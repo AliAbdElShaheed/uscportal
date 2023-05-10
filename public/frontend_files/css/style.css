@@ -35,10 +35,10 @@ header .navigation {
 header .navigation .navigation-items a {
     position: relative;
     color: #fff;
-    font-size: 1em;
+    font-size: .7em;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 15px;
     transition: 0.3s ease;
 }
 
@@ -55,6 +55,11 @@ header .navigation .navigation-items a:before {
 
 header .navigation .navigation-items a:hover:before {
     width: 100%;
+}
+
+
+.bg-black-transparent {
+    background: #22A7F0;
 }
 
 section {
@@ -95,7 +100,7 @@ section {
 }
 
 .home .content h1 {
-    font-size: 4em;
+    font-size: 1.5em;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -253,9 +258,8 @@ section {
     }
 
     .menu-btn {
-        background: url(menu.png) no-repeat;
         background-size: 30px;
-        background-position: center;
+        background: url(../../uploads/logos/menu2.png) no-repeat center;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -264,7 +268,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(close.png) no-repeat;
+        background: url(../../uploads/logos/menu2.png) no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
@@ -277,3 +281,70 @@ section {
         line-height: 60px;
     }
 }
+
+
+/*Second Section*/
+.rs-testimonial {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bg5 {
+    background-image: url(../../uploads/logos/testimonial-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.sec-spacer {
+    padding: 50px 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*statistics Section*/
+.statistics {
+    background-image: url(../../uploads/logos/2022-637938453246245007-624.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.hg_section--relative {
+    position: relative;
+    z-index: 1;
+}
+
+.pb-120 {
+    padding-bottom: 120px !important;
+}
+
+.kl-bg-source__overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 72, 74, .7);
+    z-index: 0
+}
+
+.kl-bg-source:not(:empty), .kl-bg-source__bgimage, .kl-bg-source__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
