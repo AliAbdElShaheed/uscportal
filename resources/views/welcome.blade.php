@@ -6,7 +6,7 @@
     <title>
         جامعة مدينة السادات | رئيسية الموقع
     </title>
-    <link rel="shortcut icon" href="{{asset('uploads/frontend/images/2.png')}}"/>
+    {{--    <link rel="shortcut icon" href="{{asset('uploads/frontend/images/2.png')}}"/>--}}
 
     <!-- ------------------------ Styles ------------------------ -->
     @if (app()->getLocale() == 'ar')
@@ -88,29 +88,29 @@
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.colleges_and_institutes')</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.electronic_services')</a>
-                </li>
-                {{--<li class="nav-item dropdown">
+                {{--Dropdown list--}}
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         @lang('front.electronic_services')
                     </a>
-                    <div class="image">
-                        <img src="imgs/megamenu.png" alt=""/>
+                    <div class="mega-menu">
+                        {{--<div class="image">
+                            <img class="d-none" src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
+                        </div>--}}
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>--}}
+                </li>
             </ul>
 
             {{--Search Icon--}}
@@ -143,7 +143,8 @@
 {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 
 <section class="home">
-    <video class="video-slide active" src="{{asset('uploads/frontend/videos/1.mp4')}}" autoplay muted loop></video>
+    <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
+           loop></video>
     <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
     <video class="video-slide" src="{{asset('uploads/frontend/videos/3.mp4')}}" autoplay muted loop></video>
     <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
@@ -271,7 +272,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/101.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -284,7 +285,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/103.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -297,7 +298,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/108.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -310,7 +311,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/110.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -323,7 +324,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/106.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -336,7 +337,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/109.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -349,7 +350,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/107.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -362,7 +363,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/latest_news.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/inews1.jpeg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
