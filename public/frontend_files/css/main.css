@@ -121,6 +121,26 @@ ul {
     background-size: 30px 30px;
 }
 
+
+.triangle {
+    position: relative;
+    background: var(--section-background);
+    height: 10vh;
+}
+
+.triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 28px 0 28px;
+    border-color: #2c3e50 transparent transparent transparent;
+    left: 6%;
+    transform: translateX(-50%) translateY(100%);
+}
+
 /* End Global Rules */
 
 
@@ -138,9 +158,13 @@ ul {
     color: white;
 }
 
-.navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
+    color: var(--main-color-alt);
+    border-bottom: 3px solid var(--main-color-alt);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
     color: var(--main-color-alt);
     border-top: 3px solid var(--main-color-alt);
 }
@@ -868,6 +892,25 @@ section {
 
 .u_events .subscribe form input[type="submit"]:hover {
     background-color: var(--main-color-alt);
+}
+
+
+.dots {
+    background-image: url("../../uploads/frontend/images/events_bg1.png");
+    height: 186px;
+    width: 204px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.dots-up {
+    top: 200px;
+    right: 0;
+}
+
+.dots-down {
+    bottom: 200px;
+    left: 0;
 }
 
 /* End Upcoming Events */

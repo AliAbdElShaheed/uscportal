@@ -91,6 +91,26 @@
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.electronic_services')</a>
                 </li>
+                {{--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        @lang('front.electronic_services')
+                    </a>
+                    <div class="image">
+                        <img src="imgs/megamenu.png" alt=""/>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>--}}
             </ul>
 
             {{--Search Icon--}}
@@ -511,7 +531,6 @@
 
 <div class="u_events" id="u_events">
     <div class="dots dots-up"></div>
-    <div class="dots dots-down"></div>
     <h2 class="main-title">Upcoming Events</h2>
     <div class="container">
         <img src="{{asset('uploads//frontend/images/upcoming-events.png')}}" alt=""/>
@@ -562,7 +581,7 @@
 <div class="design">
     {{--    <h2>Our Electronic & Application Services</h2>--}}
     <div class="image d-none d-md-block">
-        <img src="{{asset('uploads/frontend/images/mobile1.png')}}" alt="Mobile"/>
+        <img src="{{asset('uploads/frontend/images/mobile2.png')}}" alt="Mobile"/>
     </div>
     <div class="text">
         <h2>USC Apps</h2>
