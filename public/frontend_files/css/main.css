@@ -218,9 +218,24 @@ ul {
     background-color: var(--main-color);
 }
 
-/*.navbar .dropdown .btn {*/
-/*    background: var(--main-color);*/
-/*}*/
+/*.navbar .dropdown .btn {
+    background: var(--main-color);
+}*/
+
+/*{{--Start Mega Menu sittings--}}*/
+/*
+.mega-menu .dropdown-menu {
+    top: 55px;
+    left: -584px;
+    width: 744px;
+    border: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+}
+*/
+
+/*{{--End Mega Menu sittings--}}*/
+
 
 /* End Navbar */
 

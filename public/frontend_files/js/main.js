@@ -4,11 +4,18 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() > 500) {
 
-            $('.navbar').addClass('bg-black')
+            $('.navbar').addClass('bg-black'),
+                $('.mega-menu .dropdown-menu ').addClass('bg-black'),
+                $('.mega-menu .dropdown-item ').addClass('bg-black text-white'),
+                $('.mega-menu hr ').addClass('text-white border border-light')
+
 
         } else {
 
-            $('.navbar').removeClass('bg-black')
+            $('.navbar').removeClass('bg-black'),
+                $('.mega-menu .dropdown-menu ').removeClass('bg-black'),
+                $('.mega-menu .dropdown-item ').removeClass('bg-black text-white'),
+                $('.mega-menu hr ').removeClass('text-white border border-light')
 
         }//end of else
 

@@ -94,22 +94,34 @@
                        aria-expanded="false">
                         @lang('front.electronic_services')
                     </a>
+                    {{--Start Mega Menu--}}
                     <div class="mega-menu">
                         {{--<div class="image">
                             <img class="d-none" src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
                         </div>--}}
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            {{--<div class="image">
+                                <img src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
+                            </div>--}}
+                            <div>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Action</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
+                                        action</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
+                                        action</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
+                                        action</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
+                                        action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </div>
                         </ul>
                     </div>
+                    {{--End Mega Menu--}}
                 </li>
             </ul>
 
