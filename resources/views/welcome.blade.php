@@ -77,7 +77,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link p-2" aria-current="page"
-                       href="#">@lang('front.about_university')</a>
+                       href="/about">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.university_management')</a>
