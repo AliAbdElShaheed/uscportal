@@ -38,7 +38,9 @@ body {
     --text_color: rgba(255, 255, 255, .5) !important;
     --main-transition: 0.4s;
     --main-padding-top: 90px;
+    --main-padding-top-mini: 50px;
     --main-padding-bottom: 90px;
+    --main-padding-bottom-mini: 50px;
     --section-background: #ececec;
 }
 
@@ -58,7 +60,7 @@ ul {
 
 .main-title {
     text-transform: uppercase;
-    margin: 0 auto 80px;
+    margin: 0 auto 50px;
     border: 2px solid black;
     padding: 10px 20px;
     font-size: 30px;
@@ -103,6 +105,18 @@ ul {
     border: 2px solid white;
     /*border-radius: 75%;*/
     transition-delay: 0.5s;
+}
+
+.pt-9rem {
+    padding-top: 9rem !important;
+}
+
+.pt-4rem {
+    padding-top: 4rem !important;
+}
+
+.important_news h2, .events h2, .president_word h2, .university_council h2 {
+    color: var(--main-color);
 }
 
 .spikes {
@@ -240,7 +254,7 @@ ul {
 /* End Navbar */
 
 
-/* Start Landing Rules */
+/* Start home Rules */
 
 header {
     z-index: 999;
@@ -307,7 +321,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: var(--main-color);
+    /*background: var(--main-color);*/
     z-index: 1;
     top: -68px;
 }
@@ -316,7 +330,7 @@ section {
     z-index: 777;
     content: '';
     position: absolute;
-    background: rgba(3, 96, 251, 0.3);
+    background: rgb(3 96 251 / 12%);
     width: 100%;
     height: 100%;
     top: 0;
@@ -518,7 +532,7 @@ section {
     }
 }
 
-/* End Landing Rules */
+/* End home Rules */
 /********************* End Header Rules **************************/
 
 
@@ -530,9 +544,6 @@ section {
     margin-top: -66px;
 }
 
-.important_news h2, .events h2 {
-    color: var(--main-color);
-}
 
 .important_news .box h4 {
     background-color: var(--main-color-alt);
@@ -1127,6 +1138,206 @@ section {
 /********************* End Footer Rules **************************/
 
 
+/*------------------------------Start About Page---------------------------*/
+/*Start landing rules*/
+.landing {
+    /*background-color: var(--dark-color);*/
+    min-height: 100vh;
+    height: 75vh;
+    position: relative;
+    z-index: 1000;
+    top: -68px;
+    background: url("../../uploads/frontend/images/pages/s2.png");
+    background-size: cover;
+    animation: change-background 30s linear infinite;
+
+}
+
+.landing .image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13 110 253 / 25%);;
+    z-index: -1;
+}
+
+/*End landing rules*/
+
+
+/*Start president Word rules*/
+
+/*.president_word {
+    background: url("../../uploads/frontend/images/pages/quote.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1000;
+}*/
+
+/*
+.president_word .container .row .president {
+    height: 200px;
+}
+*/
+
+/*.president_word::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+    z-index: -1;
+}*/
+
+/*End president Word rules*/
+
+
+/*Start University History rules*/
+.university_history {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.university_history p {
+    color: #66615b;
+}
+
+
+.university_history li {
+    font-weight: bold;
+    color: #66615b;
+}
+
+.university_history span {
+    color: lightslategray;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+/*End University History rules*/
+
+
+/*Start Strategies rules*/
+
+.strategies {
+    padding-top: var(--main-padding-top
+    );
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-image: url(../../uploads/frontend/images/pages/quote.jpg);
+    background-size: cover;
+    min-height: 300px;
+}
+
+.strategies::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 87%);
+}
+
+.strategies h2 {
+    font-weight: bold;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.strategies .box {
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    transition: var(--main-transition);
+
+}
+
+.strategies .s_ul {
+    justify-content: center;
+    background: repeating-linear-gradient(31deg, rgb(0 0 0 / 50%), transparent 138px);;
+}
+
+.strategies .s-tabs {
+    background: repeating-linear-gradient(328deg, rgb(0 0 0 / 6%), transparent 138px);
+    /*background: var(--main-color);*/
+}
+
+/*.strategies .box ul li button.active {
+    !*background: var(--main-color);*!
+    background: repeating-linear-gradient(328deg, rgb(0 0 0 / 6%), transparent 138px);
+}*/
+/* End Strategies rules*/
+
+
+/*Start Privacy Policy rules*/
+
+.privacy_policy {
+    padding-top: var(--main-padding-top
+    );
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-image: url(../../uploads/frontend/images/pages/testimonial.jpg);
+    background-size: cover;
+    /*min-height: 300px;*/
+}
+
+.privacy_policy::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 42%);;
+}
+
+.privacy_policy h2 {
+    font-weight: bold;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.privacy_policy .box {
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    transition: var(--main-transition);
+    padding: 20px;
+    margin: 20px;
+    background: cornsilk;
+    border-radius: 8px;
+    box-shadow: 0 0 3px #0d9cfd;
+
+}
+
+.strategies .s_ul {
+    justify-content: center;
+    background: repeating-linear-gradient(31deg, rgb(0 0 0 / 50%), transparent 138px);;
+}
+
+.strategies .s-tabs {
+    background: repeating-linear-gradient(328deg, rgb(0 0 0 / 6%), transparent 138px);
+    /*background: var(--main-color);*/
+}
+
+
+/*End Privacy Policy rules*/
+
+
+/*-------------------------------End About Page----------------------------*/
+
+
 /**********************  Start Animation *********************** */
 @keyframes left-move {
     50% {
@@ -1162,4 +1373,20 @@ section {
     }
 }
 
+
+@keyframes change-background {
+    0%,
+    100% {
+        background-image: url("../../uploads/frontend/images/pages/s2.png");
+    }
+    33% {
+        background-image: url("../../uploads/frontend/images/pages/s4.jpg");
+    }
+    67% {
+        background-image: url("../../uploads/frontend/images/pages/s3.png");
+    }
+}
+
 /**********************  End Animation ********************* *****/
+
+
