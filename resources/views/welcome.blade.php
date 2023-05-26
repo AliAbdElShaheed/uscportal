@@ -323,7 +323,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/110.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/120.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -349,7 +349,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/109.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/130.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -362,7 +362,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/107.jpg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/140.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -375,7 +375,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card mb-5">
-                    <img src="{{asset('uploads/frontend/images/inews1.jpeg')}}" alt=""/>
+                    <img src="{{asset('uploads/frontend/images/150.jpg')}}" alt=""/>
                     <div class="card-body">
                         <h3>Test Title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -517,7 +517,7 @@
             </div>
             <div class=" col-lg-8 col-md-8 p-0 m-0">
                 <div class="preview h-100">
-                    <img class="w-100 h-75" src="{{asset('uploads/frontend/images/EVENTS_1.webp')}}" alt=""/>
+                    <img class="w-100 h-75" src="{{asset('uploads/frontend/images/event.jpg')}}" alt=""/>
                     <div class="info d-inline-flex justify-content-between">
                         <div class="justify-content-center"> Everything About The That Event</div>
 
