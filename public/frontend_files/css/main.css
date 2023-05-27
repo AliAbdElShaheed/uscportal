@@ -115,7 +115,7 @@ ul {
     padding-top: 4rem !important;
 }
 
-.important_news h2, .events h2, .president_word h2, .university_council h2 {
+.important_news h2, .events h2, .president_word h2, .university_council h2, .university_leaders h2 {
     color: var(--main-color);
 }
 
@@ -1336,6 +1336,119 @@ section {
 
 
 /*-------------------------------End About Page----------------------------*/
+
+
+/*-------------------------------Start Management Page---------------------*/
+
+/*Start University Leaders rules*/
+.university_leaders {
+    position: relative;
+}
+
+.university_leaders .box {
+    position: relative;
+}
+
+.university_leaders .box::before,
+.university_leaders .box::after {
+    content: "";
+    background-color: #f3f3f3;
+    /*background-color: red;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+
+.university_leaders .box::before {
+    width: calc(100% - 60px);
+    z-index: -2;
+}
+
+.university_leaders .box::after {
+    z-index: -1;
+    background-color: #e4e4e4;
+    width: 0;
+}
+
+.university_leaders .box:hover::after {
+    width: calc(100% - 60px);
+}
+
+.university_leaders .box .data {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.university_leaders .box .data img {
+    width: calc(100% - 60px);
+    transition: var(--main-transition);
+    border-radius: 10px;
+    /*height: 450px;*/
+}
+
+.university_leaders .box:hover img {
+    filter: grayscale(100%);
+}
+
+.university_leaders .box .data .social {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.university_leaders .box .data .social a {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.university_leaders .box .data .social a:hover svg {
+    color: var(--main-color);
+}
+
+.university_leaders .box .data .social svg {
+    color: #777;
+    transition: var(--main-transition);
+}
+
+.university_leaders .box .info {
+    padding-left: 10px;
+}
+
+.university_leaders .box .info h4 {
+    margin-bottom: 0;
+    color: var(--main-color);
+    font-size: 22px;
+    transition: var(--main-transition);
+}
+
+.university_leaders .box .info p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.university_leaders .box .info span {
+    font-size: 6px;
+
+}
+
+.university_leaders .box:hover .info h4 {
+    color: #777;
+}
+
+/*End University Leaders rules*/
+
+
+/*-------------------------------End Management Page-----------------------*/
 
 
 /**********************  Start Animation *********************** */

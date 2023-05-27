@@ -79,7 +79,7 @@
                        href="/about">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.university_management')</a>
+                    <a class="nav-link p-2 p-lg-2" href="/management">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>

@@ -24,6 +24,10 @@ Route::get('/about', function () {
     //return view('welcome');
     return view('about');
 });
+Route::get('/management', function () {
+
+    return view('management');
+});
 
 Auth::routes(['register' => false]);
 
