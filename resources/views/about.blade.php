@@ -506,7 +506,7 @@
 <div class="spikes"></div>
 
 
-{{--------------------------Start of section 6 (University History) --------------------------}}
+{{--------------------------Start of section 6 (Citizens Service Centers) ----------------------}}
 <div class="university_history" id="university_history">
     <h2 class="main-title">Citizens Service Centers</h2>
 
@@ -538,7 +538,7 @@
 
     </div>
 </div>
-{{--------------------------End of section 6 (University History) ----------------------------}}
+{{--------------------------End of section 6 (Citizens Service Centers) ------------------------}}
 
 
 
