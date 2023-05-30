@@ -29,6 +29,11 @@ Route::get('/management', function () {
     return view('management');
 });
 
+Route::get('/colleges', function () {
+
+    return view('colleges');
+});
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

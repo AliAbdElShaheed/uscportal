@@ -39,8 +39,9 @@
 
 </head>
 <body>
-{{--------------------------Start of nav bar--------------------------------------------------}}
 
+
+{{--------------------------Start of nav bar--------------------------------------------------}}
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
 
@@ -86,7 +87,7 @@
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.colleges_and_institutes')</a>
+                    <a class="nav-link p-2 p-lg-2" href="/colleges">@lang('front.colleges_and_institutes')</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
@@ -146,14 +147,13 @@
         </div>
     </div>
 </nav>
-
 {{--------------------------End of nav bar----------------------------------------------------}}
 
 
 
 
-{{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 
+{{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 <section class="home">
     <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
            loop></video>
@@ -219,11 +219,13 @@
 
     </div>
 </section>
-
 {{--------------------------End of section 1 Landing (video slides)  -------------------------}}
 
-{{--------------------------Start of section 2 (News) ----------------------------------------}}
 
+
+
+
+{{--------------------------Start of section 2 (News) ----------------------------------------}}
 <div class="important_news text-center pb-5 pt-2">
     <div class="container pb-5 pt-1">
         <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
@@ -268,14 +270,12 @@
         </div>
     </div>
 </div>
-
-
 {{--------------------------End of section 2 (News) ------------------------------------------}}
 
 
 
-{{--------------------------Start of section 3 (Latest News) ---------------------------------}}
 
+{{--------------------------Start of section 3 (Latest News) ---------------------------------}}
 <div class="latest_news" id="latest_news">
     <h2 class="main-title">Latest News</h2>
 
@@ -394,13 +394,13 @@
 
     </div>
 </div>
-
 {{--------------------------End of section 3 (Latest News) -----------------------------------}}
+
 
 <div class="spikes"></div>
 
-{{--------------------------End of section 4 (Statistics) -----------------------------------}}
 
+{{--------------------------End of section 4 (Statistics) -----------------------------------}}
 <div class="stats" id="stats">
     <h2>Our Statistics</h2>
     <div class="container">
@@ -450,15 +450,13 @@
         </div>
     </div>
 </div>
-
-
 {{--------------------------End of section 4 (Statistics) -----------------------------------}}
 
 
 
 
-{{--------------------------Start of section 5 (Events) -------------------------------------}}
 
+{{--------------------------Start of section 5 (Events) -------------------------------------}}
 <div class="events" id="events">
     <h2 class="fw-bold main-title">Top Events</h2>
     <div class="container">
@@ -534,14 +532,13 @@
         </div>
     </div>
 </div>
-
 {{--------------------------End of section 5 (Events) ---------------------------------------}}
 
 
 <div class="spikes"></div>
 
-{{--------------------------Start of section 6 (Upcoming Events) ----------------------------}}
 
+{{--------------------------Start of section 6 (Upcoming Events) ----------------------------}}
 <div class="u_events" id="u_events">
     <div class="dots dots-up"></div>
     <h2 class="main-title">Upcoming Events</h2>
@@ -581,8 +578,6 @@
         </div>
     </div>
 </div>
-
-
 {{--------------------------End of section 6 (Upcoming Events) ------------------------------}}
 
 
@@ -590,7 +585,6 @@
 
 
 {{--------------------------Start of section 7 (Mobile Apps) --------------------------------}}
-
 <div class="design">
     {{--    <h2>Our Electronic & Application Services</h2>--}}
     <div class="image d-none d-md-block">
@@ -606,9 +600,9 @@
         </ul>
     </div>
 </div>
-
-
 {{--------------------------End of section 7 (Mobile Apps) ----------------------------------}}
+
+
 
 
 
@@ -705,6 +699,8 @@
     </div>
 </div>
 {{--------------------------   End of Footer ------------------------------------------------}}
+
+
 
 
 

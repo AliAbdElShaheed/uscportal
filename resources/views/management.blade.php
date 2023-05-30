@@ -85,7 +85,7 @@
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.colleges_and_institutes')</a>
+                    <a class="nav-link p-2 p-lg-2" href="/colleges">@lang('front.colleges_and_institutes')</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
