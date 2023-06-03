@@ -1451,6 +1451,72 @@ section {
 /*-------------------------------End Management Page-----------------------*/
 
 
+/*-------------------------------Start Colleges Page-----------------------*/
+.colleges_and_institutes .card {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+
+.colleges_and_institutes .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.colleges_and_institutes .card img {
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+    height: 250px;
+}
+
+.colleges_and_institutes .card .card-body {
+    padding: 20px;
+}
+
+.colleges_and_institutes .card .card-body h3 {
+    margin: 0;
+}
+
+.colleges_and_institutes .card .card-body p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+}
+
+.colleges_and_institutes .card .info {
+    padding: 20px;
+    border-top: 1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colleges_and_institutes .card .info a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.colleges_and_institutes .card .info svg {
+    color: var(--main-color);
+}
+
+.colleges_and_institutes .card:hover .info svg {
+    animation: moving-arrow 0.6s linear infinite;
+}
+
+@media (min-width: 992px) {
+    .w-1102 {
+        width: 1102px;
+    }
+}
+
+
+/*-------------------------------End Colleges Page-----------------------*/
+
+
 /**********************  Start Animation *********************** */
 @keyframes left-move {
     50% {
