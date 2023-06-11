@@ -105,20 +105,21 @@
                                 <img src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
                             </div>--}}
                             <div>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Action</a>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Student
+                                        Services</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Postgraduate
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Staff
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Employee
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Enrollment
+                                        in university cities</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Complaints and suggestions</a></li>
                             </div>
                         </ul>
                     </div>
