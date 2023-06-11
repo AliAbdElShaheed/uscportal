@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use App\Models\Category;
-use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\ImageManagerStatic as Image;
@@ -29,8 +29,8 @@ class BlogController extends Controller
 
         $blogs = Blog::when($request->search, function ($q) use ($request) {
 
-            return $q->where('name->en', 'like', '%' . $request->search . '%')
-                ->orwhere('name->ar', 'like', '%' . $request->search . '%');
+            return $q->where('title->en', 'like', '%' . $request->search . '%')
+                ->orwhere('title->ar', 'like', '%' . $request->search . '%');
 
         })->when($request->category_id, function ($q) use ($request) {
 
@@ -54,19 +54,18 @@ class BlogController extends Controller
     {
         //dd($request->all());
 
-        //validation on Category Name if Exist
-        if (Product::where('name->ar', $request->name_ar)->orwhere('name->en', $request->name)->exists()) {
+        //validation on Category Title if Exist
+        if (Blog::where('title->ar', $request->title_ar)->orwhere('title->en', $request->title)->exists()) {
 
             return redirect()->back()->withErrors(__('message.Exist'));
         } // End Of Validation IF
 
         // validation For Required Fields
         $request->validate([
-            'name' => 'required',
-            'name_ar' => 'required',
-            'purchase_price' => 'required',
-            'sale_price' => 'required',
-            'stock' => 'required',
+            'title' => 'required',
+            'title_ar' => 'required',
+            'content' => 'required',
+            'content_ar' => 'required',
             'category_id' => 'required'
 
         ]); // End of Validation
@@ -87,17 +86,16 @@ class BlogController extends Controller
         } // End of IF
         //dd($request_data['image']);
 
-        $product = new Product();
+        $blog = new Blog();
         //dd($request_data);
-        $product->name = ['en' => $request_data['name'], 'ar' => $request_data['name_ar']];
-        $product->description = ['en' => $request_data['description'], 'ar' => $request_data['description_ar']];
-        $product->image = $request_data['image'];
-        $product->purchase_price = $request_data['purchase_price'];
-        $product->sale_price = $request_data['sale_price'];
-        $product->stock = $request_data['stock'];
-        $product->category_id = $request_data['category_id'];
-        $product->notes = $request_data['notes'];
-        $product->save();
+        $blog->title = ['en' => $request_data['title'], 'ar' => $request_data['title_ar']];
+        $blog->content = ['en' => $request_data['content'], 'ar' => $request_data['content_ar']];
+        $blog->image = $request_data['image'];
+        $blog->date = $request_data['date'];
+        $blog->top_news = $request_data['top_news'];
+        $blog->category_id = $request_data['category_id'];
+        $blog->notes = $request_data['notes'];
+        $blog->save();
 
 
         session()->flash('success', __('site.added_successfully'));
@@ -106,7 +104,7 @@ class BlogController extends Controller
     }  // End of Store
 
 
-    public function show(Product $product)
+    public function show(Blog $blog)
     {
         //
     }  // End of Show
@@ -116,10 +114,10 @@ class BlogController extends Controller
     {
         //dd($id);
         $categories = Category::all();
-        $product = Product::find($id);
-        //dd($product->name);
+        $blog = Blog::find($id);
+        //dd($blog->title);
 
-        return view('dashboard.blogs.edit', compact('categories', 'product'));
+        return view('dashboard.blogs.edit', compact('categories', 'blog'));
 
     } // End of Edit
 
@@ -127,16 +125,15 @@ class BlogController extends Controller
     public function update(Request $request, $id)
     {
         //dd($id);
-        $product = Product::find($id);
-        //dd($product);
+        $blog = Blog::find($id);
+        //dd($blog);
 
         // validation For Required Fields
         $request->validate([
-            'name' => 'required',
-            'name_ar' => 'required',
-            'purchase_price' => 'required',
-            'sale_price' => 'required',
-            'stock' => 'required',
+            'title' => 'required',
+            'title_ar' => 'required',
+            'content' => 'required',
+            'content_ar' => 'required',
             'category_id' => 'required'
 
         ]); // End of Validation
@@ -148,11 +145,11 @@ class BlogController extends Controller
         // Prepare The Request Image Size & Save It
         if ($request->image) {
 
-            if ($product->image != 'default.png') { // To Delete The Old Product Image
-                File::delete(public_path('uploads/blogs_img/') . $product->image);
+            if ($blog->image != 'default.png') { // To Delete The Old Blog Image
+                File::delete(public_path('uploads/blogs_img/') . $blog->image);
             } // End of Inner IF
 
-            // To Save The New Product Image (Update It)
+            // To Save The New Blog Image (Update It)
             Image::make($request->image)->resize(226, null, function ($constraint) {
                 $constraint->aspectRatio();
             })->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 80, 'png');
@@ -161,18 +158,16 @@ class BlogController extends Controller
         } // End of IF
         //dd($request_data['image']);
 
-        $product->name = ['en' => $request_data['name'], 'ar' => $request_data['name_ar']];
-        $product->description = ['en' => $request_data['description'], 'ar' => $request_data['description_ar']];
+        $blog->title = ['en' => $request_data['title'], 'ar' => $request_data['title_ar']];
+        $blog->content = ['en' => $request_data['content'], 'ar' => $request_data['content_ar']];
         if ($request->image) {
-            $product->image = $request_data['image'];
+            $blog->image = $request_data['image'];
         };
-        $product->purchase_price = $request_data['purchase_price'];
-        $product->sale_price = $request_data['sale_price'];
-        $product->stock = $request_data['stock'];
-        $product->category_id = $request_data['category_id'];
-        $product->notes = $request_data['notes'];
-
-        $product->update();
+        $blog->category_id = $request_data['category_id'];
+        $blog->notes = $request_data['notes'];
+        $blog->date = $request_data['date'];
+        $blog->top_news = $request_data['top_news'];
+        $blog->update();
 
         session()->flash('success', __('site.updated_successfully'));
 
@@ -183,15 +178,15 @@ class BlogController extends Controller
     public function destroy($id)
     {
         //dd($id);
-        $product = Product::find($id);
+        $blog = Blog::find($id);
 
-        // Delete The Product Image
+        // Delete The Blog Image
         //dd(public_path('uploads/blogs_img/'));
-        if ($product->image != 'default.png') {
-            File::delete(public_path('uploads/blogs_img/') . $product->image);
+        if ($blog->image != 'default.png') {
+            File::delete(public_path('uploads/blogs_img/') . $blog->image);
         }
 
-        $product->delete();
+        $blog->delete();
         session()->flash('success', __('site.deleted_successfully'));
 
         return redirect()->route('blogs.index');

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Translatable\HasTranslations;
 
-class Product extends Model
+class Blog extends Model
 {
     use HasFactory;
     use SoftDeletes;
@@ -15,18 +15,17 @@ class Product extends Model
 
 
     public $translatable = [
-        'name',
-        'description',
+        'title',
+        'content',
     ];
 
     protected $fillable = [
         'category_id',
-        'name',
-        'description',
+        'title',
+        'content',
         'image',
-        'purchase_price',
-        'sale_price',
-        'stock',
+        'date',
+        'top_news',
     ];
 
 
@@ -37,38 +36,23 @@ class Product extends Model
     } // End of Category Relationship
 
 
-    // The Relationship With Orders (Many To Many)
-    public function orders()
+    // The Relationship With Tags (Many To Many)
+    /*public function tags()
     {
 
         return $this->belongsToMany(Order::class, 'product_order');
 
     } // End of Orders Relationship
-
-    // The Relationship With supplyOrders (Many To Many)
-    public function supply_orders()
-    {
-
-        return $this->belongsToMany(SupplyOrder::class, 'product_supply_order');
-
-    } // End of SupplyOrders Relationship
+*/
 
 
-    protected $appends = ['image_path', 'profit_percent'];
+    protected $appends = ['image_path'];
 
     // Get The Image Path To Show It in The Product Index Page
     public function getImagePathAttribute()
     {
-        return asset('uploads/products_img/' . $this->image);
+        return asset('uploads/blogs_img/' . $this->image);
     } // End of Get Image Path
 
-
-    // Get The Profit Percentage
-    public function getProfitPercentAttribute()
-    {
-        $profit = $this->sale_price - $this->purchase_price;
-        $profit_percent = $profit * 100 / $this->purchase_price;
-        return number_format($profit_percent, 2);
-    } // End of Get The Profit Percentage
 
 } // End of Model

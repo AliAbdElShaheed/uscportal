@@ -20,6 +20,14 @@ class Category extends Model
         'notes',
     ];
 
+
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class);
+
+    } // End of Blogs Relationship
+
+
     public function products()
     {
         return $this->hasMany(Product::class);
