@@ -21,39 +21,19 @@ class CategorySeeder extends Seeder
         $categories =
             [
                 [
-                    'en'=>'Category One',
-                    'ar'=>'القسم الأول'
+                    'en' => 'News',
+                    'ar' => 'أخبار'
                 ],
                 [
-                    'en'=>'Category Two',
-                    'ar'=>'القسم الثانى'
+                    'en' => 'Events',
+                    'ar' => 'أحداث'
                 ],
-                [
-                    'en'=>'Category Three',
-                    'ar'=>'القسم 3'
-                ],
-                [
-                    'en'=>'Category 4',
-                    'ar'=>'القسم الرابع'
-                ],
-                [
-                    'en'=>'Category Five',
-                    'ar'=>'القسم الخامس'
-                ],
-                [
-                    'en'=>'Category 6',
-                    'ar'=>'القسم السادس'
-                ],
-
-                [
-                    'en'=>'Category 7',
-                    'ar'=>'القسم السابع'
-                ],
-             ];
+                
+            ];
 
         foreach ($categories as $category) {
 
-            Category::create (['name' => $category]);
+            Category::create(['name' => $category]);
 
         } // End of Foreach
 

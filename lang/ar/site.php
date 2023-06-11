@@ -94,6 +94,7 @@ return [
 
 
     'categories' => 'الاقسام',
+    'category' => 'القسم',
     'all_categories' => 'كل الاقسام',
     'categories_list' => 'قائمة الأقسام',
     'add_new_category' => 'أضف قسم جديد',
@@ -104,10 +105,9 @@ return [
     'notes' => 'الملاحظات',
     'edit_category' => 'تعديل القسم',
     'description' => 'الوصف',
-    'products_count' => 'عدد المنتجات',
-    'related_products' => 'المنتجات المرتبطه',
-    'category' => 'القسم',
-    'show_products' => 'عرض المنتجات',
+    'items_count' => 'عدد المنتجات',
+    'related_items' => 'المنتجات المرتبطه',
+    'show_items' => 'عرض المنتجات',
     'created_at' => 'تم اضافته',
 
     'products' => 'المنتجات',

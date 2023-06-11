@@ -58,8 +58,8 @@
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>@lang('site.name')</th>
-                                <th>@lang('site.products_count')</th>
-                                <th>@lang('site.related_products')</th>
+                                <th>@lang('site.items_count')</th>
+                                <th>@lang('site.related_items')</th>
                                 <th>@lang('site.notes')</th>
                                 <th style="width: 180px">@lang('site.actions')</th>
                             </tr>
@@ -70,7 +70,8 @@
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{$category->name}}</td>
                                     <td>{{$category->products->count()}}</td>
-                                    <td><a href="{{ route('products.index', ['category_id' => $category->id]) }}" class="btn btn-primary btn-sm">@lang('site.products')</a> </td>
+                                    <td><a href="{{ route('products.index', ['category_id' => $category->id]) }}"
+                                           class="btn btn-primary btn-sm">@lang('site.items')</a></td>
                                     <td>{{$category->notes}}</td>
                                     <td>
                                         {{--Edit category--}}
@@ -94,7 +95,8 @@
                                                 {{method_field('delete')}}
                                                 <button class="btn btn-danger btn-sm">@lang('site.delete')</button>
                                             </form>--}}
-                                            <a class="confirm" href="{{route('category.destroy', ['id'=>$category->id])}}">
+                                            <a class="confirm"
+                                               href="{{route('category.destroy', ['id'=>$category->id])}}">
                                                 <button type="button"
                                                         class="btn btn-sm btn-danger"><i
                                                         class="fa fa-trash"></i> @lang('site.delete')</button>
@@ -112,7 +114,7 @@
 
                             </tbody>
                         </table>
-                    {{$categories->appends(request()->query())->links()}}
+                        {{$categories->appends(request()->query())->links()}}
                         <!-- /.card-body -->
 
                     @else
@@ -131,17 +133,17 @@
 
 @push('scripts')
 
-{{--
-<script onclick="delete" >
-    $(function () {
+    {{--
+    <script onclick="delete" >
+        $(function () {
 
-        // Confirmation Message On Click The Link
+            // Confirmation Message On Click The Link
 
-        $('.confirm').click(function() {
+            $('.confirm').click(function() {
 
-            return confirm('Are You Sure ?');
+                return confirm('Are You Sure ?');
 
-        });
-</script>
---}}
+            });
+    </script>
+    --}}
 @endpush

@@ -80,10 +80,11 @@ class CategoryController extends Controller
 
 
     /*
-        public function show(Category $category)
-        {
+    public function show(Category $category)
+    {
             //
-        }*/
+    }
+    */
 
 
     public function edit($id)

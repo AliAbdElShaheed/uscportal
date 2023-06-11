@@ -102,9 +102,9 @@ return [
     'notes' => 'Notes',
     'edit_category' => 'Edit Category',
     'description' => 'Description',
-    'products_count' => 'Products Count',
-    'related_products' => 'Related Products',
-    'show_products' => 'Show Products',
+    'items_count' => 'Items Count',
+    'related_items' => 'Related Items',
+    'show_items' => 'Show Items',
     'created_at' => 'Created At',
 
 
@@ -123,4 +123,9 @@ return [
     'price' => 'Price',
     'sale_price' => 'Sale Price',
     'profit_percent' => 'Profit Percent',
+
+
+    'items' => 'Items',
+    'items_list' => 'Items List',
+
 ];
