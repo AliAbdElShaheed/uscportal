@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,9 @@ Route::get('/', function () {
     //return view('welcome');
     return view('welcome');
 });
+
+
+Route::get('/aa', [BlogController::class, 'index'])->name('product.add');
 
 Route::get('/about', function () {
 
