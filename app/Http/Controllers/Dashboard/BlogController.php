@@ -91,7 +91,7 @@ class BlogController extends Controller
         $blog->title = ['en' => $request_data['title'], 'ar' => $request_data['title_ar']];
         $blog->content = ['en' => $request_data['content'], 'ar' => $request_data['content_ar']];
         $blog->image = $request_data['image'];
-        $blog->date = $request_data['date'];
+        $blog->publish_date = $request_data['publish_date'];
         $blog->top_news = $request_data['top_news'];
         $blog->category_id = $request_data['category_id'];
         $blog->notes = $request_data['notes'];
@@ -165,7 +165,7 @@ class BlogController extends Controller
         };
         $blog->category_id = $request_data['category_id'];
         $blog->notes = $request_data['notes'];
-        $blog->date = $request_data['date'];
+        $blog->publish_date = $request_data['publish_date'];
         $blog->top_news = $request_data['top_news'];
         $blog->update();
 

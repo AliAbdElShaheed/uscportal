@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\BlogController;
 use App\Http\Controllers\Dashboard\CategoryController;
 use App\Http\Controllers\Dashboard\Client\OrderController;
 use App\Http\Controllers\Dashboard\ClientController;
@@ -67,6 +68,18 @@ Route::group(
             Route::get('/category/delete/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
         }); // End of Categories Routes
 
+
+        // Here Will Be All Routes To BlogController
+        Route::group(['prefix' => 'blogs', 'namespace' => 'blogs'], function () {
+
+            Route::get('/add', [BlogController::class, 'create'])->name('blog.add');
+            Route::post('/store', [BlogController::class, 'store'])->name('blog.store');
+            Route::get('/index', [BlogController::class, 'index'])->name('blogs.index');
+            Route::get('/', [BlogController::class, 'index'])->name('blogs.index');
+            Route::get('/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
+            Route::post('/blog/update/{id}', [BlogController::class, 'update'])->name('blog.update');
+            Route::get('/blog/delete/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+        }); // End of Blogs Routes
 
         // Here Will Be All Routes To ProductController
         Route::group(['prefix' => 'products', 'namespace' => 'products'], function () {

@@ -24,7 +24,7 @@ class Blog extends Model
         'title',
         'content',
         'image',
-        'date',
+        'publish_date',
         'top_news',
     ];
 

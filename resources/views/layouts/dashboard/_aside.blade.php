@@ -27,6 +27,12 @@
                             class="fa fa-sitemap"></i><span>@lang('site.categories')</span></a></li>
             @endif
 
+            @if (auth()->user()->hasPermission('blogs_read'))
+                <li><a href="{{ route('blogs.index') }}"><i
+                            class="fa fa-newspaper-o"></i><span>@lang('site.blogs')</span></a>
+                </li>
+            @endif
+
             @if (auth()->user()->hasPermission('products_read'))
                 <li><a href="{{ route('products.index') }}"><i class="fa fa-th"></i><span>@lang('site.products')</span></a>
                 </li>

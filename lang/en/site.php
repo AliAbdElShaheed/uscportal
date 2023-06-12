@@ -128,4 +128,22 @@ return [
     'items' => 'Items',
     'items_list' => 'Items List',
 
+
+    'blogs' => 'blogs',
+    'blogs_list' => 'blogs List',
+    'add_new_blog' => 'Add New blog',
+    'edit_blog' => 'Edit blog',
+    'blog' => 'blog',
+    'content_en' => 'English Content',
+    'content_ar' => 'Arabic Content',
+    'title_ar' => 'Title In Arabic',
+    'title_en' => 'Title In English',
+    'Paned As Top News' => 'Paned As Top News',
+    'Not Paned As Top News' => 'Not Paned As Top News',
+    'title' => 'Title',
+    'content' => 'Content',
+    'publish_date' => 'Publish Date',
+    'top_news' => 'ِAppear On Top News',
+
+
 ];
