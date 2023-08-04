@@ -34,16 +34,16 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link p-2" aria-current="page"
-                       href="#">@lang('front.about_university')</a>
+                       href="/about">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.university_management')</a>
+                    <a class="nav-link p-2 p-lg-2" href="/management">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.colleges_and_institutes')</a>
+                    <a class="nav-link p-2 p-lg-2" href="/colleges">@lang('front.colleges_and_institutes')</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
@@ -61,20 +61,21 @@
                                 <img src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
                             </div>--}}
                             <div>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Action</a>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Student
+                                        Services</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Another
-                                        action</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Postgraduate
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Staff
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Employee
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>Enrollment
+                                        in university cities</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Complaints and suggestions</a></li>
                             </div>
                         </ul>
                     </div>
