@@ -17,11 +17,6 @@ return [
             'users' => 'c,r,u,d',
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
-            'products' => 'c,r,u,d',
-            'clients' => 'c,r,u,d',
-            'suppliers' => 'c,r,u,d',
-            'orders' => 'c,r,u,d',
-            'supply_orders' => 'c,r,u,d',
             'profile' => 'r,u'
         ], // End of Super Admin Roles
 
@@ -29,11 +24,6 @@ return [
             'users' => 'c,r,u,d',
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
-            'products' => 'c,r,u,d',
-            'clients' => 'c,r,u,d',
-            'suppliers' => 'c,r,u,d',
-            'orders' => 'c,r,u,d',
-            'supply_orders' => 'c,r,u,d',
             'profile' => 'r,u',
         ], // End of Admin Roles
 
@@ -41,10 +31,6 @@ return [
         'user' => [
             'categories' => 'r',
             'products' => 'r',
-            'clients' => 'r',
-            'suppliers' => 'r',
-            'orders' => 'r',
-            'supply_orders' => 'r',
             'profile' => 'r,u',
         ], // End of User Roles
 

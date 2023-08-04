@@ -143,7 +143,7 @@ return [
     'title' => 'Title',
     'content' => 'Content',
     'publish_date' => 'Publish Date',
-    'top_news' => 'ِAppear On Top News',
+    'top_news' => 'Appear On Top News',
 
 
 ];

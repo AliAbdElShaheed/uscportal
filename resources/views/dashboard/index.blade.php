@@ -46,7 +46,7 @@
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
                         </div>
-                        <a href="{{ route('products.index') }}" class="small-box-footer">@lang('site.read') <i
+                        <a href="#" class="small-box-footer">@lang('site.read') <i
                                 class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         <div class="icon">
                             <i class="fa fa-users"></i>
                         </div>
-                        <a href="{{ route('clients.index') }}" class="small-box-footer">@lang('site.read') <i
+                        <a href="#" class="small-box-footer">@lang('site.read') <i
                                 class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <div class="icon">
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                         </div>
-                        <a href="{{ route('orders.index') }}" class="small-box-footer">@lang('site.read') <i
+                        <a href="#" class="small-box-footer">@lang('site.read') <i
                                 class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>

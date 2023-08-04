@@ -33,35 +33,6 @@
                 </li>
             @endif
 
-            @if (auth()->user()->hasPermission('products_read'))
-                <li><a href="{{ route('products.index') }}"><i class="fa fa-th"></i><span>@lang('site.products')</span></a>
-                </li>
-            @endif
-
-            @if (auth()->user()->hasPermission('clients_read'))
-                <li><a href="{{ route('clients.index') }}"><i
-                            class="fa fa-user-circle"></i><span>@lang('site.clients')</span></a></li>
-            @endif
-
-
-            @if (auth()->user()->hasPermission('orders_read'))
-                <li><a href="{{ route('orders.index') }}"><i
-                            class="fa fa-cart-arrow-down"></i><span>@lang('site.orders')</span></a>
-                </li>
-            @endif
-
-
-            @if (auth()->user()->hasPermission('suppliers_read'))
-                <li><a href="{{ route('suppliers.index') }}"><i
-                            class="fa fa-user-circle"></i><span>@lang('site.suppliers')</span></a></li>
-            @endif
-
-
-            @if (auth()->user()->hasPermission('supply_orders_read'))
-                <li><a href="{{ route('supply_orders.index') }}"><i
-                            class="fa fa-cart-arrow-down"></i><span>@lang('site.supply_orders')</span></a>
-                </li>
-            @endif
 
 
             @if (auth()->user()->hasPermission('reports_read'))
@@ -76,7 +47,7 @@
             <li class="treeview {{ request()->is('*profile*') || request()->is('*password*')  ? 'is-expanded' : '' }}">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><i
                         class="app-menu__icon fa fa-user-circle"></i><span
-                        class="app-menu__label">@lang('site.reports')</span><i
+                        class="app-menu__label">@lang('site.sub_menu')</span><i
                         class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a class="treeview-item" href="#"><i
