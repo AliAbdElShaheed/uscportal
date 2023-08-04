@@ -144,6 +144,7 @@ return [
     'content' => 'Content',
     'publish_date' => 'Publish Date',
     'top_news' => 'Appear On Top News',
+    'add_blog' => 'Add Blog',
 
 
 ];
