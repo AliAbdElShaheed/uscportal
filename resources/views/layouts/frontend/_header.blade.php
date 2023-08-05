@@ -96,8 +96,16 @@
                     Language
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">العربية</a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <li>
+                            <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                               href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                {{ $properties['native'] }}
+                            </a>
+                        </li>
+                    @endforeach
+                    {{-- <li><a class="dropdown-item" href="#">العربية</a></li>
+                     <li><a class="dropdown-item" href="#">English</a></li>--}}
 
                 </ul>
             </div>
