@@ -30,7 +30,8 @@ class BlogController extends Controller
             ->limit(8)
             ->get();
 
-        dd($blogs);
+        //        dd($blogs);
+        return view('frontend.index');
     }
 
     /**
