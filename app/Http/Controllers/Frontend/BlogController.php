@@ -27,7 +27,7 @@ class BlogController extends Controller
             ->limit(8)
             ->get();
 
-        return view('frontend.index', compact('blogs'));
+        return view('frontend.index', compact('top_news', 'blogs'));
     } // End of Index
 
 

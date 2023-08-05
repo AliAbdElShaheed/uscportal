@@ -1,7 +1,7 @@
 @extends('layouts.frontend.app')
 
 @section('content')
-    <?php dd($blogs); ?>
+    <!--    --><?php //dd($blogs); ?>
     {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 
     <section class="home">
