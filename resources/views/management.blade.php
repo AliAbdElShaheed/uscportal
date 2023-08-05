@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +9,23 @@
 
     <!-- ------------------------ Styles ------------------------ -->
     @if (app()->getLocale() == 'ar')
-        {{--        <link rel="stylesheet" href="{{ asset('dashboard_files/css/font-awesome-rtl.min.css') }}">--}}
-        {{--        <link rel="stylesheet" href="{{ asset('dashboard_files/css/AdminLTE-rtl.min.css') }}">--}}
-        {{--        <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">--}}
-        {{--        <link rel="stylesheet" href="{{ asset('dashboard_files/css/bootstrap-rtl.min.css') }}">--}}
-        {{--        <link rel="stylesheet" href="{{ asset('dashboard_files/css/rtl.css') }}">--}}
+        <!--bootstrap rtl-->
+        <link rel="stylesheet" href="{{ asset('frontend_files/css/bootstrap.min.css') }}">
 
-        {{--        <style>--}}
-        {{--            body, h1, h2, h3, h4, h5, h6 {--}}
-        {{--                font-family: 'Cairo', sans-serif !important;--}}
-        {{--            }--}}
-        {{--        </style>--}}
+        <!--font awesome-->
+        <link rel="stylesheet" href="{{ asset('frontend_files/css/all.min.css') }}">
+
+        <!--main styles -->
+        <link rel="stylesheet" href="{{ asset('frontend_files/css/main.rtl.css') }}">
+
+        {{--<!-- Google Fonts -->--}}
+        <style>
+            body, h1, h2, h3, h4, h5, h6 {
+                font-family: 'Cairo', sans-serif !important;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+
     @else
         <!--bootstrap-->
         <link rel="stylesheet" href="{{ asset('frontend_files/css/bootstrap.min.css') }}">
