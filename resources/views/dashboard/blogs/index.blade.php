@@ -71,7 +71,7 @@
                                 <th>@lang('site.content')</th>
                                 <th>@lang('site.image')</th>
                                 <th>@lang('site.publish_date')</th>
-                                <th>@lang('site.top_news')</th>
+                                <th>@lang('site.appear_on_top_news')</th>
                                 <th>@lang('site.category')</th>
                                 <th>@lang('site.notes')</th>
                                 <th style="width: 180px">@lang('site.actions')</th>

@@ -35,13 +35,13 @@
                     </div>
                 </div>
 
-                {{--products--}}
+                {{--Top News--}}
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-green">
                         <div class="inner">
-                            <h3>{{ $products_count }}</h3>
+                            <h3>{{ $top_news_count }}</h3>
 
-                            <p>@lang('site.products')</p>
+                            <p>@lang('site.top_news')</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
@@ -51,32 +51,32 @@
                     </div>
                 </div>
 
-                {{--clients--}}
+                {{--Blogs--}}
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-yellow-gradient">
                         <div class="inner">
-                            <h3>{{ $clients_count }}</h3>
+                            <h3>{{ $blogs_count }}</h3>
 
-                            <p>@lang('site.clients')</p>
+                            <p>@lang('site.blogs')</p>
                         </div>
                         <div class="icon">
-                            <i class="fa fa-users"></i>
+                            <i class="fa fa-newspaper-o"></i>
                         </div>
                         <a href="#" class="small-box-footer">@lang('site.read') <i
                                 class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
-                {{--orders--}}
+                {{--Events--}}
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-red">
                         <div class="inner">
-                            <h3>{{ $orders_count }}</h3>
+                            <h3>{{ $events_count }}</h3>
 
-                            <p>@lang('site.orders')</p>
+                            <p>@lang('site.events')</p>
                         </div>
                         <div class="icon">
-                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <i class="fa fa-podcast" aria-hidden="true"></i>
                         </div>
                         <a href="#" class="small-box-footer">@lang('site.read') <i
                                 class="fa fa-arrow-circle-right"></i></a>

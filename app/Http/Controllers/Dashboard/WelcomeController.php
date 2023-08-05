@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 
+use App\Models\Blog;
 use App\Models\Category;
 use App\Models\Client;
 use App\Models\Order;
@@ -18,9 +19,9 @@ class WelcomeController extends Controller
     public function index()
     {
         $categories_count = Category::count();
-        $products_count = Product::count();
-        $clients_count = Client::count();
-        $orders_count = Order::count();
+        $top_news_count = Blog::where('top_news', 1)->count();
+        $blogs_count = Blog::where('top_news', 0)->count();
+        $events_count = Blog::count();
         // $users_count = User::whereRoleIs(['admin', 'user'])->count();
 
         $sales_data = Order::select(
@@ -31,7 +32,7 @@ class WelcomeController extends Controller
 
         // dd($sales_data);
 
-        return view('dashboard.index', compact('categories_count', 'products_count', 'clients_count', 'orders_count', 'sales_data'));
+        return view('dashboard.index', compact('categories_count', 'top_news_count', 'blogs_count', 'events_count', 'sales_data'));
 
     }//end of index
 

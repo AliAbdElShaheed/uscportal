@@ -143,8 +143,10 @@ return [
     'title' => 'Title',
     'content' => 'Content',
     'publish_date' => 'Publish Date',
-    'top_news' => 'Appear On Top News',
+    'appear_on_top_news' => 'Appear On Top News',
+    'top_news' => 'Top News',
     'add_blog' => 'Add Blog',
+    'events' => 'Events',
 
 
 ];
