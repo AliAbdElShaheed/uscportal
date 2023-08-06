@@ -34,6 +34,14 @@
             @endif
 
 
+            @if (auth()->user()->hasPermission('events_read'))
+                <li><a href="{{ route('blogs.index') }}"><i
+                            class="fa fa-newspaper-o"></i><span>@lang('site.events')</span></a>
+                </li>
+            @endif
+
+
+
 
             @if (auth()->user()->hasPermission('reports_read'))
                 <li><a href="{{ route('reports.index') }}"><i

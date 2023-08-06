@@ -28,17 +28,15 @@ Route::group(
 
 
     Route::get('/about', function () {
-
         //return view('welcome');
         return view('about');
     });
-    Route::get('/management', function () {
 
+    Route::get('/management', function () {
         return view('management');
     });
 
     Route::get('/colleges', function () {
-
         return view('colleges');
     });
 

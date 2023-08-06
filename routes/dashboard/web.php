@@ -82,6 +82,19 @@ Route::group(
         }); // End of Blogs Routes
 
 
+        // Here Will Be All Routes To EventController
+        Route::group(['prefix' => 'events', 'namespace' => 'events'], function () {
+
+            Route::get('/add', [EventController::class, 'create'])->name('event.add');
+            Route::post('/store', [EventController::class, 'store'])->name('event.store');
+            Route::get('/index', [EventController::class, 'index'])->name('events.index');
+            Route::get('/', [EventController::class, 'index'])->name('events.index');
+            Route::get('/edit/{id}', [EventController::class, 'edit'])->name('event.edit');
+            Route::post('/blog/update/{id}', [EventController::class, 'update'])->name('event.update');
+            Route::get('/blog/delete/{id}', [EventController::class, 'destroy'])->name('event.destroy');
+        }); // End of Events Routes
+
+
     });// End of Dashboard Routes (Url/dashboard/....)
 
 

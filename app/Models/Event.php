@@ -7,12 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Translatable\HasTranslations;
 
-class Blog extends Model
+class Event extends Model
 {
     use HasFactory;
     use SoftDeletes;
     use HasTranslations;
-
 
     public $translatable = [
         'title',
@@ -24,11 +23,11 @@ class Blog extends Model
         'title',
         'content',
         'image',
-        'publish_date',
-        'top_news',
+        'start_date',
+        'end_date',
+        'location',
         'notes',
     ];
-
 
     // The Relationship With Category Model
     public function category()
@@ -37,19 +36,9 @@ class Blog extends Model
     } // End of Category Relationship
 
 
-    // The Relationship With Tags (Many To Many)
-    /*public function tags()
-    {
-
-        return $this->belongsToMany(Order::class, 'product_order');
-
-    } // End of Orders Relationship
-*/
-
-
     protected $appends = ['image_path'];
 
-    // Get The Image Path To Show It in The Blogs Index Page
+    // Get The Image Path To Show It in The Events Index Page
     public function getImagePathAttribute()
     {
         return asset('uploads/blogs_img/' . $this->image);

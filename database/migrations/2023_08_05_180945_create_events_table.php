@@ -12,26 +12,28 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('blogs', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('category_id')->unsigned();
             $table->json('title')->unique();
             $table->json('content');
             $table->string('image')->default('default.png');
-            $table->date('publish_date')->nullable();
-            $table->boolean('top_news')->default(0);
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->string('location')->nullable();
             $table->string('notes')->nullable();
             $table->timestamps();
             $table->softDeletes();
 
             // The DB Relation with Categories
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
         });
     }
 
 
     public function down()
     {
-        Schema::dropIfExists('blogs');
+        Schema::dropIfExists('events');
     }
 };

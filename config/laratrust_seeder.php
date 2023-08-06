@@ -17,6 +17,7 @@ return [
             'users' => 'c,r,u,d',
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
+            'events' => 'c,r,u,d',
             'profile' => 'r,u'
         ], // End of Super Admin Roles
 
@@ -24,13 +25,15 @@ return [
             'users' => 'c,r,u,d',
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
+            'events' => 'c,r,u,d',
             'profile' => 'r,u',
         ], // End of Admin Roles
 
 
         'user' => [
             'categories' => 'r',
-            'products' => 'r',
+            'blogs' => 'r',
+            'events' => 'r',
             'profile' => 'r,u',
         ], // End of User Roles
 

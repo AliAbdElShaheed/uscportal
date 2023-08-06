@@ -28,11 +28,11 @@ class Category extends Model
     } // End of Blogs Relationship
 
 
-    public function products()
+    public function events()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Event::class);
 
-    } // End of Products Relationship
+    } // End of Events Relationship
 
 
 } // End of Model

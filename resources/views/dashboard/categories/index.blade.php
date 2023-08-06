@@ -69,7 +69,11 @@
                                 <tr>
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{$category->name}}</td>
-                                    <td>{{$category->products->count()}}</td>
+                                    @if($category->id == 1)
+                                        <td>{{$category->blogs->count()}}</td>
+                                    @else
+                                        <td>{{$category->events->count()}}</td>
+                                    @endif
                                     <td><a href="{{ route('blogs.index', ['category_id' => $category->id]) }}"
                                            class="btn btn-primary btn-sm">@lang('site.items')</a></td>
                                     <td>{{$category->notes}}</td>
@@ -77,7 +81,8 @@
                                         {{--Edit category--}}
                                         @if(auth()->user()->hasPermission('categories_update'))
                                             <a href="{{route('category.edit', ['id'=>$category->id])}}"
-                                               class="btn btn-sm btn-info"><i class="fa fa-edit"></i>@lang('site.edit')
+                                               class="btn btn-sm btn-info"><i
+                                                    class="fa fa-edit"></i>@lang('site.edit')
                                             </a>
                                         @else
                                             <a href="#"
