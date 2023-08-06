@@ -41,7 +41,7 @@ class Event extends Model
     // Get The Image Path To Show It in The Events Index Page
     public function getImagePathAttribute()
     {
-        return asset('uploads/blogs_img/' . $this->image);
+        return asset('uploads/events_img/' . $this->image);
     } // End of Get Image Path
 
 

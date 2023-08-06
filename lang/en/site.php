@@ -129,11 +129,11 @@ return [
     'items_list' => 'Items List',
 
 
-    'blogs' => 'blogs',
-    'blogs_list' => 'blogs List',
-    'add_new_blog' => 'Add New blog',
-    'edit_blog' => 'Edit blog',
-    'blog' => 'blog',
+    'blogs' => 'Blogs',
+    'blogs_list' => 'Blogs List',
+    'add_new_blog' => 'Add New Blog',
+    'edit_blog' => 'Edit Blog',
+    'blog' => 'Blog',
     'content_en' => 'English Content',
     'content_ar' => 'Arabic Content',
     'title_ar' => 'Title In Arabic',
@@ -147,6 +147,12 @@ return [
     'top_news' => 'Top News',
     'add_blog' => 'Add Blog',
     'events' => 'Events',
+    'events_list' => 'Events List',
+    'add_new_event' => 'Add New Event',
+    'edit_event' => 'Edit Event',
+    'start_date' => 'Start Date',
+    'end_date' => 'End Date',
+    'location' => 'Location',
 
 
 ];

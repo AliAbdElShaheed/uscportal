@@ -154,6 +154,12 @@ return [
     'top_news' => 'أهم الأخبار',
     'add_blog' => 'أضف خبر',
     'events' => 'الأحداث',
+    'events_list' => 'قائمة الأحداث',
+    'add_new_event' => 'إضافة حدث جديد',
+    'edit_event' => 'تعديل الحدث',
+    'start_date' => 'تاريخ البداية',
+    'end_date' => 'تاريخ النهاية',
+    'location' => 'الموقع',
 
 
 ];

@@ -54,7 +54,7 @@ class BlogController extends Controller
     {
         //dd($request->all());
 
-        //validation on Category Title if Exist
+        //validation on Blog Title if Exist
         if (Blog::where('title->ar', $request->title_ar)->orwhere('title->en', $request->title)->exists()) {
 
             return redirect()->back()->withErrors(__('message.Exist'));

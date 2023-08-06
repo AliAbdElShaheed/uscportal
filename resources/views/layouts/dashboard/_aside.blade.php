@@ -35,7 +35,7 @@
 
 
             @if (auth()->user()->hasPermission('events_read'))
-                <li><a href="{{ route('blogs.index') }}"><i
+                <li><a href="{{ route('events.index') }}"><i
                             class="fa fa-newspaper-o"></i><span>@lang('site.events')</span></a>
                 </li>
             @endif
