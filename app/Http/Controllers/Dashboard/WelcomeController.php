@@ -6,7 +6,6 @@ namespace App\Http\Controllers\Dashboard;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\Client;
-use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
 
@@ -24,15 +23,15 @@ class WelcomeController extends Controller
         $events_count = Blog::count();
         // $users_count = User::whereRoleIs(['admin', 'user'])->count();
 
-        $sales_data = Order::select(
-            DB::raw('YEAR(created_at) as year'),
-            DB::raw('MONTH(created_at) as month'),
-            DB::raw('SUM(total_price) as sum')
-        )->groupBy('month')->get();
+        /*        $sales_data = Order::select(
+                    DB::raw('YEAR(created_at) as year'),
+                    DB::raw('MONTH(created_at) as month'),
+                    DB::raw('SUM(total_price) as sum')
+                )->groupBy('month')->get();*/
 
         // dd($sales_data);
 
-        return view('dashboard.index', compact('categories_count', 'top_news_count', 'blogs_count', 'events_count', 'sales_data'));
+        return view('dashboard.index', compact('categories_count', 'top_news_count', 'blogs_count', 'events_count'));
 
     }//end of index
 

@@ -108,7 +108,7 @@
                     <div class="box box-solid">
 
                         <div class="box-header">
-                            <h3 class="box-title">Sales Graph</h3>
+                            <h3 class="box-title">Work Flow Graph</h3>
                         </div>
                         <div class="box-body border-radius-none">
                             <div class="chart" id="line-chart" style="height: 250px;"></div>
@@ -130,30 +130,32 @@
 @endsection
 
 @push('scripts')
+    {{--
 
-    <script>
+        <script>
 
-        //line chart
-        var line = new Morris.Line({
-            element: 'line-chart',
-            resize: true,
-            data: [
-                    @foreach ($sales_data as $data)
-                {
-                    ym: "{{ $data->year }}-{{ $data->month }}", sum: "{{ $data->sum }}"
-                },
-                @endforeach
-            ],
-            xkey: 'ym',
-            ykeys: ['sum'],
-            labels: ['@lang('site.total')'],
-            lineWidth: 2,
-            hideHover: 'auto',
-            gridStrokeWidth: 0.4,
-            pointSize: 4,
-            gridTextFamily: 'Open Sans',
-            gridTextSize: 10
-        });
-    </script>
+            //line chart
+            var line = new Morris.Line({
+                element: 'line-chart',
+                resize: true,
+                data: [
+                        @foreach ($sales_data as $data)
+                    {
+                        ym: "{{ $data->year }}-{{ $data->month }}", sum: "{{ $data->sum }}"
+                    },
+                    @endforeach
+                ],
+                xkey: 'ym',
+                ykeys: ['sum'],
+                labels: ['@lang('site.total')'],
+                lineWidth: 2,
+                hideHover: 'auto',
+                gridStrokeWidth: 0.4,
+                pointSize: 4,
+                gridTextFamily: 'Open Sans',
+                gridTextSize: 10
+            });
+        </script>
+    --}}
 
 @endpush
