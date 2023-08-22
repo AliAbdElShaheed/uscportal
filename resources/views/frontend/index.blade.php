@@ -12,7 +12,7 @@
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
 
         <div class="content active">
-            <h1>@lang('university of sadat city').<br><span>USC</span></h1>
+            <h1>@lang('site.USC').<br><span>USC</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex
@@ -24,7 +24,7 @@
             <a href="#">Read More</a>
         </div>
         <div class="content">
-            <h1>@lang('University President\'s speech').<br><span>@lang('DR / Shaden Moaawia')</span></h1>
+            <h1>@lang('site.USC President\'s speech').<br><span>@lang('DR / Shaden Moaawia')</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex
@@ -72,9 +72,9 @@
             <a href="#">Read More</a>
         </div>
         <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/universityofsadatcity/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Univ_SadatCity"><i class="fab fa-twitter"></i></a>
         </div>
         <div class="slider-navigation">
             <div class="nav-btn active"></div>

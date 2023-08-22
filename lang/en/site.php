@@ -4,6 +4,7 @@ return [
     'dashboard' => 'Dashboard',
     'logout' => ' Logout',
 
+    'USC' => 'University of Sadat City',
 
     'add' => 'Add',
     'add_user' => 'Add User',
