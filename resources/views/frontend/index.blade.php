@@ -12,15 +12,8 @@
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
 
         <div class="content active">
-            <h1>@lang('site.USC').<br><span>USC</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
+            <h1>@lang('site.USC') <br> </h1>
+            <p>جامعة مدينة السادات جامعة مصرية حكومية تم انشاءها كجامعة مستقلة بالقرار الجمهوري من بتاريخ 25 مارس 2013.</p>
             <a href="#">Read More</a>
         </div>
         <div class="content">
@@ -92,7 +85,7 @@
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
             <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
-            <h2 class="fw-bold main-title">important news</h2>
+            <h2 class="fw-bold main-title">@lang('site.IMPORTANTNEWS')</h2>
             <p class="text-black-50 mb-5">
                 Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                 Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie
@@ -143,7 +136,7 @@
     {{--------------------------Start of section 3 (Latest News) ---------------------------------}}
 
     <div class="latest_news" id="latest_news">
-        <h2 class="main-title">Latest News</h2>
+        <h2 class="main-title">@lang('site.LatestNews') </h2>
 
         <div class="container">
             <div class="row">
@@ -268,7 +261,7 @@
     {{--------------------------End of section 4 (Statistics) -----------------------------------}}
 
     <div class="stats" id="stats">
-        <h2>Our Statistics</h2>
+        <h2>@lang('site.OurStatistics')</h2>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
@@ -326,7 +319,7 @@
     {{--------------------------Start of section 5 (Events) -------------------------------------}}
 
     <div class="events" id="events">
-        <h2 class="fw-bold main-title">Top Events</h2>
+        <h2 class="fw-bold main-title">@lang('site.TopEvents')</h2>
         <div class="container">
             <div class="row border">
                 <div class="col-lg-4 col-md-4">
@@ -417,7 +410,7 @@
 
     <div class="u_events" id="u_events">
         <div class="dots dots-up"></div>
-        <h2 class="main-title">Upcoming Events</h2>
+        <h2 class="main-title">@lang('site.UpcomingEvents') </h2>
         <div class="container">
             <img src="{{asset('uploads//frontend/images/upcoming-events.png')}}" alt=""/>
             <div class="info">
@@ -471,7 +464,7 @@
             <img src="{{asset('uploads/frontend/images/mobile2.png')}}" alt="Mobile"/>
         </div>
         <div class="text">
-            <h2>USC Apps</h2>
+            <h2>@lang('site.USCApps')  </h2>
             <ul>
                 <li>USC Portal Application</li>
                 <li>USC HR New System</li>

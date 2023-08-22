@@ -5,6 +5,21 @@ return [
     'logout' => ' Logout',
 
     'USC' => 'University of Sadat City',
+    'IMPORTANTNEWS' => 'IMPORTANT NEWS',
+    'LATESTNEWS' => 'LATEST NEWS',
+    'OurStatistics' => 'Our Statistics',
+    'TOPEVENTS' => 'TOP EVENTS',
+    'UPCOMINGEVENTS' => 'UPCOMING EVENTS',
+    'USCAPPS' => 'USC APPS',
+
+    'Links' => 'Links',
+    'ContactUs' => 'Contact Us',
+    'OurLocation' => 'Our Location',
+
+
+
+
+
 
     'add' => 'Add',
     'add_user' => 'Add User',

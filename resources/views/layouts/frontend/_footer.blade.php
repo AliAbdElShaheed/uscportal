@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-6 col-lg-2">
                 <div class="links">
-                    <h5 class="text-light">Links</h5>
+                    <h5 class="text-light">@lang('site.Links') </h5>
                     <ul class="list-unstyled lh-lg">
                         <li><a href="#">@lang('front.about_university')</a></li>
                         <li><a href="#">@lang('Management')</a></li>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-2">
-                <h5 class="text-light mb-3">Contact Us</h5>
+                <h5 class="text-light mb-3">@lang('site.ContactUs') </h5>
                 <div class="line">
                     <i class="fas fa-map-marker-alt fa-fw"></i>
                     <div class="info">Sadat University, Abdel Moneim Riad St, Sadat City, Egypt</div>
@@ -74,7 +74,7 @@
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="map justify-content-center">
-                    <h5 class="text-light mb-3">Our Location</h5>
+                    <h5 class="text-light mb-3">@lang('site.OurLocation') </h5>
                     <div class="justify-content-center">
                         <img src="{{asset('uploads/frontend/images/map.png')}}" alt="USC map"
                              class="w-75"/>
@@ -85,7 +85,7 @@
         </div>
     </div>
     <div class="copyright">
-        Created By <span>USC Portal Team</span> &copy; 2023 - <span>Sadat City University</span>
+        Created By <span>USC Portal Team</span> &copy; 2023 - <span>@lang('site.USC') </span>
     </div>
 </div>
 

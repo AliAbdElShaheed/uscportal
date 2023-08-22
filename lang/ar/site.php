@@ -5,6 +5,16 @@ return [
     'logout' => 'تسجيل الخروج',
 
     'USC' => 'جامعة مدينةالسادات',
+    'IMPORTANTNEWS' => 'الاخبار المهمة',
+    'LATESTNEWS' => 'احدث الاخبار',
+    'OurStatistics' => 'الاحصائيات',
+    'TOPEVENTS' => ' الاحداث',
+    'UPCOMINGEVENTS' => 'الاحداث القادمة',
+    'USCAPPS' => 'تطبيقات الجامعة',
+
+    'Links' => 'الروابط',
+    'ContactUs' => 'اتصل بنا',
+    'OurLocation' => 'موقعنا',
 
     'add' => 'اضف',
     'add_user' => 'أضف مستخدم',
