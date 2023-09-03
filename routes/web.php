@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\BlogController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -26,11 +27,9 @@ Route::group(
     Route::get('/', [BlogController::class, 'index'])->name('dashboard.index');
     Route::get('/index', [BlogController::class, 'index'])->name('dashboard.index');
 
+    // About Page Route
+    Route::get('/about', [AboutController::class, 'index'])->name('front.about');
 
-    Route::get('/about', function () {
-        //return view('welcome');
-        return view('about');
-    });
 
     Route::get('/management', function () {
         return view('management');

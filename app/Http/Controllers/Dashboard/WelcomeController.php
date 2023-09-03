@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Dashboard;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\Client;
+use App\Models\Event;
 use App\Models\Product;
 use App\Models\User;
 
@@ -20,7 +21,7 @@ class WelcomeController extends Controller
         $categories_count = Category::count();
         $top_news_count = Blog::where('top_news', 1)->count();
         $blogs_count = Blog::where('top_news', 0)->count();
-        $events_count = Blog::count();
+        $events_count = Event::count();
         // $users_count = User::whereRoleIs(['admin', 'user'])->count();
 
         /*        $sales_data = Order::select(

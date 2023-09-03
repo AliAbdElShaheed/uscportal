@@ -17,10 +17,6 @@ return [
     'OurLocation' => 'Our Location',
 
 
-
-
-
-
     'add' => 'Add',
     'add_user' => 'Add User',
     'create' => 'Add New',
@@ -170,5 +166,23 @@ return [
     'end_date' => 'End Date',
     'location' => 'Location',
 
+
+    /////**********************  General    **************////////////////////
+    'get_started' => 'Get Started',
+
+
+    /////**********************  About Page **************////////////////////
+
+    'opening_about_page_word' => 'About The University Of Sadat City',
+    'sub_opening_about_page_word' => 'You can know everything about our university here',
+    'president_name' => 'DR Shaden Moawia',
+    'president_word' => 'President Word',
+    'president_words' => 'At the beginning of my assignment as President of Sadat City University under the leadership of His Excellency the President of the Republic, President Abdel Fattah El-Sisi, I am pleased to extend my sincere thanks, gratitude and appreciation to Mr. Professor Dr. Ayman Ashour, Minister of Higher Education and Scientific Research, for assigning me to facilitate the work of Sadat City University in order to ensure that the university’s work continues with the required effectiveness. This is until the procedures for appointing a new president of the university are completed
+I pray to God Almighty that I will be worthy of this trust in continuing the university’s journey and leading the pace of development in this period to raise the university’s standing and achieve the strategic goals of the Ministry of Higher Education in light of Egypt’s Vision 2030 and under the leadership of His Excellency the President of the Republic, President Abdel Fattah El-Sisi.
+I also extend my sincere greetings and appreciation to all the university’s members, including faculty members, support staff, and employees, and I call on them to join hands and stand as one integrated work team to preserve the university’s capabilities and advance the process of its renaissance scientifically, researchally, and socially.
+May God guide us and you to what He loves and is pleased with in order to raise our beloved Egypt.',
+
+    
+    'university_history' => 'University History',
 
 ];
