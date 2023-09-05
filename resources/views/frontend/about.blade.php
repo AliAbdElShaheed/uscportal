@@ -53,62 +53,21 @@
 
                 <div class="col-xs-12 col-lg-10 align-content-center">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, at corporis cum dolorum
-                        eaque earum
-                        error ex excepturi expedita fugiat id maxime minima obcaecati, officia provident
-                        reprehenderit sequi
-                        velit vero.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cumque ex explicabo
-                        iure
-                        maiores, modi nemo nisi nulla quia quis quisquam recusandae rerum saepe vero voluptatem.
-                        Est,
-                        voluptas?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur ex natus
-                        sequi
-                        similique sit, totam. Adipisci aut deserunt dicta esse et eveniet ipsam molestiae, pariatur,
-                        provident quam quidem voluptas.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea fugiat inventore
-                        minus
-                        quisquam sint. Assumenda consectetur fugiat illo ipsa, laborum magni necessitatibus quas
-                        quod sed
-                        sit ut vel voluptatibus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error, excepturi incidunt
-                        repudiandae sed veniam! Animi blanditiis dolor dolores eveniet inventore, magni quaerat
-                        reiciendis
-                        reprehenderit rerum suscipit. Id, modi, necessitatibus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae corporis dolore eos
-                        eveniet
-                        exercitationem in ipsam itaque maiores modi pariatur provident quia ratione similique sint
-                        temporibus tenetur, ut vero!
+                    <p>@lang('site.university_histories')
                     </p>
-                    <h4>First Article</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, at corporis cum dolorum
-                        eaque earum
-                        error ex excepturi expedita fugiat id maxime minima obcaecati, officia provident
-                        reprehenderit sequi
-                        velit vero.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cumque ex explicabo
-                        iure
-                        maiores, modi nemo nisi nulla quia quis quisquam recusandae rerum saepe vero voluptatem.
-                        Est,
-                        voluptas?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur ex natus
-                        sequi
-                        similique sit, totam. Adipisci aut deserunt dicta esse et eveniet ipsam molestiae, pariatur,
-                        provident quam quidem voluptas.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea fugiat inventore
-                        minus
-                        quisquam sint. Assumenda consectetur fugiat illo ipsa, laborum magni necessitatibus quas
-                        quod sed
-                        sit ut vel voluptatibus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error, excepturi incidunt
-                        repudiandae sed veniam! Animi blanditiis dolor dolores eveniet inventore, magni quaerat
-                        reiciendis
-                        reprehenderit rerum suscipit. Id, modi, necessitatibus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae corporis dolore eos
-                        eveniet
-                        exercitationem in ipsam itaque maiores modi pariatur provident quia ratione similique sint
-                        temporibus tenetur, ut vero!
+                    <h4>@lang('site.university_histories1')</h4>
+                    <h6>@lang('site.university_histories2')</h6>
+                    <h6>@lang('site.university_histories3')</h6>
+                    <h6>@lang('site.university_histories4')</h6>
+                    <h6>@lang('site.university_histories5')</h6>
+                    <h6>@lang('site.university_histories6')</h6>
+                    <h6>@lang('site.university_histories7')</h6>
+                    <h6>@lang('site.university_histories8')</h6>
+                    <h6>@lang('site.university_histories9')</h6>
+                    <h6>@lang('site.university_histories10')</h6>
+                    <h6>@lang('site.university_histories11')</h6>
+                    <h6>@lang('site.university_histories12')</h6>
+                    <p>@lang('site.university_histories13')
                     </p>
                     <h4>Second Article</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, at corporis cum dolorum
@@ -224,7 +183,7 @@
 
     {{--------------------------End of section 4 (strategies) --------------------------------------}}
     <div class="strategies" id="strategies">
-        <h2>University Strategies</h2>
+        <h2>@lang('site.university_strategies')</h2>
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-lg-10 align-content-center p-0 bg-white">
@@ -234,85 +193,75 @@
                                 <button class="nav-link fw-bold active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#home-tab-pane" type="button" role="tab"
                                         aria-controls="home-tab-pane"
-                                        aria-selected="true">Vision
+                                        aria-selected="true">@lang('site.vision')
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link fw-bold" id="mission-tab" data-bs-toggle="tab"
                                         data-bs-target="#mission-tab-pane" type="button" role="tab"
-                                        aria-controls="mission-tab-pane" aria-selected="false">Mission
+                                        aria-controls="mission-tab-pane"
+                                        aria-selected="false">@lang('site.mission')
                                 </button>
                             </li>
                             <li class="nav-item fw-bold" role="presentation">
                                 <button class="nav-link" id="values-tab" data-bs-toggle="tab"
                                         data-bs-target="#values-tab-pane" type="button" role="tab"
-                                        aria-controls="values-tab-pane" aria-selected="false">Values
+                                        aria-controls="values-tab-pane"
+                                        aria-selected="false">@lang('site.values')
                                 </button>
                             </li>
                             <li class="nav-item fw-bold" role="presentation">
                                 <button class="nav-link" id="objectives-tab" data-bs-toggle="tab"
                                         data-bs-target="#objectives-tab-pane" type="button" role="tab"
-                                        aria-controls="objectives-tab-pane" aria-selected="false">Objectives
+                                        aria-controls="objectives-tab-pane"
+                                        aria-selected="false">@lang('site.objectives')
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link fw-bold" id="strategic_objectives-tab" data-bs-toggle="tab"
                                         data-bs-target="#strategic_objectives-tab-pane" type="button" role="tab"
-                                        aria-controls="strategic_objectives-tab-pane" aria-selected="false">Strategic
-                                    Objectives:
+                                        aria-controls="strategic_objectives-tab-pane"
+                                        aria-selected="false">@lang('site.strategic_objectives'):
                                 </button>
                             </li>
                         </ul>
                         <div class="s-tabs py-3 tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                                  aria-labelledby="home-tab"
-                                 tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid autem
-                                dolore
-                                fuga omnis perspiciatis provident, quas, quidem reiciendis reprehenderit sapiente sed
-                                sunt
-                                tempore. Amet animi eius explicabo in sunt.
+                                 tabindex="0">@lang('site.vision_data')
                             </div>
                             <div class="tab-pane fade" id="mission-tab-pane" role="tabpanel"
                                  aria-labelledby="mission-tab"
-                                 tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum
-                                deleniti
-                                dolorem doloribus eos, expedita facere laudantium magni minima modi necessitatibus,
-                                omnis
-                                quia
-                                quos repellat sapiente tempore, temporibus vel voluptatem?
+                                 tabindex="0">@lang('site.mission_data')
                             </div>
                             <div class="tab-pane fade" id="values-tab-pane" role="tabpanel" aria-labelledby="values-tab"
-                                 tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                                consequuntur
-                                earum ex expedita fuga incidunt inventore itaque minus, nesciunt nostrum numquam
-                                obcaecati
-                                officia praesentium quae qui quia saepe sunt, voluptas?
-                            </div>
-                            <div class="tab-pane fade" id="objectives-tab-pane" role="tabpanel"
-                                 aria-labelledby="objectives-tab"
-                                 tabindex="0">
-                                <ul>
-                                    <li>1 - aaa</li>
-                                    <li>1 - aaa</li>
-                                    <li>1 - aaa</li>
+                                 tabindex="0">@lang('site.values_data')
+                                <div class="tab-pane fade" id="objectives-tab-pane" role="tabpanel"
+                                     aria-labelledby="objectives-tab"
+                                     tabindex="0">
+                                    <ul>
+                                        <li>1 - aaa</li>
+                                        <li>1 - aaa</li>
+                                        <li>1 - aaa</li>
 
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="strategic_objectives-tab-pane" role="tabpanel"
-                                 aria-labelledby="strategic_objectives-tab"
-                                 tabindex="0">
-                                <ul>
-                                    <li>1 - aaa</li>
-                                    <li>1 - aaa</li>
-                                    <li>1 - aaa</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="strategic_objectives-tab-pane" role="tabpanel"
+                                     aria-labelledby="strategic_objectives-tab"
+                                     tabindex="0">
+                                    <ul>
+                                        <li>1 - aaa</li>
+                                        <li>1 - aaa</li>
+                                        <li>1 - aaa</li>
 
-                                </ul>
-                            </div>
+                                    </ul>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
@@ -329,9 +278,11 @@
             <h2 class="fw-bold main-title">University Council</h2>
             <p class="text-black-50 mb-5">
                 The University Council, USC’s most prestigious administrative authority, considers all University
-                activities, especially USC’s educational objectives and issues that affect faculty, staff and students.
+                activities, especially USC’s educational objectives and issues that affect faculty, staff and
+                students.
                 It
-                makes recommendations to the Rector regarding the development and evaluation of University programs and
+                makes recommendations to the Rector regarding the development and evaluation of University programs
+                and
                 policies.
             </p>
 
@@ -411,7 +362,8 @@
                                 </button>
                                 <button class="nav-link fw-bold" id="v-pills-messages-tab" data-bs-toggle="pill"
                                         data-bs-target="#v-pills-messages" type="button" role="tab"
-                                        aria-controls="v-pills-messages" aria-selected="false">Copyright & Disclaimer
+                                        aria-controls="v-pills-messages" aria-selected="false">Copyright &
+                                    Disclaimer
                                 </button>
 
                             </div>
@@ -421,7 +373,8 @@
                                     consectetur
                                     adipisicing elit. Asperiores commodi cum earum esse mollitia nihil possimus
                                     repudiandae
-                                    saepe similique? Architecto asperiores enim est hic odio, officiis provident quaerat
+                                    saepe similique? Architecto asperiores enim est hic odio, officiis provident
+                                    quaerat
                                     qui
                                     quia?
                                 </div>
@@ -429,12 +382,14 @@
                                      aria-labelledby="v-pills-profile-tab" tabindex="0">Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit. Adipisci autem cum debitis dignissimos iusto nobis
                                     placeat
-                                    quaerat quasi quia quos? Blanditiis deserunt ea facere laudantium porro ratione sunt
+                                    quaerat quasi quia quos? Blanditiis deserunt ea facere laudantium porro ratione
+                                    sunt
                                     tempore. Odit.
                                 </div>
                                 <div class="tab-pane fade fw-bold pt-9rem" id="v-pills-messages" role="tabpanel"
                                      aria-labelledby="v-pills-messages-tab" tabindex="0">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Enim exercitationem impedit itaque nam nemo odio sed
+                                    consectetur adipisicing elit. Enim exercitationem impedit itaque nam nemo odio
+                                    sed
                                     ut
                                     voluptatibus. Beatae consequuntur cumque, dolorem doloremque esse eveniet ipsum
                                     minus

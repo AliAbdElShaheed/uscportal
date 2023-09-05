@@ -182,7 +182,50 @@ I pray to God Almighty that I will be worthy of this trust in continuing the uni
 I also extend my sincere greetings and appreciation to all the university’s members, including faculty members, support staff, and employees, and I call on them to join hands and stand as one integrated work team to preserve the university’s capabilities and advance the process of its renaissance scientifically, researchally, and socially.
 May God guide us and you to what He loves and is pleased with in order to raise our beloved Egypt.',
 
-    
+
     'university_history' => 'University History',
+    'university_histories' => 'The University of Sadat City (USC) is an Egyptian Public University conveniently located in Sadat city, north-western of Cairo. USC was initially established as a number of faculties affiliated by Menofia University during the period from 1993 to 2007, then was adopted as a branch of Menofia University from 2007 to 2013. In 2013 USC’s Campus founded by the presidential decree on the 25th of March.
+
+USC campus is currently comprised of the following nine faculties and two scientific research institutes:
+	Faculty of Physical Education (Boys & Girls), founded in 1993
+	Institute of Genetic Engineering and Biotechnology Research, founded in 1995
+	Faculty of Tourism and Hotels, founded in 1997
+	Faculty of Veterinary Medicine, founded in 1997
+	Faculty of Commerce, founded in 2000
+	Faculty of Law, founded in 2001
+	Faculty of Education, founded in 2001
+	Institute of Environmental Studies and Research, founded in 2005
+	Faculty of Pharmacy, founded in 2016
+	Faculty of Education for Early Childhood, founded in 2017
+	Faculty of Computers and Artificial Intelligence, founded in 2020
+With the continuing development of the University, USC are strongly committed to fostering diversity within our community, so USC planned to increase the number of its faculties with various applied fields.
+',
+
+    'university_histories1' => 'USC campus is currently comprised of the following nine faculties and two scientific research institutes:',
+    'university_histories2' => '	Faculty of Physical Education (Boys & Girls), founded in 1993',
+    'university_histories3' => '	Institute of Genetic Engineering and Biotechnology Research, founded in 1995',
+    'university_histories4' => '	Faculty of Tourism and Hotels, founded in 1997',
+    'university_histories5' => '	Faculty of Veterinary Medicine, founded in 1997',
+    'university_histories6' => '	Faculty of Commerce, founded in 2000',
+    'university_histories7' => '	Faculty of Law, founded in 2001',
+    'university_histories8' => '	Faculty of Education, founded in 2001',
+    'university_histories9' => '	Institute of Environmental Studies and Research, founded in 2005',
+    'university_histories10' => '	Faculty of Pharmacy, founded in 2016',
+    'university_histories11' => '	Faculty of Education for Early Childhood, founded in 2017',
+    'university_histories12' => '	Faculty of Computers and Artificial Intelligence, founded in 2020',
+    'university_histories13' => 'With the continuing development of the University, USC are strongly committed to fostering diversity within our community, so USC planned to increase the number of its faculties with various applied fields.',
+    'university_histories14' => '',
+
+
+    'university_strategies' => 'University Strategies',
+    'vision' => 'Vision',
+    'mission' => 'Mission',
+    'values' => 'Values',
+    'objectives' => 'Objectives',
+    'strategic_objectives' => 'Strategic Objectives',
+    'vision_data' => 'USC seeks to be an Internationally Pioneer and a Productive Paradigm of knowledge and its applications',
+    'mission_data' => 'USC is committed to preparing graduates who have the ability to cope with the labor market needs, through educational, research and community services that encourage the innovation and excellence within the framework of sustainable development',
+    'values_data' => 'values_data',
+
 
 ];
