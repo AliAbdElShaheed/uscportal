@@ -68,7 +68,7 @@
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>@lang('site.title')</th>
-                                <th>@lang('site.content')</th>
+                                {{--                                <th>@lang('site.content')</th>--}}
                                 <th>@lang('site.image')</th>
                                 <th>@lang('site.publish_date')</th>
                                 <th>@lang('site.appear_on_top_news')</th>
@@ -82,7 +82,7 @@
                                 <tr>
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{$blog->title}}</td>
-                                    <td>{!! $blog->content !!}</td>
+                                    {{--                                    <td>{!! $blog->content !!}</td>--}}
                                     <td><img src="{{ $blog->image_path }}" alt="Blog Photo" class="img-thumbnail"
                                              style="height: 50px;"></td>
                                     <td>{{$blog->publish_date}}</td>
