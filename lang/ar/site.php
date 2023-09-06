@@ -3,10 +3,11 @@
 return [
     'dashboard' => 'الرئيسيه',
     'logout' => 'تسجيل الخروج',
+    'language' => "تغيير اللغــة",
 
     'USC' => 'جامعة مدينةالسادات',
-    'IMPORTANTNEWS' => 'الاخبار المهمة',
-    'LATESTNEWS' => 'احدث الاخبار',
+    'IMPORTANTNEWS' => 'أهــم الأخبـــــــار',
+    'latest_news' => 'أخــر الأخبـــــــار',
     'OurStatistics' => 'الاحصائيات',
     'TOPEVENTS' => ' الاحداث',
     'UPCOMINGEVENTS' => 'الاحداث القادمة',

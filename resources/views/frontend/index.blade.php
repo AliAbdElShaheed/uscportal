@@ -96,7 +96,8 @@
                 @foreach($top_news as $top_new)
                     <div class="col-md-6 col-lg-4">
                         <div class="box bg-white">
-                            <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"/>
+                            <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"
+                                 style="width: 416px; height: 277px;"/>
                             <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
                             <blockquote class="text-black-50 p-3">
                                 “{{$top_new->brief_content}}“
@@ -120,14 +121,15 @@
     {{--------------------------Start of section 3 (Latest News) ---------------------------------}}
 
     <div class="latest_news" id="latest_news">
-        <h2 class="main-title">@lang('site.LatestNews') </h2>
+        <h2 class="main-title">@lang('site.latest_news') </h2>
 
         <div class="container">
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/101.jpg')}}" alt=""/>
+                        <img src="{{asset('uploads/frontend/images/101.jpg')}}" alt=""
+                             style="width: 304px; height: 250px;"/>
                         <div class="card-body">
                             <h3>Test Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>

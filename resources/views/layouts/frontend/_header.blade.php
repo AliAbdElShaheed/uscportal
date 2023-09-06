@@ -93,7 +93,7 @@
                 <button class="btn btn-primary btn-sm dropdown-toggle rounded-pill" type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false">
-                    Language
+                    @lang('site.language')
                 </button>
                 <ul class="dropdown-menu">
                     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)

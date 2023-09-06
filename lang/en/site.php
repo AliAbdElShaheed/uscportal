@@ -3,10 +3,11 @@
 return [
     'dashboard' => 'Dashboard',
     'logout' => ' Logout',
+    'language' => "Language",
 
     'USC' => 'University of Sadat City',
     'IMPORTANTNEWS' => 'IMPORTANT NEWS',
-    'LATESTNEWS' => 'LATEST NEWS',
+    'latest_news' => 'LATEST NEWS',
     'OurStatistics' => 'Our Statistics',
     'TOPEVENTS' => 'TOP EVENTS',
     'UPCOMINGEVENTS' => 'UPCOMING EVENTS',
