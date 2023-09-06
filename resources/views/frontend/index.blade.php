@@ -15,7 +15,7 @@
             <h1>@lang('site.USC') <br></h1>
             <p>جامعة مدينة السادات جامعة مصرية حكومية تم انشاءها كجامعة مستقلة بالقرار الجمهوري من بتاريخ 25 مارس
                 2013.</p>
-            <a href="#">Read More</a>
+            <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
             <h1>@lang('site.USC President\'s speech').<br><span>@lang('DR / Shaden Moaawia')</span></h1>
@@ -27,7 +27,7 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit
                 anim id est laborum.</p>
-            <a href="#">Read More</a>
+            <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
             <h1>@lang('university of sadat city').<br><span>USC</span></h1>
@@ -39,7 +39,7 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit
                 anim id est laborum.</p>
-            <a href="#">Read More</a>
+            <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
             <h1>@lang('university of sadat city').<br><span>USC</span></h1>
@@ -51,7 +51,7 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit
                 anim id est laborum.</p>
-            <a href="#">Read More</a>
+            <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
             <h1>@lang('university of sadat city').<br><span>USC</span></h1>
@@ -63,7 +63,7 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit
                 anim id est laborum.</p>
-            <a href="#">Read More</a>
+            <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="media-icons">
             <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
@@ -86,11 +86,9 @@
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
             <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
-            <h2 class="fw-bold main-title">@lang('site.IMPORTANTNEWS')</h2>
+            <h2 class="fw-bold main-title">@lang('site.important_news')</h2>
             <p class="text-black-50 mb-5">
-                Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie
-                malesuada.
+                @lang('site.important_news_note')
             </p>
             <div class="row">
                 @foreach($top_news as $top_new)
@@ -108,7 +106,7 @@
             </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">More News</a>
+                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">@lang('site.more_top_news')</a>
             </div>
         </div>
     </div>
@@ -135,7 +133,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -148,7 +146,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -161,7 +159,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -174,7 +172,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -187,7 +185,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -200,7 +198,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -213,7 +211,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -226,7 +224,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         </div>
                         <div class="info">
-                            <a href="">Read More</a>
+                            <a href="">@lang('site.read_more')</a>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
                     </div>
@@ -234,7 +232,7 @@
             </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">More News</a>
+                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">@lang('site.more_news')</a>
             </div>
 
         </div>
@@ -254,42 +252,42 @@
                     <div class="box">
                         <i class="fa-solid fa-users fa-2xl"></i>
                         <span class="number" data-goal="3016">2000</span>
-                        <span class="text">Employees</span>
+                        <span class="text">@lang('site.employees')</span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
                     <div class="box">
                         <i class="fa-solid fa-building-columns fa-2x fa-fw"></i>
                         <span class="number" data-goal="11">0</span>
-                        <span class="text">Colleges</span>
+                        <span class="text">@lang('site.colleges')</span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
                     <div class="box">
                         <i class="fas fa-pen-nib fa-2xl"></i>
                         <span class="number" data-goal="1486">500</span>
-                        <span class="text">Staff</span>
+                        <span class="text">@lang('site.staff')</span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
                     <div class="box">
                         <i class="fa-solid fa-graduation-cap fa-2xl"></i>
                         <span class="number" data-goal="7835">6500</span>
-                        <span class="text">Postgraduate</span>
+                        <span class="text">@lang('site.postgraduate')</span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
                     <div class="box">
                         <i class="fa-solid fa-user-graduate fa-2xl"></i>
                         <span class="number" data-goal="25684">24000</span>
-                        <span class="text">Students</span>
+                        <span class="text">@lang('site.students')</span>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 pb-5">
                     <div class="box">
                         <i class="fa-solid fa-sliders fa-2xl"></i>
                         <span class="number" data-goal="312">0</span>
-                        <span class="text">Study Programs</span>
+                        <span class="text">@lang('site.study_programs')</span>
                     </div>
                 </div>
             </div>
@@ -375,7 +373,7 @@
 
                             {{--
                             <div class="info bnt btn-primary d-inline-block border spinner-border-sm">
-                                <a href="">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="">@lang('site.read_more') <i class="fas fa-long-arrow-alt-right"></i></a>
 
                             </div>
                             --}}

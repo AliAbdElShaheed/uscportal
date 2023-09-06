@@ -16,12 +16,14 @@ class Blog extends Model
 
     public $translatable = [
         'title',
+        'brief_content',
         'content',
     ];
 
     protected $fillable = [
         'category_id',
         'title',
+        'brief_content',
         'content',
         'image',
         'publish_date',

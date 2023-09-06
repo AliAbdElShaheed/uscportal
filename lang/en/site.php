@@ -4,18 +4,9 @@ return [
     'dashboard' => 'Dashboard',
     'logout' => ' Logout',
     'language' => "Language",
+    'read_more' => "Read More",
 
     'USC' => 'University of Sadat City',
-    'IMPORTANTNEWS' => 'IMPORTANT NEWS',
-    'latest_news' => 'LATEST NEWS',
-    'OurStatistics' => 'Our Statistics',
-    'TOPEVENTS' => 'TOP EVENTS',
-    'UPCOMINGEVENTS' => 'UPCOMING EVENTS',
-    'USCAPPS' => 'USC APPS',
-
-    'Links' => 'Links',
-    'ContactUs' => 'Contact Us',
-    'OurLocation' => 'Our Location',
 
 
     'add' => 'Add',
@@ -170,6 +161,33 @@ return [
 
     /////**********************  General    **************////////////////////
     'get_started' => 'Get Started',
+
+
+    /////**********************  Landing Page ************////////////////////
+
+
+    'important_news' => 'IMPORTANT NEWS',
+    'important_news_note' => 'Important News Short Note',
+    'more_top_news' => 'More Top News',
+
+    'latest_news' => 'LATEST NEWS',
+    'more_news' => 'More News',
+
+    'OurStatistics' => 'Our Statistics',
+    'employees' => 'Employees',
+    'colleges' => 'Colleges',
+    'staff' => 'Academic Staff',
+    'postgraduate' => 'Postgraduate',
+    'students' => 'Students',
+    'study_programs' => 'Study Programs',
+
+    'TOPEVENTS' => 'TOP EVENTS',
+    'UPCOMINGEVENTS' => 'UPCOMING EVENTS',
+    'USCAPPS' => 'USC APPS',
+
+    'Links' => 'Links',
+    'ContactUs' => 'Contact Us',
+    'OurLocation' => 'Our Location',
 
 
     /////**********************  About Page **************////////////////////

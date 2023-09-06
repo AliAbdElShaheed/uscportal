@@ -71,6 +71,9 @@ class BlogController extends Controller
         ]); // End of Validation
 
         $request_data = $request->all();
+        $brief_content = strip_tags($request_data['content']);
+        $brief_content_ar = strip_tags($request_data['content_ar']);
+        //dd(strlen($brief_content));
 
         //dd($request_data);
 
@@ -89,6 +92,7 @@ class BlogController extends Controller
         $blog = new Blog();
         //dd($request_data);
         $blog->title = ['en' => $request_data['title'], 'ar' => $request_data['title_ar']];
+        $blog->brief_content = ['en' => substr($brief_content, 0, 5), 'ar' => substr($brief_content_ar, 0, 5)];
         $blog->content = ['en' => $request_data['content'], 'ar' => $request_data['content_ar']];
         $blog->image = $request_data['image'];
         $blog->publish_date = $request_data['publish_date'];
@@ -139,6 +143,9 @@ class BlogController extends Controller
         ]); // End of Validation
 
         $request_data = $request->all();
+        $brief_content = $request_data['content'];
+        $brief_content_ar = $request_data['content_ar'];
+
 
         //dd($request_data);
 
@@ -159,6 +166,7 @@ class BlogController extends Controller
         //dd($request_data['image']);
 
         $blog->title = ['en' => $request_data['title'], 'ar' => $request_data['title_ar']];
+        $blog->brief_content = ['en' => substr($brief_content, 0, 3), 'ar' => substr($brief_content_ar, 0, 3)];
         $blog->content = ['en' => $request_data['content'], 'ar' => $request_data['content_ar']];
         if ($request->image) {
             $blog->image = $request_data['image'];
