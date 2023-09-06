@@ -124,111 +124,22 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/101.jpg')}}" alt=""
-                             style="width: 304px; height: 250px;"/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/103.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
+                @foreach($blogs as $blog)
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card mb-5">
+                            <img src="{{ $blog->image_path }}" alt="{{ $blog->title }}"
+                                 style="width: 304px; height: 250px;"/>
+                            <div class="card-body">
+                                <h3>{{ $blog->title }}</h3>
+                                <p>{{$blog->brief_content}}</p>
+                            </div>
+                            <div class="info">
+                                <a href="">@lang('site.read_more')</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/108.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/110.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/106.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/109.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/107.jpg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-5">
-                        <img src="{{asset('uploads/frontend/images/inews1.jpeg')}}" alt=""/>
-                        <div class="card-body">
-                            <h3>Test Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        </div>
-                        <div class="info">
-                            <a href="">@lang('site.read_more')</a>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
             <div class="d-flex justify-content-center mt-5">
