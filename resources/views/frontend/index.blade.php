@@ -12,8 +12,9 @@
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
 
         <div class="content active">
-            <h1>@lang('site.USC') <br> </h1>
-            <p>جامعة مدينة السادات جامعة مصرية حكومية تم انشاءها كجامعة مستقلة بالقرار الجمهوري من بتاريخ 25 مارس 2013.</p>
+            <h1>@lang('site.USC') <br></h1>
+            <p>جامعة مدينة السادات جامعة مصرية حكومية تم انشاءها كجامعة مستقلة بالقرار الجمهوري من بتاريخ 25 مارس
+                2013.</p>
             <a href="#">Read More</a>
         </div>
         <div class="content">
@@ -92,34 +93,17 @@
                 malesuada.
             </p>
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="box bg-white">
-                        <img class="img-fluid" src="{{asset('uploads/frontend/images/inews1.jpeg')}}" alt=""/>
-                        <h4 class="p-3 text-light">Luke Skywalker</h4>
-                        <blockquote class="text-black-50 p-3">
-                            “I don't understand how we got by those troops. I thought we were dead.“
-                        </blockquote>
+                @foreach($top_news as $top_new)
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box bg-white">
+                            <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"/>
+                            <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
+                            <blockquote class="text-black-50 p-3">
+                                “{{$top_new->brief_content}}“
+                            </blockquote>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="box bg-white">
-                        <img class="img-fluid" src="{{asset('uploads/frontend/images/inews2.jpg')}}" alt=""/>
-                        <h4 class="p-3 text-light">Luke Skywalker</h4>
-                        <blockquote class="text-black-50 p-3">
-                            “I don't understand how we got by those troops. I thought we were dead.“
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="box bg-white">
-                        <img class="img-fluid" src="{{asset('uploads/frontend/images/inews3.jpg')}}" alt=""/>
-                        <h4 class="p-3 text-light">Luke Skywalker</h4>
-                        <blockquote class="text-black-50 p-3">
-                            “I don't understand how we got by those troops. I thought we were dead.“
-                        </blockquote>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
 
             <div class="d-flex justify-content-center mt-5">

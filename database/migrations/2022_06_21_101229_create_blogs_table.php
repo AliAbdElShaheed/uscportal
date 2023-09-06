@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->id();
             $table->bigInteger('category_id')->unsigned();
             $table->json('title')->unique();
+            $table->json('brief_content');
             $table->json('content');
             $table->string('image')->default('default.png');
             $table->date('publish_date')->nullable();
