@@ -30,6 +30,14 @@ return [
         ], // End of Admin Roles
 
 
+        'blogger' => [
+            'categories' => 'r',
+            'blogs' => 'c,r,u,d',
+            'events' => 'c,r,u,d',
+            'profile' => 'r,u',
+        ], // End of Blogger Roles
+
+
         'user' => [
             'categories' => 'r',
             'blogs' => 'r',
