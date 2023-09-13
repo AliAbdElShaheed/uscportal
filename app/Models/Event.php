@@ -22,6 +22,7 @@ class Event extends Model
         'category_id',
         'title',
         'content',
+        'brief_content',
         'image',
         'start_date',
         'end_date',

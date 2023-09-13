@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
 
-        <a href="#" class="brand">
+        <a href="/" class="brand">
             <img src="{{asset('uploads/frontend/images/logo3.png')}}" alt="USC Logo"/>
         </a>
         <button

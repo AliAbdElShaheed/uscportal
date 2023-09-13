@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\Event;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -27,7 +29,27 @@ class BlogController extends Controller
             ->limit(8)
             ->get();
 
-        return view('frontend.index', compact('top_news', 'blogs'));
+
+        $events = Event::where('start_date', '<', now())
+            ->orderBy('start_date')
+            ->take(8)
+            ->limit(8)
+            ->get();
+        //dd($events);
+
+        /*$formattedDate = Carbon::createFromFormat('Y-m-d', $dateString)
+            ->format('M d, Y at h:i A');
+
+        echo $formattedDate;*/
+
+
+        $upcoming_events = Event::where('start_date', '>', now())
+            ->orderBy('start_date')
+            ->take(1)
+            ->limit(1)
+            ->get();
+
+        return view('frontend.index', compact('top_news', 'blogs', 'events', 'upcoming_events'));
     } // End of Index
 
 

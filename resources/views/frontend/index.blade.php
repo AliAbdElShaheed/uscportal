@@ -1,5 +1,14 @@
 @extends('layouts.frontend.app')
 
+
+<style>
+    /* Define the style for the selected event */
+    .selected-event {
+        background-color: #f0f0f0; /* Change to the desired background color */
+        font-weight: bold; /* Change to the desired font weight */
+        /* Add any other styles you want to apply to the selected event */
+    }
+</style>
 @section('content')
     <!--    --><?php //dd($blogs); ?>
     {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
@@ -131,7 +140,7 @@
                                  style="width: 304px; height: 250px;"/>
                             <div class="card-body">
                                 <h3>{{ $blog->title }}</h3>
-                                <p>{{$blog->brief_content}}</p>
+                                <p>{{substr(strip_tags(trim($blog->content)), 0, 43)}}...</p>
                             </div>
                             <div class="info">
                                 <a href="">@lang('site.read_more')</a>
@@ -217,77 +226,62 @@
         <h2 class="fw-bold main-title">@lang('site.TopEvents')</h2>
         <div class="container">
             <div class="row border">
-                <div class="col-lg-4 col-md-4">
+
+
+                {{--         <div class="col-lg-4 col-md-4 event-data">
+                             <div class="list w-100 bg-white">
+                                 <div class="name">
+                                     Top Events
+                                     <i class="fas fa-random"></i>
+                                 </div>
+                                 <ul>
+                                     @foreach($events as $event)
+                                         <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">
+                                             {{ $event->title }}
+                                             <span>Jan 17, 2022 at 05:18 PM</span>
+                                             <span> {{ $event->start_date }}</span>
+                                         </li>
+                                     @endforeach
+                                 </ul>
+                             </div>
+                         </div>
+                         <div class="col-lg-8 col-md-8 p-0 m-0 event-img">
+                             <div class="preview h-100">
+                                 <img class="w-100 h-75" src="{{ $event->image_path }}" alt="{{ $event->title }}"/>
+                                 <div class="info d-inline-flex justify-content-between">
+                                     <div class="justify-content-center"> Everything About {{ $event->title }} Event</div>
+                                 </div>
+                             </div>
+                         </div>--}}
+
+
+                <div class="col-lg-4 col-md-4 event-data">
                     <div class="list w-100 bg-white">
                         <div class="name">
                             Top Events
                             <i class="fas fa-random"></i>
                         </div>
                         <ul>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">How To
-                                Create
-                                Sub
-                                Domain
-                                <span>Jan 17, 2022 at 05:18 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">How To
-                                Create
-                                Sub
-                                Domain
-                                <span>Jan 17, 2022 at 05:18 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">How To
-                                Create
-                                Sub
-                                Domain
-                                <span>Jan 17, 2022 at 05:18 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">Playing With
-                                The
-                                DNS
-                                <span>Jan 17, 2022 at 03:18 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">Everything
-                                About
-                                The
-                                Virtual Hosts
-                                <span>Jan 17, 2022 at 05:25 PM</span></li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">How To
-                                Monitor
-                                Your
-                                Website
-                                <span>Jan 17, 2022 at 04:16 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">Uncharted
-                                Beating The
-                                Last Boss
-                                <span>Jan 17, 2022 at 07:48 PM</span></li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">Ys Oath In
-                                Felghana
-                                Overview
-                                <span>Jan 17, 2022 at 03:12 PM</span>
-                            </li>
-                            <li class="py-2 px-4 border-top border-light-subtle" role="button" tabindex="0">Ys Series
-                                All
-                                Games
-                                Ending
-                                <span>Jan 17, 2022 at 08:10 AM</span>
-                            </li>
+                            @foreach($events as $event)
+                                <li class="py-2 px-4 border-top border-light-subtle event-item" role="button"
+                                    tabindex="0" data-image="{{ $event->image_path }}">
+                                    {{ $event->title }}
+                                    <span>Jan 17, 2022 at 05:18 PM to be as that format </span>
+                                    <span> {{ $event->start_date }}</span>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
-                <div class=" col-lg-8 col-md-8 p-0 m-0">
+
+                <div class="col-lg-8 col-md-8 p-0 m-0 event-img">
                     <div class="preview h-100">
-                        <img class="w-100 h-75" src="{{asset('uploads/frontend/images/EVENTS_1.webp')}}" alt=""/>
+                        <img class="w-100 h-75" id="event-image"
+                             src="{{asset('uploads/frontend/images/EVENTS_1.webp')}}"
+                             alt=""/>
                         <div class="info d-inline-flex justify-content-between">
-                            <div class="justify-content-center"> Everything About The That Event</div>
-
-                            {{--
-                            <div class="info bnt btn-primary d-inline-block border spinner-border-sm">
-                                <a href="">@lang('site.read_more') <i class="fas fa-long-arrow-alt-right"></i></a>
-
+                            <div class="justify-content-center">Everything About <span id="event-title"></span> Event
                             </div>
-                            --}}
                         </div>
                     </div>
                 </div>
@@ -373,11 +367,43 @@
     {{--------------------------End of section 7 (Mobile Apps) ----------------------------------}}
 
 @endsection
-{{--
+
 
 @push('scripts')
 
+    <script>
+        // JavaScript code to handle the click event on event items
+        const eventItems = document.querySelectorAll('.event-item');
+        const eventImage = document.getElementById('event-image');
+        const eventTitle = document.getElementById('event-title');
 
+        // Function to remove the "selected-event" class from all event items
+        function deselectAllEvents() {
+            eventItems.forEach(item => {
+                item.classList.remove('selected-event');
+            });
+        }
+
+        // Select the first event item by default
+        const firstEventItem = eventItems[0];
+        firstEventItem.click();
+
+        eventItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Deselect all events first
+                deselectAllEvents();
+
+                // Add the "selected-event" class to the clicked event
+                item.classList.add('selected-event');
+
+                const imageSrc = item.getAttribute('data-image');
+                const title = item.textContent.trim();
+                eventImage.src = imageSrc;
+                eventTitle.textContent = title;
+            });
+        });
+
+    </script>
 
 @endpush
---}}
+
