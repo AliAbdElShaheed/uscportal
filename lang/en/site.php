@@ -7,6 +7,31 @@ return [
     'read_more' => "Read More",
 
     'USC' => 'University of Sadat City',
+	
+		    /////**********************  Faculties And Institutions Page **************////////////////////
+
+
+    'FacultiesAndInstitutions' => 'Faculties And Institutions',
+
+    'FacultiesAndInstitutionsAbout' => 'You can know everything about Colleges and Institutes in The University of Sadat City here',
+
+ 'PracticalFaculties' => 'Practical Faculties',
+    'TheoreticalFaculties' => 'Theoretical Faculties',
+    'ResearchInstitutes' => 'Research Institutes',
+
+    'FCAI' => 'Faculty of Computers and Artificial Intelligence',
+    'Pharm' => 'Faculty of Pharmacy',
+    'Vet' => 'Faculty of Veterinary Medicine',
+    'phedu' => 'Faculty of Physical Education',
+    'tourism' => 'Faculty of Tourism and Hotels',
+
+    'edu' => 'Faculty of Education',
+    'law' => 'Faculty of Law',
+    'com' => 'Faculty of Commerce',
+    'kind' => 'College of Early Childhood Education',
+    'esri' => 'Institute of Environmental Studies and Research',
+    'gebri' => 'Genetic Engineering and Biotechnology Research Institute',
+
 
 
     'add' => 'Add',
