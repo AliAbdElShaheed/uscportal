@@ -27,6 +27,8 @@ Route::group(
     Route::get('/', [BlogController::class, 'index'])->name('front.index');
     Route::get('/index', [BlogController::class, 'index'])->name('front.index');
     Route::get('/top-new/{id}', [BlogController::class, 'show_top_new'])->name('top_new.show');
+    Route::get('/blog/{id}', [BlogController::class, 'show_blog'])->name('blog.show');
+    Route::get('/blogs', [BlogController::class, 'blogs'])->name('all_blogs.index');
 
     // About Page Route
     Route::get('/about', [AboutController::class, 'index'])->name('front.about');
@@ -36,6 +38,7 @@ Route::group(
         return view('management');
     });
 
+    // Colleges Page Route
     Route::get('/colleges', function () {
         return view('colleges');
     });

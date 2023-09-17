@@ -36,7 +36,7 @@ class BlogController extends Controller
 
             return $q->where('category_id', $request->category_id);
 
-        })->latest()->paginate(5);
+        })->latest()->paginate(10);
 
         return view('dashboard.blogs.index', compact('categories', 'blogs'));
     }  // End of Index

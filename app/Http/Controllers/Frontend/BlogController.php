@@ -24,7 +24,7 @@ class BlogController extends Controller
         //dd($top_news);
 
         $blogs = Blog::where('top_news', 0)
-            ->orderBy('publish_date')
+            ->orderBy('publish_date', 'desc')
             ->take(8)
             ->limit(8)
             ->get();
@@ -59,16 +59,27 @@ class BlogController extends Controller
         $categories = Category::all();
         $top_new = Blog::find($id);
         // dd($top_new->title);
-
         return view('frontend.show_top_new', compact('categories', 'top_new'));
-
     } // End of Show Top New
 
 
-    public function create()
+    public function show_blog($id)
     {
-        //
-    }
+        $categories = Category::all();
+        $blog = Blog::find($id);
+        return view('frontend.show_blog', compact('categories', 'blog'));
+    } // End of Show Blog
+
+
+    public function blogs()
+    {
+        $categories = Category::all();
+        $blogs = Blog::orderBy('publish_date', 'desc')
+            ->get();
+
+        // dd($top_new->title);
+        return view('frontend.blogs', compact('categories', 'blogs'));
+    } // End of Blogs
 
 
     public function store(Request $request)

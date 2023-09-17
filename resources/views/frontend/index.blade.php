@@ -90,7 +90,7 @@
 
     {{--------------------------End of section 1 Landing (video slides)  -------------------------}}
 
-    {{--------------------------Start of section 2 (News) ----------------------------------------}}
+    {{--------------------------Start of section 2 (Top News) ----------------------------------------}}
 
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
@@ -147,9 +147,7 @@
 
 
 
-
-
-    {{--------------------------End of section 2 (News) ------------------------------------------}}
+    {{--------------------------End of section 2 (Top News) ------------------------------------------}}
 
 
 
@@ -167,12 +165,19 @@
                             <img src="{{ $blog->image_path }}" alt="{{ $blog->title }}"
                                  style="width: 304px; height: 250px;"/>
                             <div class="card-body">
+                                <h6 class="publish-date">{{ $blog->publish_date }}</h6>
                                 <h3>{{ $blog->title }}</h3>
-                                <p>{{substr(strip_tags(trim($blog->content)), 0, 43)}}...</p>
+                                <p>{{substr(strip_tags(trim($blog->content)), 0, 50)}}...</p>
                             </div>
                             <div class="info">
-                                <a href="">@lang('site.read_more')</a>
-                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <a href="{{ route('blog.show', ['id' => $blog->id]) }}">@lang('site.read_more')</a>
+
+                                @if(app()->getLocale() == 'ar')
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                @else
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                @endif
+
                             </div>
                         </div>
                     </div>
@@ -180,7 +185,8 @@
             </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">@lang('site.more_news')</a>
+                <a class="btn rounded-pill main-btn-dark text-uppercase"
+                   href="{{ route('all_blogs.index') }}">@lang('site.more_news')</a>
             </div>
 
         </div>

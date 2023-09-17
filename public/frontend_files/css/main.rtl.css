@@ -1164,6 +1164,12 @@ section {
     z-index: -1;
 }
 
+.publish-date {
+    font-size: 10px;
+    float: left;
+    margin-top: -15px;
+}
+
 /*End landing rules*/
 
 
@@ -1547,7 +1553,7 @@ section {
 }
 
 @keyframes moving-arrow {
-    100% {
+    0% {
         transform: translateX(10px);
     }
 }
