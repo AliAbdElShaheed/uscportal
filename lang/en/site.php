@@ -190,6 +190,14 @@ return [
     'university_news' => 'University News',
 
 
+    'USCInfo' => 'University of Sadat City, On the Cairo-Alexandria Desert Road, Sadat City, Egypt',
+    'BusinessHours' => 'Business Hours: From 08:30 To 14:30',
+
+
+
+
+
+
     /////**********************  About Page **************////////////////////
 
     'opening_about_page_word' => 'About The University Of Sadat City',
