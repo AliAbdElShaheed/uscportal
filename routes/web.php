@@ -24,8 +24,9 @@ Route::group(
     ], function () {
     /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
     // Landing Page Route
-    Route::get('/', [BlogController::class, 'index'])->name('dashboard.index');
-    Route::get('/index', [BlogController::class, 'index'])->name('dashboard.index');
+    Route::get('/', [BlogController::class, 'index'])->name('front.index');
+    Route::get('/index', [BlogController::class, 'index'])->name('front.index');
+    Route::get('/top-new/{id}', [BlogController::class, 'show_top_new'])->name('top_new.show');
 
     // About Page Route
     Route::get('/about', [AboutController::class, 'index'])->name('front.about');

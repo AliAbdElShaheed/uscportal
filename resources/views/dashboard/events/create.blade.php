@@ -142,7 +142,8 @@
 
                                                                 <option
                                                                     value="{{$category->id}}"
-                                                                    {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                                                    {{ old('category_id') == $category->id ? 'selected' : '' }}
+                                                                    {{ $category->name == 'Events' ? 'selected' : '' }}>
                                                                     {{$category->name}}
                                                                 </option>
                                                             @endforeach

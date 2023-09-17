@@ -17,9 +17,9 @@ class BlogController extends Controller
     {
         $categories = Category::all();
         $top_news = Blog::where('top_news', 1)
-            ->orderBy('publish_date')
-            ->take(3)
-            ->limit(3)
+            ->orderBy('publish_date', 'desc')
+            ->take(6)
+            ->limit(6)
             ->get();
         //dd($top_news);
 
@@ -53,6 +53,18 @@ class BlogController extends Controller
     } // End of Index
 
 
+    public function show_top_new($id)
+    {
+        // dd($id);
+        $categories = Category::all();
+        $top_new = Blog::find($id);
+        // dd($top_new->title);
+
+        return view('frontend.show_top_new', compact('categories', 'top_new'));
+
+    } // End of Show Top New
+
+
     public function create()
     {
         //
@@ -60,12 +72,6 @@ class BlogController extends Controller
 
 
     public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show($id)
     {
         //
     }

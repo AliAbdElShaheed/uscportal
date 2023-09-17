@@ -121,9 +121,9 @@
                                                             <option value="">---</option>
                                                             @foreach($categories as $category)
 
-                                                                <option
-                                                                    value="{{$category->id}}"
-                                                                    {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                                                <option value="{{$category->id}}"
+                                                                    {{ old('category_id') == $category->id ? 'selected' : '' }}
+                                                                    {{ $category->name == 'News' ? 'selected' : '' }}>
                                                                     {{$category->name}}
                                                                 </option>
                                                             @endforeach

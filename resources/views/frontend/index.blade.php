@@ -100,14 +100,19 @@
                 @lang('site.important_news_note')
             </p>
             <div class="row">
-                @foreach($top_news as $top_new)
+                @foreach($top_news->take(3) as $top_new)
                     <div class="col-md-6 col-lg-4">
                         <div class="box bg-white">
-                            <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"
-                                 style="width: 416px; height: 277px;"/>
-                            <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
+                            <a href="{{ route('top_new.show', ['id' => $top_new->id]) }}">
+                                <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"
+                                     style="width: 416px; height: 277px;"/>
+                            </a>
+                            <a href="{{ route('top_new.show', ['id' => $top_new->id]) }}">
+                                <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
+                            </a>
                             <blockquote class="text-black-50 p-3">
-                                “{{$top_new->brief_content}}“
+                                {{--                                “{{$top_new->brief_content}}“--}}
+                                {{substr(strip_tags(trim($top_new->content)), 0, 43)}} ...
                             </blockquote>
                         </div>
                     </div>
@@ -115,10 +120,33 @@
             </div>
 
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">@lang('site.more_top_news')</a>
+                <a class="btn rounded-pill main-btn-dark text-uppercase" id="load-more"
+                   href="#">@lang('site.more_top_news')</a>
+            </div>
+            <div class="row remaining-blogs" style="display: none;">
+                @foreach($top_news->splice(3) as $top_new)
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box bg-white">
+                            <a href="{{ route('top_new.show', ['id' => $top_new->id]) }}">
+                                <img class="img-fluid" src="{{ $top_new->image_path }}" alt="{{ $top_new->title }}"
+                                     style="width: 416px; height: 277px;"/>
+                            </a>
+                            <a href="{{ route('top_new.show', ['id' => $top_new->id]) }}">
+                                <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
+                            </a>
+                            <blockquote class="text-black-50 p-3">
+                                “{{$top_new->brief_content}}“
+                                {{substr(strip_tags(trim($top_new->content)), 0, 43)}}
+                            </blockquote>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
+
+
+
 
 
     {{--------------------------End of section 2 (News) ------------------------------------------}}
@@ -403,6 +431,22 @@
             });
         });
 
+    </script>
+
+
+    <script src="{{asset('frontend_files/js/http_code.jquery.com_jquery-3.6.0.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            $("#load-more").click(function (e) {
+                e.preventDefault();
+
+                // Show the remaining blog items
+                $(".remaining-blogs").slideDown();
+
+                // Hide the "See More" button
+                $(this).hide();
+            });
+        });
     </script>
 
 @endpush
