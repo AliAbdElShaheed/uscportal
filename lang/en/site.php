@@ -187,6 +187,7 @@ return [
     'Links' => 'Links',
     'ContactUs' => 'Contact Us',
     'OurLocation' => 'Our Location',
+    'university_news' => 'University News',
 
 
     /////**********************  About Page **************////////////////////
