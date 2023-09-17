@@ -7,32 +7,6 @@ return [
     'read_more' => "Read More",
 
     'USC' => 'University of Sadat City',
-	
-		    /////**********************  Faculties And Institutions Page **************////////////////////
-
-
-    'FacultiesAndInstitutions' => 'Faculties And Institutions',
-
-    'FacultiesAndInstitutionsAbout' => 'You can know everything about Colleges and Institutes in The University of Sadat City here',
-
- 'PracticalFaculties' => 'Practical Faculties',
-    'TheoreticalFaculties' => 'Theoretical Faculties',
-    'ResearchInstitutes' => 'Research Institutes',
-
-    'FCAI' => 'Faculty of Computers and Artificial Intelligence',
-    'Pharm' => 'Faculty of Pharmacy',
-    'Vet' => 'Faculty of Veterinary Medicine',
-    'phedu' => 'Faculty of Physical Education',
-    'tourism' => 'Faculty of Tourism and Hotels',
-
-    'edu' => 'Faculty of Education',
-    'law' => 'Faculty of Law',
-    'com' => 'Faculty of Commerce',
-    'kind' => 'College of Early Childhood Education',
-    'esri' => 'Institute of Environmental Studies and Research',
-    'gebri' => 'Genetic Engineering and Biotechnology Research Institute',
-
-
 
     'add' => 'Add',
     'add_user' => 'Add User',
@@ -206,9 +180,9 @@ return [
     'students' => 'Students',
     'study_programs' => 'Study Programs',
 
-    'TOPEVENTS' => 'TOP EVENTS',
-    'UPCOMINGEVENTS' => 'UPCOMING EVENTS',
-    'USCAPPS' => 'USC APPS',
+    'TopEvents' => 'TOP EVENTS',
+    'UpcomingEvents' => 'UPCOMING EVENTS',
+    'USCApps' => 'USC APPS',
 
     'Links' => 'Links',
     'ContactUs' => 'Contact Us',
@@ -270,6 +244,28 @@ With the continuing development of the University, USC are strongly committed to
     'vision_data' => 'USC seeks to be an Internationally Pioneer and a Productive Paradigm of knowledge and its applications',
     'mission_data' => 'USC is committed to preparing graduates who have the ability to cope with the labor market needs, through educational, research and community services that encourage the innovation and excellence within the framework of sustainable development',
     'values_data' => 'values_data',
+
+
+    /////**********************  Faculties And Institutions Page **************////////////////////
+
+    'FacultiesAndInstitutions' => 'Faculties And Institutions',
+    'FacultiesAndInstitutionsAbout' => 'You can know everything about Colleges and Institutes in The University of Sadat City here',
+    'PracticalFaculties' => 'Practical Faculties',
+    'TheoreticalFaculties' => 'Theoretical Faculties',
+    'ResearchInstitutes' => 'Research Institutes',
+
+    'FCAI' => 'Faculty of Computers and Artificial Intelligence',
+    'Pharm' => 'Faculty of Pharmacy',
+    'Vet' => 'Faculty of Veterinary Medicine',
+    'phedu' => 'Faculty of Physical Education',
+    'tourism' => 'Faculty of Tourism and Hotels',
+
+    'edu' => 'Faculty of Education',
+    'law' => 'Faculty of Law',
+    'com' => 'Faculty of Commerce',
+    'kind' => 'College of Early Childhood Education',
+    'esri' => 'Institute of Environmental Studies and Research',
+    'gebri' => 'Genetic Engineering and Biotechnology Research Institute',
 
 
 ];
