@@ -160,6 +160,7 @@ return [
 
     /////**********************  General    **************////////////////////
     'get_started' => 'Get Started',
+    'Complaintsandsuggestions' => 'نظام الشكاوى و المقترحات',
 
 
     /////**********************  Landing Page ************////////////////////
@@ -194,6 +195,10 @@ return [
     'BusinessHours' => 'Business Hours: From 08:30 To 14:30',
 
 
+    'StudentServices' => 'Student Services',
+    'Ibnelhaitham' => 'Ibn al-Haytham',
+    'AlFarouk' => 'Al Farouk',
+    'ELZAHRAA' => 'ELZAHRAA for Student Cities',
 
 
 
