@@ -75,8 +75,10 @@
                 <div class="map justify-content-center">
                     <h5 class="text-light mb-3">@lang('site.OurLocation') </h5>
                     <div class="justify-content-center">
-                        <img src="{{asset('uploads/frontend/images/map.png')}}" alt="USC map"
+                    <!--    <img src="{{asset('uploads/frontend/images/map.png')}}" alt="USC map"
                              class="w-75"/>
+							 -->
+							 <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=university%20of%20sadat%20city&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 270px;"></iframe><style>.mapouter{position:relative;height:420px;width:400px}.gmap_canvas{overflow:hidden;height:400px;width:490px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{top:0;z-index:0}</style></div></div>
                     </div>
 
                 </div>
