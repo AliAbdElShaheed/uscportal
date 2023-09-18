@@ -14,7 +14,7 @@
     {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 
     <section class="home">
-        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
+        <video   class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
                loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/3.mp4')}}" autoplay muted loop></video>
@@ -27,53 +27,29 @@
             <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
-            <h1>@lang('site.USC President\'s speech').<br><span>@lang('DR / Shaden Moaawia')</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
+            <h1>@lang('site.president_word')<br><span>@lang('site.president_name')</span></h1>
+            <p>يسعدنى فى بداية تكليفى قائما بعمل رئيس جامعة مدينة السادات فى ظل قيادة فخامة رئيس الجمهورية الرئيس عبد الفتاح السيسي ان اتقدم بخالص الشكر والعرفان والتقدير الى السيد الاستاذ الدكتور أيمن عاشور وزير التعليم العالي والبحث العلمي لتكليفى بتيسير أعمال جامعة مدينة السادات حرصا على إستمرار العمل بالجامعه بالفاعليه المطلوبه وذالك لحين الانتهاء من إجراءات تعيين رئيسا جديدا للجامعه
+وأدعوا الله العلى القدير أن أكون أهلا لهذه الثقه فى إستكمال مسيرة الجامعه وتسيير ركب التطور فى هذه الفتره لرفع شأن الجامعه وتحقيق أهداف إستراتيجية وزارة التعليم العالى فى ظل رؤية مصر ٢٠٣٠ وتحت قيادة فخامة رئيس الجمهورية الرئيس عبد الفتاح السيسى.
+كما أتوجه الى كل منتسبى الجامعه من أعضاء هيئة تدريس وهيئة معاونه وعاملين بخالص التحيه والتقدير وادعوهم الى التكاتف والوقوف يدا واحده وفريق عمل واحد متكامل للحفاظ على مقدرات الجامعه و دفع مسيرة نهضتها علميا وبحثيا ومجتمعيا
+وفقنا الله وإياكم الى مايحبه ويرضاه لرفعة مصرنا الحبيبه.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
-            <h1>@lang('university of sadat city').<br><span>USC</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
+           <h1>@lang('site.USC') <br></h1>
+            <p>جامعة مدينة السادات جامعة مصرية حكومية تم انشاءها كجامعة مستقلة بالقرار الجمهوري من بتاريخ 25 مارس
+                2013.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
         <div class="content">
-            <h1>@lang('university of sadat city').<br><span>USC</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
+            <h1>@lang('site.president_word')<br><span>@lang('site.president_name')</span></h1>
+            <p>يسعدنى فى بداية تكليفى قائما بعمل رئيس جامعة مدينة السادات فى ظل قيادة فخامة رئيس الجمهورية الرئيس عبد الفتاح السيسي ان اتقدم بخالص الشكر والعرفان والتقدير الى السيد الاستاذ الدكتور أيمن عاشور وزير التعليم العالي والبحث العلمي لتكليفى بتيسير أعمال جامعة مدينة السادات حرصا على إستمرار العمل بالجامعه بالفاعليه المطلوبه وذالك لحين الانتهاء من إجراءات تعيين رئيسا جديدا للجامعه
+وأدعوا الله العلى القدير أن أكون أهلا لهذه الثقه فى إستكمال مسيرة الجامعه وتسيير ركب التطور فى هذه الفتره لرفع شأن الجامعه وتحقيق أهداف إستراتيجية وزارة التعليم العالى فى ظل رؤية مصر ٢٠٣٠ وتحت قيادة فخامة رئيس الجمهورية الرئيس عبد الفتاح السيسى.
+كما أتوجه الى كل منتسبى الجامعه من أعضاء هيئة تدريس وهيئة معاونه وعاملين بخالص التحيه والتقدير وادعوهم الى التكاتف والوقوف يدا واحده وفريق عمل واحد متكامل للحفاظ على مقدرات الجامعه و دفع مسيرة نهضتها علميا وبحثيا ومجتمعيا
+وفقنا الله وإياكم الى مايحبه ويرضاه لرفعة مصرنا الحبيبه.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
-        <div class="content">
-            <h1>@lang('university of sadat city').<br><span>USC</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.</p>
-            <a href="#">@lang('site.read_more')</a>
-        </div>
+        
+		
         <div class="media-icons">
             <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/universityofsadatcity/"><i class="fab fa-instagram"></i></a>
@@ -331,7 +307,7 @@
 
     {{--------------------------Start of section 6 (Upcoming Events) ----------------------------}}
 
-    <div class="u_events" id="u_events">
+  <!-- <div class="u_events" id="u_events">
         <div class="dots dots-up"></div>
         <h2 class="main-title">@lang('site.UpcomingEvents') </h2>
         <div class="container">
@@ -370,7 +346,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>     -->
 
 
     {{--------------------------End of section 6 (Upcoming Events) ------------------------------}}
@@ -387,12 +363,11 @@
             <img src="{{asset('uploads/frontend/images/mobile2.png')}}" alt="Mobile"/>
         </div>
         <div class="text">
-            <h2>@lang('site.USCApps')  </h2>
+            <h2>@lang('site.StudentServices')  </h2>
             <ul>
-                <li>USC Portal Application</li>
-                <li>USC HR New System</li>
-                <li>ELZAHRAA for Student Cities</li>
-                <li>ABN ELHITHAM for Education & Student affairs</li>
+                 <li>@lang('site.ELZAHRAA')</li>
+                <li>@lang('site.AlFarouk')</li>
+                <li> @lang('site.Ibnelhaitham')   </li>
             </ul>
         </div>
     </div>
