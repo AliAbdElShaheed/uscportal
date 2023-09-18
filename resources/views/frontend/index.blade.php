@@ -70,7 +70,7 @@
 
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
-            <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
+            <img class="mb-4" src="{{asset('uploads/frontend/images/f_logos/USCLogo.png')}}" alt=""/>
             <h2 class="fw-bold main-title">@lang('site.important_news')</h2>
             <p class="text-black-50 mb-5">
                 @lang('site.important_news_note')
