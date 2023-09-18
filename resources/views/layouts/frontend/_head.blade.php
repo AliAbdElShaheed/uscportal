@@ -6,7 +6,9 @@
     <title>
         جامعة مدينة السادات | رئيسية الموقع
     </title>
-    {{--    <link rel="shortcut icon" href="{{asset('uploads/frontend/images/2.png')}}"/>--}}
+   <!--   <link rel="shortcut icon" href="{{asset('uploads/frontend/images/f_logos/USCLogo.ico')}}"/>   -->
+  <link rel="icon" type="image/x-icon" href="{{asset('uploads/frontend/images/f_logos/USCLogo.ico')}}">
+
 
     <!-- ------------------------ Styles ------------------------ -->
     @if (app()->getLocale() == 'ar')

@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <a href="/" class="brand">
-            <img src="{{asset('uploads/frontend/images/logo3.png')}}" alt="USC Logo"/>
+            <img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo"/>
         </a>
         <button
             class="navbar-toggler"

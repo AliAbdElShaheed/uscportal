@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="info mb-5">
-                    <img src="{{asset('uploads/frontend/images/logo3.png')}}" alt="USC Logo" class="w-50"/>
+                    <img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo" class="w-50"/>
                     <ul class="d-flex my-3 list-unstyled gap-3 justify-content-sm-center justify-content-md-start">
                         <li>
                             <a class="d-block text-light" href="https://www.facebook.com/usc.edu.eg"
