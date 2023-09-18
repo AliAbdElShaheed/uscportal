@@ -16,7 +16,7 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         {{-- <header>
-             <a href="#" class="brand">Travel</a>
+             <a href="#" class="brand">USC</a>
              <div class="menu-btn"></div>
              <div class="navigation">
                  <div class="navigation-items">
@@ -25,6 +25,8 @@
                      <a href="#">@lang('front.postgraduate_and_research')</a>
                      <a href="#">@lang('front.colleges_and_institutes')</a>
                      <a href="#">@lang('front.university_city')</a>
+					    <a href="#">مراكز ووحدات</a>
+
                      <a href="#">@lang('front.electronic_services')</a>
                  </div>
              </div>
@@ -44,6 +46,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="/colleges">@lang('front.colleges_and_institutes')</a>
+                </li>
+				 <li class="nav-item">
+                    <a class="nav-link p-2" aria-current="page"
+                       href="/istc">مراكز ووحدات</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
@@ -75,7 +81,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Complaints and suggestions</a></li>
+                                <li><a class="dropdown-item" href="https://www.shakwa.eg/">@lang('site.Complaintsandsuggestions')</a></li>
                             </div>
                         </ul>
                     </div>
