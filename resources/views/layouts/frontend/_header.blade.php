@@ -2,7 +2,17 @@
     <div class="container-fluid">
 
         <a href="/" class="brand">
-            <img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo"/>
+		
+			  @if(app()->getLocale() == 'ar')
+				<img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo"/>
+					@else
+				<img src="{{asset('uploads/frontend/images/f_logos/USCLogoEnNew.png')}}" alt="USC Logo"/>
+                @endif
+		
+			
+			
+			
+			
         </a>
         <button
             class="navbar-toggler"
