@@ -79,14 +79,16 @@ class BlogController extends Controller
 
         // Prepare The Request Image Size & Save It
         if ($request->image) {
-            Image::make($request->image)->resize(226, null, function ($constraint) {
+            /*Image::make($request->image)->resize(226, null, function ($constraint) {
                 $constraint->aspectRatio();
-            })->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 80, 'png');
+            })->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 100, 'png');*/
+
+            Image::make($request->image)->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 100, 'png');
 
             $request_data['image'] = $request->image->hashName();
         } else {
             $request_data['image'] = 'default.png';
-        } // End of IF
+        } // End of IF Image
         //dd($request_data['image']);
 
         $blog = new Blog();
@@ -157,9 +159,11 @@ class BlogController extends Controller
             } // End of Inner IF
 
             // To Save The New Blog Image (Update It)
-            Image::make($request->image)->resize(226, null, function ($constraint) {
+            /*Image::make($request->image)->resize(226, null, function ($constraint) {
                 $constraint->aspectRatio();
-            })->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 80, 'png');
+            })->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 80, 'png');*/
+            Image::make($request->image)->save(public_path('uploads/blogs_img/' . $request->image->hashName()), 100, 'png');
+
 
             $request_data['image'] = $request->image->hashName();
         } // End of IF

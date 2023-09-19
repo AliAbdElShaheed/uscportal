@@ -77,9 +77,7 @@ class EventController extends Controller
 
         // Prepare The Request Image Size & Save It
         if ($request->image) {
-            Image::make($request->image)->resize(226, null, function ($constraint) {
-                $constraint->aspectRatio();
-            })->save(public_path('uploads/events_img/' . $request->image->hashName()), 80, 'png');
+            Image::make($request->image)->save(public_path('uploads/events_img/' . $request->image->hashName()), 100, 'png');
 
             $request_data['image'] = $request->image->hashName();
         } else {
@@ -154,9 +152,7 @@ class EventController extends Controller
             } // End of Inner IF
 
             // To Save The New event Image (Update It)
-            Image::make($request->image)->resize(226, null, function ($constraint) {
-                $constraint->aspectRatio();
-            })->save(public_path('uploads/events_img/' . $request->image->hashName()), 80, 'png');
+            Image::make($request->image)->save(public_path('uploads/events_img/' . $request->image->hashName()), 100, 'png');
 
             $request_data['image'] = $request->image->hashName();
         } // End of IF
