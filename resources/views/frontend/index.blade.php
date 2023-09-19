@@ -290,10 +290,11 @@
                         <ul>
                             @foreach($events as $event)
                                 <li class="py-2 px-4 border-top border-light-subtle event-item" role="button"
-                                    tabindex="0" data-image="{{ $event->image_path }}">
+                                    tabindex="0" data-image="{{ $event->image_path }}"
+                                    data-content="{{ $event->content }}"
+                                    {{ $event->title }} data-date="{{ $event->start_date }}">
                                     {{ $event->title }}
-                                    <span>Jan 17, 2022 at 05:18 PM to be as that format </span>
-                                    <span> {{ $event->start_date }}</span>
+                                    <span>{{ \Carbon\Carbon::parse($event->start_date)->format('M j, Y') }}</span>
                                 </li>
                             @endforeach
                         </ul>
@@ -302,15 +303,16 @@
 
                 <div class="col-lg-8 col-md-8 p-0 m-0 event-img">
                     <div class="preview h-100">
-                        <img class="w-100 h-75" id="event-image"
-                             src="{{asset('uploads/frontend/images/EVENTS_1.webp')}}"
-                             alt=""/>
+                        <img class="w-100 h-75" id="event-image" src="" alt=""/>
                         <div class="info d-inline-flex justify-content-between">
-                            <div class="justify-content-center">Everything About <span id="event-title"></span> Event
+                            <div class="justify-content-center">
+                                Everything About <span id="event-title"></span> Event at <span id="event-date"></span>
+                                <p id="event-content"></p>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -396,41 +398,155 @@
 
 @push('scripts')
 
+    {{--        <script>
+                // JavaScript code to handle the click event on event items
+                const eventItems = document.querySelectorAll('.event-item');
+                const eventImage = document.getElementById('event-image');
+                const eventTitle = document.getElementById('event-title');
+
+                // Function to remove the "selected-event" class from all event items
+                function deselectAllEvents() {
+                    eventItems.forEach(item => {
+                        item.classList.remove('selected-event');
+                    });
+                }
+
+                // Select the first event item by default
+                const firstEventItem = eventItems[0];
+                firstEventItem.click();
+
+                eventItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        // Deselect all events first
+                        deselectAllEvents();
+
+                        // Add the "selected-event" class to the clicked event
+                        item.classList.add('selected-event');
+
+                        const imageSrc = item.getAttribute('data-image');
+                        const title = item.textContent.trim();
+                        eventImage.src = imageSrc;
+                        eventTitle.textContent = title;
+                    });
+                });
+
+            </script>--}}
+    {{--        <script>
+                // JavaScript code to handle the click event on event items
+                document.addEventListener('DOMContentLoaded', function () {
+                    const eventItems = document.querySelectorAll('.event-item');
+                    const eventImage = document.getElementById('event-image');
+                    const eventTitle = document.getElementById('event-title');
+
+                    // Function to remove the "selected-event" class from all event items
+                    function deselectAllEvents() {
+                        eventItems.forEach(item => {
+                            item.classList.remove('selected-event');
+                        });
+                    }
+
+                    // Select the first event item by default
+                    const firstEventItem = eventItems[0];
+                    selectEvent(firstEventItem);
+
+                    eventItems.forEach(item => {
+                        item.addEventListener('click', () => {
+                            // Deselect all events first
+                            deselectAllEvents();
+
+                            // Add the "selected-event" class to the clicked event
+                            item.classList.add('selected-event');
+
+                            // Call the selectEvent function to update the event image and title
+                            selectEvent(item);
+                        });
+                    });
+
+                    // Function to update the event image and title
+                    function selectEvent(item) {
+                        const imageSrc = item.getAttribute('data-image');
+                        const title = item.textContent.trim();
+                        eventImage.src = imageSrc;
+                        eventTitle.textContent = title;
+                    }
+                });
+            </script>--}}
+
     <script>
         // JavaScript code to handle the click event on event items
-        const eventItems = document.querySelectorAll('.event-item');
-        const eventImage = document.getElementById('event-image');
-        const eventTitle = document.getElementById('event-title');
+        document.addEventListener('DOMContentLoaded', function () {
+            const eventItems = document.querySelectorAll('.event-item');
+            const eventImage = document.getElementById('event-image');
+            const eventTitle = document.getElementById('event-title');
+            const eventDate = document.getElementById('event-date');
+            const eventContent = document.getElementById('event-content');
 
-        // Function to remove the "selected-event" class from all event items
-        function deselectAllEvents() {
+            // Function to remove the "selected-event" class from all event items
+            function deselectAllEvents() {
+                eventItems.forEach(item => {
+                    item.classList.remove('selected-event');
+                });
+            }
+
             eventItems.forEach(item => {
-                item.classList.remove('selected-event');
+                item.addEventListener('click', () => {
+                    // Deselect all events first
+                    deselectAllEvents();
+
+                    // Add the "selected-event" class to the clicked event
+                    item.classList.add('selected-event');
+
+                    // Call the selectEvent function to update the event image and title
+                    selectEvent(item);
+                });
             });
-        }
 
-        // Select the first event item by default
-        const firstEventItem = eventItems[0];
-        firstEventItem.click();
+            // Select the first event item by default after event listeners are set up
+            const firstEventItem = eventItems[0];
+            firstEventItem.click(); // Simulate a click to style it as selected
 
-        eventItems.forEach(item => {
-            item.addEventListener('click', () => {
-                // Deselect all events first
-                deselectAllEvents();
-
-                // Add the "selected-event" class to the clicked event
-                item.classList.add('selected-event');
-
+            // Function to update the event image and title
+            /*function selectEvent(item) {
                 const imageSrc = item.getAttribute('data-image');
-                const title = item.textContent.trim();
+                const titleWithDate = item.textContent.trim();
+
+                // Split the title to separate the date
+                const titleParts = titleWithDate.split(' at ');
+
+                // Extract the event title without the date
+                const title = titleParts[0];
+
                 eventImage.src = imageSrc;
                 eventTitle.textContent = title;
-            });
-        });
+            }*/
 
+            // Function to update the event image, title, date, and content
+            function selectEvent(item) {
+                const imageSrc = item.getAttribute('data-image');
+                const titleWithDate = item.textContent.trim();
+
+                // Split the title to separate the date and title parts
+                const titleParts = titleWithDate.split(' at ');
+                const date = titleParts[0];
+                const title = titleParts.slice(1).join(' ');
+
+                // Get the event content from the data-content attribute of the clicked item
+                const content = item.getAttribute('data-content');
+
+                eventImage.src = imageSrc;
+                eventTitle.textContent = title;
+                eventDate.textContent = date;
+                eventContent.textContent = content;
+            }
+
+        });
     </script>
 
 
+
+
+
+    {{--script to show more important news--}}
     <script src="{{asset('frontend_files/js/http_code.jquery.com_jquery-3.6.0.js')}}"></script>
     <script>
         $(document).ready(function () {
