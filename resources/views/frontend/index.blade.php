@@ -29,12 +29,12 @@
         .popup-tab {
             position: fixed;
             top: 50%;
-            left: 0; /* Adjust for left sidebar */
+            right: 0; /* Adjust for left sidebar */
             background-color: #007BFF;
             color: #fff;
             padding: 10px 20px;
-            border-top-right-radius: 10px; /* Rounded corners for the tab */
-            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px; /* Rounded corners for the tab */
+            border-bottom-left-radius: 10px;
             cursor: pointer;
         }
 
