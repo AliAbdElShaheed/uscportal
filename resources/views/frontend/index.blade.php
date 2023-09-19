@@ -9,6 +9,41 @@
         /* Add any other styles you want to apply to the selected event */
     }
 </style>
+
+
+
+<style>
+        /* Styles for the sidebar pop-up container */
+        .sidebar-popup {
+            position: fixed;
+            top: 100;
+            width: 0; /* Initially hidden */
+            height: 500px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            overflow-x: hidden;
+            transition: width 0.3s; /* Smooth transition for opening and closing */
+        }
+
+        /* Styles for the tab that opens the sidebar pop-up */
+        .popup-tab {
+            position: fixed;
+            top: 50%;
+            left: 0; /* Adjust for left sidebar */
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-top-right-radius: 10px; /* Rounded corners for the tab */
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Styles for the content inside the sidebar pop-up */
+        .popup-content {
+            padding: 20px;
+        }
+    </style>
+
 @section('content')
     <!--    --><?php //dd($blogs); ?>
     {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
@@ -275,7 +310,7 @@
                              <div class="preview h-100">
                                  <img class="w-100 h-75" src="{{ $event->image_path }}" alt="{{ $event->title }}"/>
                                  <div class="info d-inline-flex justify-content-between">
-                                     <div class="justify-content-center"> Everything About {{ $event->title }} Event</div>
+                                     <div class="justify-content-center">   {{ $event->title }} </div>
                                  </div>
                              </div>
                          </div>--}}
@@ -306,7 +341,7 @@
                         <img class="w-100 h-75" id="event-image" src="" alt=""/>
                         <div class="info d-inline-flex justify-content-between">
                             <div class="justify-content-center">
-                                Everything About <span id="event-title"></span> Event at <span id="event-date"></span>
+                                  <span id="event-title"></span>   <span id="event-date"></span>
                                 <p id="event-content"></p>
                             </div>
                         </div>
@@ -397,6 +432,41 @@
 
 
 @push('scripts')
+
+
+ <!-- Tab to open the sidebar pop-up -->
+    <div class="popup-tab" id="popupTab" onclick="togglePopup()">هام جدا </div>
+
+    <!-- Sidebar pop-up container -->
+    <div class="sidebar-popup" id="popupContainer">
+        <div class="popup-content">
+            <h2>خدمة الدفع الإلكتروني للخدمات المقدمة من مركز الخدمات المعرفية والالكترونية</h2>
+           <p dir="RTL" style='margin-right:0in;margin-left:0in;font-size:16px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;font-size:11.0pt;text-align:center;background:white;'><strong><span style='font-size:21px;font-family:"Sakkal Majalla";color:#ED7D31;'>(المكتبة الرقمة &ndash; التحول الرقمي) الرجاء الدخول على الرابط التالى:-</span></strong></p>
+<p style="text-align: center;"><span style='font-size:14px;font-family:"Calibri",sans-serif;color:#ED7D31;'><a href="https://eksc.usc.edu.eg/login" data-asw-orgfontsize="14" style=" border-box;color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));"><strong><span data-asw-orgfontsize="21"><span style='font-size:21px;font-family:"Sakkal Majalla";color:#ED7D31;text-decoration:none;'>https://eksc.usc.edu.eg/login</span></span></strong></a></span></p>
+
+            <button onclick="togglePopup()">اغلاق</button>
+        </div>
+    </div>
+
+    <script>
+        var popupTab = document.getElementById("popupTab");
+        var popupContainer = document.getElementById("popupContainer");
+
+        // Function to toggle the sidebar pop-up open and closed
+        function togglePopup() {
+            if (popupContainer.style.width === "0px" || popupContainer.style.width === "") {
+                // Open the sidebar pop-up
+                popupContainer.style.width = "300px"; // Adjust the width as needed
+            } else {
+                // Close the sidebar pop-up
+                popupContainer.style.width = "0";
+            }
+        }
+    </script>
+
+
+
+
 
     {{--        <script>
                 // JavaScript code to handle the click event on event items
