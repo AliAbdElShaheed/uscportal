@@ -5,6 +5,7 @@ use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Frontend\CollegeController;
 use App\Http\Controllers\Frontend\IstcController;
 use App\Http\Controllers\Frontend\ManagementController;
+use App\Http\Controllers\Frontend\PostgraduateController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -44,6 +45,10 @@ Route::group(
 
     // Management Page Route
     Route::get('/management', [ManagementController::class, 'index'])->name('front.management');
+
+
+    // Postgraduate&research Page Route
+    Route::get('/postgraduate&research', [PostgraduateController::class, 'index'])->name('front.postgraduate');
 
 
     // ISTC Page Route

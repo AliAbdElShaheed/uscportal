@@ -43,7 +43,8 @@
                        href="{{route('front.management')}}">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>
+                    <a class="nav-link p-2 p-lg-2"
+                       href="{{route('front.postgraduate')}}">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2"
