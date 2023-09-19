@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\BlogController;
+use App\Http\Controllers\Frontend\CollegeController;
+use App\Http\Controllers\Frontend\IstcController;
+use App\Http\Controllers\Frontend\ManagementController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -30,18 +33,22 @@ Route::group(
     Route::get('/blog/{id}', [BlogController::class, 'show_blog'])->name('blog.show');
     Route::get('/blogs', [BlogController::class, 'blogs'])->name('all_blogs.index');
 
+
     // About Page Route
     Route::get('/about', [AboutController::class, 'index'])->name('front.about');
 
 
-    Route::get('/management', function () {
-        return view('management');
-    });
-
     // Colleges Page Route
-    Route::get('/colleges', function () {
-        return view('colleges');
-    });
+    Route::get('/colleges', [CollegeController::class, 'index'])->name('front.colleges');
+
+
+    // Management Page Route
+    Route::get('/management', [ManagementController::class, 'index'])->name('front.management');
+
+
+    // ISTC Page Route
+    Route::get('/istc', [IstcController::class, 'index'])->name('front.istc');
+
 
 }); //End of All Routes
 

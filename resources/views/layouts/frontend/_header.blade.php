@@ -36,20 +36,22 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link p-2" aria-current="page"
-                       href="/about">@lang('front.about_university')</a>
+                       href="{{route('front.about')}}">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="/management">@lang('front.university_management')</a>
+                    <a class="nav-link p-2 p-lg-2"
+                       href="{{route('front.management')}}">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" href="#">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" href="/colleges">@lang('front.colleges_and_institutes')</a>
+                    <a class="nav-link p-2 p-lg-2"
+                       href="{{route('front.colleges')}}">@lang('front.colleges_and_institutes')</a>
                 </li>
-				 <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link p-2" aria-current="page"
-                       href="/istc">مراكز ووحدات</a>
+                       href="{{route('front.istc')}}">مراكز ووحدات</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
@@ -81,7 +83,8 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="https://www.shakwa.eg/">@lang('site.Complaintsandsuggestions')</a></li>
+                                <li><a class="dropdown-item"
+                                       href="https://www.shakwa.eg/">@lang('site.Complaintsandsuggestions')</a></li>
                             </div>
                         </ul>
                     </div>

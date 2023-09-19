@@ -201,8 +201,6 @@ return [
     'ELZAHRAA' => 'ELZAHRAA for Student Cities',
 
 
-
-
     /////**********************  About Page **************////////////////////
 
     'opening_about_page_word' => 'About The University Of Sadat City',
@@ -258,34 +256,33 @@ With the continuing development of the University, USC are strongly committed to
     'vision_data' => 'USC seeks to be an Internationally Pioneer and a Productive Paradigm of knowledge and its applications',
     'mission_data' => 'USC is committed to preparing graduates who have the ability to cope with the labor market needs, through educational, research and community services that encourage the innovation and excellence within the framework of sustainable development',
     'values_data' => 'University of Sadat City is a community committed to sharing values of diversity,
-creativity and integrity in order to achieve and sustain excellence, locally, regionally and internationally. These values ground and enliven the University's identity and commitment to knowledge for both personal enhancement and social progress.
- Excellence
-Apply the high-level standards for evaluating the level of scientific research, and encourage the distinguished and creative people to achieve leadership and excellence, as we always strive to be the best in everything we do, whether in teaching, research creativity, community service, and serve each other in our daily life.
+creativity and integrity in order to achieve and sustain excellence, locally, regionally and internationally. These values ground and enliven the University\'s identity and commitment to knowledge for both personal enhancement and social progress .
+Excellence
+Apply the high - level standards for evaluating the level of scientific research, and encourage the distinguished and creative people to achieve leadership and excellence, as we always strive to be the best in everything we do, whether in teaching, research creativity, community service, and serve each other in our daily life .
 
 Integrity
 
-Achieve the principles of social justice, equal opportunities, and cultural diversity, and commitment the highest levels of integrity, respect and professional ethics, and adhering the principles of academic integrity, including fairness, accountability, and honesty.
+Achieve the principles of social justice, equal opportunities, and cultural diversity, and commitment the highest levels of integrity, respect and professional ethics, and adhering the principles of academic integrity, including fairness, accountability, and honesty .
 
 Diversity
 
-Along with the values of excellence, accountability, responsibility, and integrity, we embrace diversity to as a way to enhance all of our activities and accomplish the mission of the University.
+Along with the values of excellence, accountability, responsibility, and integrity, we embrace diversity to as a way to enhance all of our activities and accomplish the mission of the University .
 
 Respect
 
-Respect moves us to understand the gifts and unique contributions of every person in the University community and to value diverse perspectives. Respect for personal dignity and individual potential has consistently prompted USC to welcome students and help them succeed.
+Respect moves us to understand the gifts and unique contributions of every person in the University community and to value diverse perspectives . Respect for personal dignity and individual potential has consistently prompted USC to welcome students and help them succeed .
 
 Learning for Life
 
-Learning for Life, encourages us to pursue knowledge and truth throughout our lives in ways that improve our community and ourselves, and that strengthen our understanding of each other.',
+             Learning for Life, encourages us to pursue knowledge and truth throughout our lives in ways that improve our community and ourselves, and that strengthen our understanding of each other . ',
 
 
     'CitizensServiceCenters' => 'Citizens Service Centers',
 
 
-
     /////**********************  Faculties And Institutions Page **************////////////////////
 
-    'FacultiesAndInstitutions' => 'Faculties And Institutions',
+    'FacultiesAndInstitutions' => 'Faculties and Institutions',
     'FacultiesAndInstitutionsAbout' => 'You can know everything about Colleges and Institutes in The University of Sadat City here',
     'PracticalFaculties' => 'Practical Faculties',
     'TheoreticalFaculties' => 'Theoretical Faculties',
