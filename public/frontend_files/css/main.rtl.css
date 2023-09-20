@@ -32,6 +32,7 @@ body {
 
 :root {
     --main-color: #2196f3;
+    --main-color-logo: #dfb831;
     --dark-color: #191919;
     --main-color-alt: #1787e0;
     --section-color: #eff7fa;
@@ -170,8 +171,16 @@ ul {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: white;
+    color: var(--main-color-logo);
 }
+
+
+.navbar .container-fluid .navbar-collapse .dropdown .btn {
+    /*color: var(--main-color-logo);*/
+    background: var(--main-color-logo);
+    border: var(--main-color-logo);
+}
+
 
 .navbar .navbar-nav .nav-link:hover {
     color: var(--main-color-alt);
@@ -186,7 +195,7 @@ ul {
 
 @media (min-width: 992px) {
     .navbar .search {
-        border-right: 1px solid var(--main-color);
+        border-right: 1px solid var(--main-color-logo);
     }
 }
 
@@ -197,7 +206,7 @@ ul {
 }
 
 .navbar .search svg {
-    color: white;
+    color: var(--main-color-logo);
 }
 
 .navbar .search :hover {
