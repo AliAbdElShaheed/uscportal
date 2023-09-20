@@ -76,22 +76,75 @@
             <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
             <h2 class="fw-bold main-title">@lang('site.Vice_Rector\'s_Office')</h2>
             <p class="text-black-50 mb-5">
-                The appointment of Prof. Dr. Shadeen Moawia as Director of Sadat City University came after a
-                busy career in academic work, which began as a teaching assistant at the university, then as a lecturer,
-                then as a professor in facility of ......., then as VICE RECTOR FOR GRADUATE STUDIES & SCIENTIFIC
-                RESEARCH
-                until .........
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aut facilis molestias mollitia,
-                odit
-                omnis pariatur repellendus sequi sint, suscipit totam vel velit. Dolore ducimus ea error laboriosam
-                magni?
-            </p>
 
+            <div class="progInfo">
+                <div class="progName">
+                    <h4 style="direction: rtl;">د / منال صابر حمزة</h4>
+                </div>
+                <div class="progPresenter">
+                    <p class="presenterName" style="direction: rtl;">مدير مكتب نائب رئيس الجامعة للدراسات العليا والبحث
+                        العلمى</p>
+                </div>
+            </div>
+            <div class="progTime" style="direction: rtl;"><img
+                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                    height="124"/>
+            </div>
+            <br><br>
 
-            <div class="d-flex justify-content-center mt-5">
-                <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">Visit Site</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ / كريم عادل حسين</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">أخصائى علاقات عامة</p>
+                        </div>
+                    </div>
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ سعيد فارق عبد القادر موسى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية للطفولة المبكرة</p>
+                        </div>
+                    </div>
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ سعيد فارق عبد القادر موسى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية للطفولة المبكرة</p>
+                        </div>
+                    </div>
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">Visit Site</a>
+        </div>
+    </div>
     </div>
     {{--------------------------End of section 4 (Vice Rector's Office) -- ----------------------------}}
 
