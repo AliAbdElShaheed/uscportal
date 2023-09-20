@@ -1119,7 +1119,7 @@ section {
 }
 
 
-.footer .copyleft {
+.footer .copyright {
     padding: 25px 0;
     text-align: center;
     color: white;
@@ -1127,11 +1127,11 @@ section {
     border-top: 1px solid #444;
 }
 
-.footer .copyleft > span {
+.footer .copyright > span {
     color: var(--main-color);
 }
 
-.footer .copyleft div span {
+.footer .copyright div span {
     color: var(--main-color-alt);
 }
 

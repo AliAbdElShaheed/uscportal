@@ -291,7 +291,7 @@
                             @foreach($events as $event)
                                 <li class="py-2 px-4 border-top border-light-subtle event-item" role="button"
                                     tabindex="0" data-image="{{ $event->image_path }}"
-                                    data-content="{{ $event->content }}"
+                                    data-content="{!! $event->content !!}"
                                     {{ $event->title }} data-date="{{ $event->start_date }}">
                                     {{ $event->title }}
                                     <span>{{ \Carbon\Carbon::parse($event->start_date)->format('M j, Y') }}</span>
@@ -306,7 +306,7 @@
                         <img class="w-100 h-75" id="event-image" src="" alt=""/>
                         <div class="info d-inline-flex justify-content-between">
                             <div class="justify-content-center">
-                                Everything About <span id="event-title"></span> Event at <span id="event-date"></span>
+                                <span id="event-title"></span> <span id="event-date"></span>
                                 <p id="event-content"></p>
                             </div>
                         </div>
