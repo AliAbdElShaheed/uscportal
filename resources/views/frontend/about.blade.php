@@ -327,7 +327,9 @@
         <div class="container pb-5 pt-1">
             <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
             <h2 class="fw-bold main-title">مجلس الجامعة</h2>
-            <p class="text-black-50 mb-5">
+            <p class="text-black-50">
+                @lang('site.important_news_note')
+            </p>
             <h4 style="direction: rtl;">رئيس المجلس</h4>
             <div class="progTime" style="direction: rtl;"><img
                     src="http://pic.usc.edu.eg/usc/index.php?&amp;src=b28232e5888735fe2d58484942e2c1f5.jpg&amp;w=150&amp;h=124&amp;iar=1"
@@ -341,210 +343,294 @@
                 </div>
             </div>
             <h4 style="direction: rtl;">أعضاء مجلس جامعة مدينة السادات</h4>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=57c3d8e7f84cfa05ab87c923c3d7ea6e.png&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ شريف محمد علي</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=57c3d8e7f84cfa05ab87c923c3d7ea6e.png&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ شريف محمد علي</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">نائب رئيس الجامعة لشئون التعليم والطلاب</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">نائب رئيس الجامعة لشئون التعليم والطلاب</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=e9d3e1ace1b9454a441d0c431ea14255.jpg&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د / خالد محمود محمد جعفر</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">نائب رئيس الجامعة لشئون خدمة المجتمع وتنمية
+                                البيئة</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=e9d3e1ace1b9454a441d0c431ea14255.jpg&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د / خالد محمود محمد جعفر</h4>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=ab2ff20dfe8dbfbc74994f837e8da152.jpg&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">ا.د أسامة ربيع أمين سليمان</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التجارة</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">نائب رئيس الجامعة لشئون خدمة المجتمع وتنمية
-                        البيئة</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=ab2ff20dfe8dbfbc74994f837e8da152.jpg&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">ا.د أسامة ربيع أمين سليمان</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية التجارة</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=8b2895ff5c3b6f91c5b136b1f2764db7.jpg&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ علاء الدين حسين مصطفى</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية الطب البيطري</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ سعيد فارق عبد القادر موسى</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية التربية للطفولة المبكرة</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د / نهاد كمال</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية السياحة و الفنادق</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=8b2895ff5c3b6f91c5b136b1f2764db7.jpg&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ علاء الدين حسين مصطفى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية الطب البيطري</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ ممدوح محمد السعيد السيد</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ سعيد فارق عبد القادر موسى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية للطفولة المبكرة</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد معهد الدراسات والبحوث البيئية</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ سعيد فارق عبد القادر موسى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية للطفولة المبكرة</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ أحمد ابراهيم أحمد عزب</h4>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د / نهاد كمال</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية السياحة و الفنادق</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية التربية الرياضية</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=ae311b57f6c521bc344cd1cfed0009de.jpg&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ سحر عبد الستار امام</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية الحقوق</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">ا.د / خميس محمد خميس</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية التربية</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ.د/ محمد عبد الخالق اسماعيل</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">عميد كلية الصيدلة</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">ا.د/ طارق مصطفى محمود</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">المدير التنفيذي للمعلومات بالجامعة ( cio)</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ ممدوح محمد السعيد السيد</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد معهد الدراسات والبحوث البيئية</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=c8ca8c368072ec613aaf3e24dee6d811.JPG&amp;w=150&amp;h=124&amp;iar=1"
-                    height="124"/></div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ . د / هانى يوسف حسن</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ أحمد ابراهيم أحمد عزب</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية الرياضية</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">مدير مركز القياس والتقويم</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=ae311b57f6c521bc344cd1cfed0009de.jpg&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ سحر عبد الستار امام</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية الحقوق</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">ا.د / ماجدة محمد رفعت أبو الصفا</h4>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">ا.د / خميس محمد خميس</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية التربية</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">مدير إدارة/ مركز ضمان الجودة والتطوير المستمر</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">المستشار / أحمد شوقي سرور</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">المستشار القانوني لرئيس الجامعة</p>
-                </div>
-            </div>
-            <h4 style="direction: rtl;">أمانة المجالس واللجان</h4>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ./ سناء عبد التواب محمد</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">سكرتيرة المجلس</p>
-                </div>
-            </div>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ /نجوي ابراهيم كيلاني</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">سكرتيرة المجلس</p>
-                </div>
-            </div>
-            <h4 style="direction: rtl;">المشاركين</h4>
-            <div class="progTime" style="direction: rtl;"><img
-                    src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1" height="124"/>
-            </div>
-            <div class="progInfo">
-                <div class="progName">
-                    <h4 style="direction: rtl;">أ / سلوى عثمان الشنوانى</h4>
-                </div>
-                <div class="progPresenter">
-                    <p class="presenterName" style="direction: rtl;">مدير ادارة سكرتارية مكتب رئيس الجامعة</p>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ.د/ محمد عبد الخالق اسماعيل</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية الصيدلة</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </p>
+            <div class="row">
+                <div class="col-md-3">
 
+                </div>
+                <div class="col-md-3">
 
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">ا.د/ طارق مصطفى محمود</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">المدير التنفيذي للمعلومات بالجامعة (
+                                cio)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=c8ca8c368072ec613aaf3e24dee6d811.JPG&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/></div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ . د / هانى يوسف حسن</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">مدير مركز القياس والتقويم</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">ا.د / ماجدة محمد رفعت أبو الصفا</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">مدير إدارة/ مركز ضمان الجودة والتطوير
+                                المستمر</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">المستشار / أحمد شوقي سرور</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">المستشار القانوني لرئيس الجامعة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 style="direction: rtl;">أمانة المجالس واللجان والمشاركين</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ./ سناء عبد التواب محمد</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">سكرتيرة المجلس</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ /نجوي ابراهيم كيلاني</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">سكرتيرة المجلس</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">أ / سلوى عثمان الشنوانى</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">مدير ادارة سكرتارية مكتب رئيس الجامعة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="d-flex justify-content-center mt-5">
                 <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">Visit Site</a>
             </div>
