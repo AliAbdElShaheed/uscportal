@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @extends('layouts.frontend.app')
 
 
@@ -20,7 +19,7 @@
         width: 0; /* Initially hidden */
         height: 500px;
         background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         overflow-x: hidden;
         transition: width 0.3s; /* Smooth transition for opening and closing */
     }
@@ -641,6 +640,7 @@
 
 @endpush
 
+{{--
 =======
 @extends('layouts.frontend.app')
 
@@ -655,7 +655,9 @@
 </style>
 @section('content')
     <!--    --><?php //dd($blogs); ?>
-    {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
+    --}}
+{{--------------------------Start of section 1 Landing (video slides)-------------------------}}{{--
+
 
     <section class="home">
         <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
@@ -724,9 +726,13 @@
         </div>
     </section>
 
-    {{--------------------------End of section 1 Landing (video slides)  -------------------------}}
+    --}}
+{{--------------------------End of section 1 Landing (video slides)  -------------------------}}{{--
 
-    {{--------------------------Start of section 2 (Top News) ----------------------------------------}}
+
+    --}}
+{{--------------------------Start of section 2 (Top News) ----------------------------------------}}{{--
+
 
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
@@ -747,7 +753,9 @@
                                 <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
                             </a>
                             <blockquote class="text-black-50 p-3">
-                                {{--                                “{{$top_new->brief_content}}“--}}
+                                --}}
+{{--                                “{{$top_new->brief_content}}“--}}{{--
+
                                 {{substr(strip_tags(trim($top_new->content)), 0, 43)}} ...
                             </blockquote>
                         </div>
@@ -783,11 +791,15 @@
 
 
 
-    {{--------------------------End of section 2 (Top News) ------------------------------------------}}
+    --}}
+{{--------------------------End of section 2 (Top News) ------------------------------------------}}{{--
 
 
 
-    {{--------------------------Start of section 3 (Latest News) ---------------------------------}}
+
+    --}}
+{{--------------------------Start of section 3 (Latest News) ---------------------------------}}{{--
+
 
     <div class="latest_news" id="latest_news">
         <h2 class="main-title">@lang('site.latest_news') </h2>
@@ -828,11 +840,15 @@
         </div>
     </div>
 
-    {{--------------------------End of section 3 (Latest News) -----------------------------------}}
+    --}}
+{{--------------------------End of section 3 (Latest News) -----------------------------------}}{{--
+
 
     <div class="spikes"></div>
 
-    {{--------------------------End of section 4 (Statistics) -----------------------------------}}
+    --}}
+{{--------------------------End of section 4 (Statistics) -----------------------------------}}{{--
+
 
     <div class="stats" id="stats">
         <h2>@lang('site.OurStatistics')</h2>
@@ -885,12 +901,16 @@
     </div>
 
 
-    {{--------------------------End of section 4 (Statistics) -----------------------------------}}
+    --}}
+{{--------------------------End of section 4 (Statistics) -----------------------------------}}{{--
 
 
 
 
-    {{--------------------------Start of section 5 (Events) -------------------------------------}}
+
+    --}}
+{{--------------------------Start of section 5 (Events) -------------------------------------}}{{--
+
 
     <div class="events" id="events">
         <h2 class="fw-bold main-title">@lang('site.TopEvents')</h2>
@@ -898,7 +918,8 @@
             <div class="row border">
 
 
-                {{--         <div class="col-lg-4 col-md-4 event-data">
+                --}}
+{{--         <div class="col-lg-4 col-md-4 event-data">
                              <div class="list w-100 bg-white">
                                  <div class="name">
                                      Top Events
@@ -922,7 +943,8 @@
                                      <div class="justify-content-center"> Everything About {{ $event->title }} Event</div>
                                  </div>
                              </div>
-                         </div>--}}
+                         </div>--}}{{--
+
 
 
                 <div class="col-lg-4 col-md-4 event-data">
@@ -962,12 +984,16 @@
         </div>
     </div>
 
-    {{--------------------------End of section 5 (Events) ---------------------------------------}}
+    --}}
+{{--------------------------End of section 5 (Events) ---------------------------------------}}{{--
+
 
 
     <div class="spikes"></div>
 
-    {{--------------------------Start of section 6 (Upcoming Events) ----------------------------}}
+    --}}
+{{--------------------------Start of section 6 (Upcoming Events) ----------------------------}}{{--
+
 
     <!-- <div class="u_events" id="u_events">
         <div class="dots dots-up"></div>
@@ -1011,16 +1037,22 @@
     </div>     -->
 
 
-    {{--------------------------End of section 6 (Upcoming Events) ------------------------------}}
+    --}}
+{{--------------------------End of section 6 (Upcoming Events) ------------------------------}}{{--
 
 
 
 
 
-    {{--------------------------Start of section 7 (Mobile Apps) --------------------------------}}
+
+    --}}
+{{--------------------------Start of section 7 (Mobile Apps) --------------------------------}}{{--
+
 
     <div class="design">
-        {{--    <h2>Our Electronic & Application Services</h2>--}}
+        --}}
+{{--    <h2>Our Electronic & Application Services</h2>--}}{{--
+
         <div class="image d-none d-md-block">
             <img src="{{asset('uploads/frontend/images/mobile2.png')}}" alt="Mobile"/>
         </div>
@@ -1035,14 +1067,17 @@
     </div>
 
 
-    {{--------------------------End of section 7 (Mobile Apps) ----------------------------------}}
+    --}}
+{{--------------------------End of section 7 (Mobile Apps) ----------------------------------}}{{--
+
 
 @endsection
 
 
 @push('scripts')
 
-    {{--        <script>
+    --}}
+{{--        <script>
                 // JavaScript code to handle the click event on event items
                 const eventItems = document.querySelectorAll('.event-item');
                 const eventImage = document.getElementById('event-image');
@@ -1074,8 +1109,10 @@
                     });
                 });
 
-            </script>--}}
-    {{--        <script>
+            </script>--}}{{--
+
+    --}}
+{{--        <script>
                 // JavaScript code to handle the click event on event items
                 document.addEventListener('DOMContentLoaded', function () {
                     const eventItems = document.querySelectorAll('.event-item');
@@ -1114,7 +1151,8 @@
                         eventTitle.textContent = title;
                     }
                 });
-            </script>--}}
+            </script>--}}{{--
+
 
     <script>
         // JavaScript code to handle the click event on event items
@@ -1190,7 +1228,9 @@
 
 
 
-    {{--script to show more important news--}}
+    --}}
+{{--script to show more important news--}}{{--
+
     <script src="{{asset('frontend_files/js/http_code.jquery.com_jquery-3.6.0.js')}}"></script>
     <script>
         $(document).ready(function () {
@@ -1207,5 +1247,6 @@
     </script>
 
 @endpush
+--}}
 
 
