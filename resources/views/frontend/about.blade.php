@@ -328,7 +328,7 @@
             <img class="mb-4" src="{{asset('uploads/frontend/images/12.png')}}" alt=""/>
             <h2 class="fw-bold main-title">مجلس الجامعة</h2>
             <p class="text-black-50">
-                @lang('site.important_news_note')
+                @lang('site.council_note')
             </p>
             <h4 style="direction: rtl;">رئيس المجلس</h4>
             <div class="progTime" style="direction: rtl;"><img
