@@ -32,10 +32,12 @@ body {
 
 :root {
     --main-color: #2196f3;
-    --main-color-logo: #dfb831;
-    --dark-color: #191919;
     --main-color-alt: #1787e0;
+    --main-color-logo: #dfb831;
+    --main-color-logo-light: #efdfaf;
+    --main-color-logo_alt: #a3a49e;
     --section-color: #eff7fa;
+    --dark-color: #191919;
     --text_color: rgba(255, 255, 255, .5) !important;
     --main-transition: 0.4s;
     --main-padding-top: 90px;
@@ -1332,7 +1334,7 @@ section {
     transition: var(--main-transition);
     padding: 20px;
     margin: 20px;
-    background: cornsilk;
+    background: var(--main-color-logo-light);
     border-radius: 8px;
     box-shadow: 0 0 3px #0d9cfd;
 

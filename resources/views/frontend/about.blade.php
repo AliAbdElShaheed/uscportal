@@ -680,7 +680,7 @@
                             <a href="#">- وحدة التدريب على اختبارات التحول الرقمي</a>
                         </li>
 
-                        <!--         <li class="pb-2"><a href="#">- Public Service Center</a></li>
+                        {{--<!--         <li class="pb-2"><a href="#">- Public Service Center</a></li>
                                  <li class="pb-2"><a href="#">- Veterinary Medical Services Center</a></li>
                                  <li class="pb-2"><a href="#">- Cisco training labs</a></li>
                                  <li class="pb-2"><a href="#">- Al Tieco unit</a></li>
@@ -692,8 +692,8 @@
                                          Engineering</a></li>
                                  <li class="pb-2"><a href="#">- Training Unit for Digital Transformation Tests</a></li>
                                  <li class="pb-2"><a href="#">- Public Service Center</a></li>
-                             </ul>
-         -->
+                        -->--}}
+                    </ul>
                 </div>
 
             </div>
@@ -710,7 +710,8 @@
 
 
     {{---------Start of section 7 (Privacy Policy, Terms of use and Copyright & Disclaimer) --------}}
-    <!--  <div class="privacy_policy" id="privacy_policy">
+
+    {{--  <div class="privacy_policy" id="privacy_policy">
         <h2>Privacy Policy, Terms of Use and Copyright & Disclaimer</h2>
         <div class="container">
             <div class="row justify-content-md-center">
@@ -772,9 +773,7 @@
             </div>
         </div>
     </div>
-
-
--->
+    --}}
 
     {{--------- End of section 7 (Privacy Policy, Terms of use and Copyright & Disclaimer)  --------}}
 @endsection

@@ -288,6 +288,10 @@ return [
     'postgraduate_vice_rector_history' => 'تاريخ قطاع الدراسات العليا والبحث العلمى',
     'postgraduate_vice_rector_histories' => 'كلمة مختصرة عن تاريخ قطاع الدراسات العليا والبحث العلمى',
     'postgraduate_vice_rector_history_members' => 'نواب قطاع الدراسات العليا والبحوث السابقيين',
+    'sub_departments' => 'إدارات القطــاع الفرعية',
+    'postgraduate_sub_department_1' => 'الإدارة العامة للدراسات العليا والبحوث',
+    'postgraduate_sub_department_2' => 'الإدارة العامة للعلاقات الثقافية',
+    'postgraduate_sub_department_3' => 'الإدارة العامة للمكتبات',
 
 
     /////**********************  Faculties And Institutions Page **************////////////////////
