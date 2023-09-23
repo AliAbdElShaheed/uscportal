@@ -185,7 +185,9 @@ ul {
 
 
 .asw-menu-btn {
-    bottom: 130px !important;;
+    bottom: 130px !important;
+    background: var(--main-color) !important;
+    outline: 4px solid var(--main-color) !important;
 }
 
 
