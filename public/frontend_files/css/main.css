@@ -158,6 +158,37 @@ ul {
     transform: translateX(-50%) translateY(100%);
 }
 
+
+.up {
+    position: fixed;
+    bottom: 25px;
+    /*right: -30px;*/
+    right: 25px;
+    opacity: 0;
+    background-color: var(--main-color);
+    color: var(--main-color-logo);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 12px;
+    /*font-family: Arial, Tahoma;*/
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.up.show {
+    /*right: 25px;*/
+    opacity: 1;
+    transition: 0.9s;
+}
+
+
+.asw-menu-btn {
+    bottom: 130px !important;;
+}
+
+
 /* End Global Rules */
 
 
