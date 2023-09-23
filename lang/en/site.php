@@ -7,6 +7,9 @@ return [
     'read_more' => "Read More",
 
     'USC' => 'University of Sadat City',
+    'Created_By' => 'Created By',
+    'USC_Portal_Team' => 'USC Portal Team',
+    'All_rights_reserved' => 'All rights reserved',
 
     'add' => 'Add',
     'add_user' => 'Add User',
