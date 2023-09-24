@@ -32,7 +32,7 @@
                          style="width: 624px; height: 416px;"/>
                 </div>
                 <div class="content-container col-lg-4 pt-5">
-                    {!!   strip_tags($top_new->content, $allowedTags) !!}
+                    {!! $top_new->content !!}
                 </div>
             </div>
         </div>

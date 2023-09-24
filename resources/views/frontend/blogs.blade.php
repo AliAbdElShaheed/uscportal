@@ -64,7 +64,7 @@
                              style="width: 416px; height: 277px;"/>
                     </div>
                     <div class="col-lg-7 content-container pt-5 @if($index % 2 == 0) order-lg-1 @endif">
-                        {!! strip_tags($blog->content) !!}
+                        {!! $blog->content !!}
                     </div>
                 </div>
                 <hr/>

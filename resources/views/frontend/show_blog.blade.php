@@ -31,7 +31,7 @@
                          style="width: 624px; height: 416px;"/>
                 </div>
                 <div class="content-container col-lg-4 pt-5">
-                    {!!   strip_tags($blog->content) !!}
+                    {!! $blog->content !!}
                 </div>
             </div>
         </div>

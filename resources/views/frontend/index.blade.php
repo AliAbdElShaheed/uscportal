@@ -701,7 +701,7 @@
                                 <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
                             </a>
                             <blockquote class="text-black-50 p-3">
-                                {{--                                “{{$top_new->brief_content}}“--}}
+                                {{--“{{$top_new->brief_content}}“--}}
                                 {{substr(strip_tags(trim($top_new->content)), 0, 43)}} ...
                             </blockquote>
                         </div>
@@ -725,7 +725,7 @@
                                 <h4 class="p-3 text-light">{{ $top_new->title }}</h4>
                             </a>
                             <blockquote class="text-black-50 p-3">
-                                “{{$top_new->brief_content}}“
+                                {{--“{{$top_new->brief_content}}“--}}
                                 {{substr(strip_tags(trim($top_new->content)), 0, 43)}}
                             </blockquote>
                         </div>
