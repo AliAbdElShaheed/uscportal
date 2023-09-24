@@ -14,11 +14,10 @@
     --}}{{--------------------------Start of section 1 Landing (video slides)-------------------------}}{{--
 
     <section class="home">
-        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
-               loop></video>
+        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted ></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/3.mp4')}}" autoplay muted loop></video>
-        <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
+    <!--      <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>    --> 
 
         <div class="content active">
             <h1>@lang('site.USC') <br></h1>
@@ -48,7 +47,7 @@
                 2013.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
-        <div class="content">
+    <!--    <div class="content">
             <h1>@lang('site.president_word')<br><span>@lang('site.president_name')</span></h1>
             <p style="font-size: 13px !important;">يسعدنى فى بداية تكليفى قائما بعمل رئيس جامعة مدينة السادات فى ظل
                 قيادة فخامة
@@ -64,18 +63,20 @@
                 وفقنا الله وإياكم الى مايحبه ويرضاه لرفعة مصرنا الحبيبه.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
-
+	-->
 
         <div class="media-icons">
             <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/universityofsadatcity/"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/Univ_SadatCity"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
+
         </div>
         <div class="slider-navigation">
             <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
+         <!--   <div class="nav-btn"></div>  -->
 
         </div>
     </section>
@@ -275,7 +276,7 @@
                              <div class="preview h-100">
                                  <img class="w-100 h-75" src="{{ $event->image_path }}" alt="{{ $event->title }}"/>
                                  <div class="info d-inline-flex justify-content-between">
-                                     <div class="justify-content-center"> Everything About {{ $event->title }} Event</div>
+                                     <div class="justify-content-center">   {{ $event->title }}  </div>
                                  </div>
                              </div>
                          </div>--}}{{--
@@ -284,7 +285,7 @@
                 <div class="col-lg-4 col-md-4 event-data">
                     <div class="list w-100 bg-white">
                         <div class="name">
-                            Top Events
+                            أهم الاحداث
                             <i class="fas fa-random"></i>
                         </div>
                         <ul>
@@ -1066,12 +1067,12 @@
 @push('scripts')
 
     <!-- Tab to open the sidebar pop-up -->
-    <div class="popup-tab" id="popupTab" onclick="togglePopup()">هام جدا</div>
+    <div class="popup-tab" id="popupTab" onclick="togglePopup()">خدمات الجامعة</div>
 
     <!-- Sidebar pop-up container -->
     <div class="sidebar-popup" id="popupContainer">
         <div class="popup-content">
-            <h2>خدمة الدفع الإلكتروني للخدمات المقدمة من مركز الخدمات المعرفية والالكترونية</h2>
+            <h5>خدمة الدفع الإلكتروني للخدمات المقدمة من مركز الخدمات المعرفية والالكترونية</h5>
             <p dir="RTL"
                style='margin-right:0; margin-left:0; font-size:16px;font-family:"Calibri",sans-serif;margin-top:0; margin-bottom:8.0pt; font-size:11.0pt; text-align:center;background:white;'>
                 <strong><span style='font-size:21px; font-family:"Sakkal Majalla"; color:#ED7D31;'>(المكتبة الرقمة &ndash; التحول الرقمي) الرجاء الدخول على الرابط التالى:-</span></strong>
