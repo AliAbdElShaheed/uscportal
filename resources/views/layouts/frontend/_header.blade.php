@@ -30,7 +30,7 @@
              <div class="menu-btn"></div>
              <div class="navigation">
                  <div class="navigation-items">
-                     <a href="#">@lang('front.about_university')</a>
+                     <a  style="font-weight:bold;" href="#">@lang('front.about_university')</a>
                      <a href="#">@lang('front.university_management')</a>
                      <a href="#">@lang('front.postgraduate_and_research')</a>
                      <a href="#">@lang('front.colleges_and_institutes')</a>
@@ -45,28 +45,28 @@
         <div class="collapse navbar-collapse" id="main">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link p-2" aria-current="page"
+                    <a class="nav-link p-2" aria-current="page"  style="font-weight:bold;"
                        href="{{route('front.about')}}">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"
+                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;"
                        href="{{route('front.management')}}">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"
+                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;"
                        href="{{route('front.postgraduate')}}">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"
+                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;font-size: 16px;"
                        href="{{route('front.colleges')}}">@lang('front.colleges_and_institutes')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2" aria-current="page"
+                    <a class="nav-link p-2" aria-current="page"  style="font-weight:bold;"
                        href="{{route('front.istc')}}">مراكز ووحدات</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  style="font-weight:bold;"
                        aria-expanded="false">
                         @lang('front.electronic_services')
                     </a>
