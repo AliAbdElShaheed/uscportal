@@ -528,6 +528,22 @@
                 </div>
             </div>
             <div class="row">
+			
+			<div class="col-md-3">
+                    <div class="progTime" style="direction: rtl;"><img
+                            src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
+                            height="124"/>
+                    </div>
+                    <div class="progInfo">
+                        <div class="progName">
+                            <h4 style="direction: rtl;">ا.د /  ابراهيم سليم</h4>
+                        </div>
+                        <div class="progPresenter">
+                            <p class="presenterName" style="direction: rtl;">عميد كلية الحاسبات و الذكاء الاصطناعى</p>
+                        </div>
+                    </div>
+                </div>
+			
                 <div class="col-md-3">
                     <div class="progTime" style="direction: rtl;"><img
                             src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
@@ -571,7 +587,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                
+            </div>
+       <!--    <h4 style="direction: rtl;">أمانة المجالس واللجان والمشاركين</h4>  -->
+            <div class="row">
+			
+			
+			
+			 <div class="col-md-3">
                     <div class="progTime" style="direction: rtl;"><img
                             src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
                             height="124"/>
@@ -585,10 +608,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <h4 style="direction: rtl;">أمانة المجالس واللجان والمشاركين</h4>
-            <div class="row">
-                <div class="col-md-4">
+			
+			
+                <div class="col-md-3">
                     <div class="progTime" style="direction: rtl;"><img
                             src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
                             height="124"/>
@@ -602,7 +624,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="progTime" style="direction: rtl;"><img
                             src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
                             height="124"/>
@@ -616,7 +638,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="progTime" style="direction: rtl;"><img
                             src="http://pic.usc.edu.eg/usc/index.php?&amp;src=&amp;w=150&amp;h=124&amp;iar=1"
                             height="124"/>
@@ -631,9 +653,9 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center mt-5">
+         <!--   <div class="d-flex justify-content-center mt-5">
                 <a class="btn rounded-pill main-btn-dark text-uppercase" href="#">Visit Site</a>
-            </div>
+            </div>   -->
         </div>
     </div>
     {{--------------------------End of section 5 (University Council) ------------------------------}}

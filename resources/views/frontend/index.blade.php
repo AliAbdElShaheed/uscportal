@@ -14,7 +14,10 @@
     --}}{{--------------------------Start of section 1 Landing (video slides)-------------------------}}{{--
 
     <section class="home">
-        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted ></video>
+	
+	
+	
+        <video id="myVideo1" class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted ></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/3.mp4')}}" autoplay muted loop></video>
     <!--      <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>    --> 
@@ -84,6 +87,7 @@
     --}}{{--------------------------End of section 1 Landing (video slides)  -------------------------}}{{--
 
     --}}{{--------------------------Start of section 2 (Top News) ----------------------------------------}}{{--
+	 <img src="uploads/frontend/images/banner11.jpg" alt="data"       style="width: 1600px; height: 2600px;"/>
 
     <div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
@@ -582,7 +586,7 @@
         position: fixed;
         top: 100;
         width: 0; /* Initially hidden */
-        height: 500px;
+        height: 400px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         overflow-x: hidden;
@@ -613,11 +617,12 @@
     {{--------------------------Start of section 1 Landing (video slides)-------------------------}}
 
     <section class="home">
-        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted
-               loop></video>
+	
+	
+        <video class="video-slide active" src="{{asset('uploads/frontend/videos/USCVideoBanner.mp4')}}" autoplay muted loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
         <video class="video-slide" src="{{asset('uploads/frontend/videos/3.mp4')}}" autoplay muted loop></video>
-        <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>
+     <!--      <video class="video-slide" src="{{asset('uploads/frontend/videos/2.mp4')}}" autoplay muted loop></video>  -->
 
         <div class="content active">
             <h1>@lang('site.USC') <br></h1>
@@ -647,7 +652,7 @@
                 2013.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
-        <div class="content">
+    <!--      <div class="content">
             <h1>@lang('site.president_word')<br><span>@lang('site.president_name')</span></h1>
             <p style="font-size: 13px !important;">يسعدنى فى بداية تكليفى قائما بعمل رئيس جامعة مدينة السادات فى ظل
                 قيادة فخامة
@@ -663,18 +668,23 @@
                 وفقنا الله وإياكم الى مايحبه ويرضاه لرفعة مصرنا الحبيبه.</p>
             <a href="#">@lang('site.read_more')</a>
         </div>
-
+  -->
 
         <div class="media-icons">
             <a href="https://www.facebook.com/usc.edu.eg"><i class="fab fa-facebook-f"></i></a>
+			 <a href="https://twitter.com/Univ_SadatCity"><i class="fab fa-twitter"></i></a>
+
             <a href="https://www.instagram.com/universityofsadatcity/"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/Univ_SadatCity"><i class="fab fa-twitter"></i></a>
+			 <a href="https://www.linkedin.com/company/university-of-sadat-city/"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.youtube.com/@U.S.C"><i class="fab fa-youtube"></i></a>
+
+
         </div>
         <div class="slider-navigation">
             <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
-            <div class="nav-btn"></div>
+          <!--  <div class="nav-btn"></div> -->
 
         </div>
     </section>
@@ -1103,6 +1113,23 @@
             }
         }
     </script>
+
+
+
+
+<script>
+var x = document.getElementById("myVideo1");
+
+function getPlaySpeed() { 
+  x.playbackRate;
+} 
+
+function setPlaySpeed() { 
+  x.playbackRate = 0.5;
+} 
+</script> 
+
+
 
 
 
