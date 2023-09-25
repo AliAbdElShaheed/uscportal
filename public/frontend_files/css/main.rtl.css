@@ -1181,6 +1181,15 @@ section {
     color: var(--main-color-alt);
 }
 
+
+/* width of the map in mobile view */
+@media (max-width: 560px) {
+    .gmap_canvas {
+        width: 365px !important;
+    }
+}
+
+
 /********************* End Footer Rules **************************/
 
 

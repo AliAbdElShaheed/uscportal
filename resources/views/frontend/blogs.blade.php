@@ -15,6 +15,13 @@
     .even-blog {
         background-color: white;
     }
+    
+    /* blog image size in mobile view */
+    @media (max-width: 560px) {
+        .important_news .container .row img {
+            width: 365px !important;
+        }
+    }
 
 </style>
 

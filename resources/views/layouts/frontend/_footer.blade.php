@@ -11,7 +11,7 @@
                                      class="w-50"/>
 
 
-                                <ul class="d-flex my-3 list-unstyled gap-3 justify-content-sm-center justify-content-md-start">
+                                <ul class="d-flex my-3 list-unstyled gap-3 justify-content-center justify-content-md-start">
 
                                     <li>
                                         <a class="d-block text-light" href="https://www.facebook.com/usc.edu.eg"
