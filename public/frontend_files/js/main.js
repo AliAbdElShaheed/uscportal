@@ -37,7 +37,8 @@ window.onscroll = function () {
     // ************************* Statistics Work
     // if (window.scrollY >= 3000) {  // Test scrolling
     // Stats Increase Number
-    if (window.scrollY >= statsSection.offsetTop - 300) {
+
+    if (statsSection && window.scrollY >= statsSection.offsetTop - 300) {
         // console.log(this.scrollY);
         if (!started) {
             nums.forEach((num) => startCount(num));
