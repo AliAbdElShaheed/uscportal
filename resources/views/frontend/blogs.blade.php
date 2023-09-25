@@ -48,7 +48,7 @@
 
 
 
-    <div class="important_news text-center pb-5 pt-2">
+    {{--<div class="important_news text-center pb-5 pt-2">
         <div class="container pb-5 pt-1">
             <img class="mb-4" src="{{ asset('uploads/frontend/images/12.png') }}" alt=""/>
             <h2 class="fw-bold main-title">@lang('site.university_news')</h2>
@@ -70,31 +70,31 @@
                 <hr/>
             @endforeach
         </div>
-    </div>
+    </div>--}}
 
 
 
 
-    <div class="important_news text-center pb-5 pt-2">
-        <div class="container pb-5 pt-1 @if($index % 2 == 0) even-blog @endif">
-            <img class="mb-4" src="{{ asset('uploads/frontend/images/12.png') }}" alt=""/>
-            <h2 class="fw-bold main-title">@lang('site.latest_news')</h2>
-            @foreach($blogs as $index => $blog)
-                <div class="col @if($index % 2 == 0) even-blog @endif">
-                    <strong>{{$blog->title}}</strong>
-                </div>
-                <div class="row pb-5 @if($index % 2 == 0) even-blog @endif">
-                    <div class="col-lg-5 @if($index % 2 == 0) order-lg-2 @endif">
-                        <img src="{{ $blog->image_path }}" alt="{{ $blog->title }}"
-                             style="width: 416px; height: 277px;"/>
-                    </div>
-                    <div class="col-lg-7 content-container pt-5 @if($index % 2 == 0) order-lg-1 @endif">
-                        {!! strip_tags($blog->content) !!}
-                    </div>
-                </div>
-                <hr/>
-            @endforeach
-        </div>
-    </div>
+    {{-- <div class="important_news text-center pb-5 pt-2">
+         <div class="container pb-5 pt-1 @if($index % 2 == 0) even-blog @endif">
+             <img class="mb-4" src="{{ asset('uploads/frontend/images/12.png') }}" alt=""/>
+             <h2 class="fw-bold main-title">@lang('site.latest_news')</h2>
+             @foreach($blogs as $index => $blog)
+                 <div class="col @if($index % 2 == 0) even-blog @endif">
+                     <strong>{{$blog->title}}</strong>
+                 </div>
+                 <div class="row pb-5 @if($index % 2 == 0) even-blog @endif">
+                     <div class="col-lg-5 @if($index % 2 == 0) order-lg-2 @endif">
+                         <img src="{{ $blog->image_path }}" alt="{{ $blog->title }}"
+                              style="width: 416px; height: 277px;"/>
+                     </div>
+                     <div class="col-lg-7 content-container pt-5 @if($index % 2 == 0) order-lg-1 @endif">
+                         {!! strip_tags($blog->content) !!}
+                     </div>
+                 </div>
+                 <hr/>
+             @endforeach
+         </div>
+     </div>--}}
 
 @endsection
