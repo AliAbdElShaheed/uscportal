@@ -2,17 +2,12 @@
     <div class="container-fluid">
 
         <a href="/" class="brand">
-		
-			  @if(app()->getLocale() == 'ar')
-				<img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo"/>
-					@else
-				<img src="{{asset('uploads/frontend/images/f_logos/USCLogoEnNew.png')}}" alt="USC Logo"/>
-                @endif
-		
-			
-			
-			
-			
+
+            @if(app()->getLocale() == 'ar')
+                <img src="{{asset('uploads/frontend/images/f_logos/USCLogoNew.png')}}" alt="USC Logo"/>
+            @else
+                <img src="{{asset('uploads/frontend/images/f_logos/USCLogoEnNew.png')}}" alt="USC Logo"/>
+            @endif
         </a>
         <button
             class="navbar-toggler"
@@ -45,28 +40,29 @@
         <div class="collapse navbar-collapse" id="main">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link p-2" aria-current="page"  style="font-weight:bold;"
+                    <a class="nav-link p-2" aria-current="page" style="font-weight:bold;"
                        href="{{route('front.about')}}">@lang('front.about_university')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;"
+                    <a class="nav-link p-2 p-lg-2" style="font-weight:bold;"
                        href="{{route('front.management')}}">@lang('front.university_management')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;"
+                    <a class="nav-link p-2 p-lg-2" style="font-weight:bold;"
                        href="{{route('front.postgraduate')}}">@lang('front.postgraduate_and_research')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2"  style="font-weight:bold;font-size: 16px;"
+                    <a class="nav-link p-2 p-lg-2" style="font-weight:bold;font-size: 16px;"
                        href="{{route('front.colleges')}}">@lang('front.colleges_and_institutes')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2" aria-current="page"  style="font-weight:bold;"
+                    <a class="nav-link p-2" aria-current="page" style="font-weight:bold;"
                        href="{{route('front.istc')}}">مراكز ووحدات</a>
                 </li>
                 {{--Dropdown list--}}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"  style="font-weight:bold;"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       style="font-weight:bold;"
                        aria-expanded="false">
                         @lang('front.electronic_services')
                     </a>
@@ -82,10 +78,14 @@
                             <div>
                                 <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>حدمات الطلاب</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات الدراسات العليا</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات اعضاء هيئة التدريس</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات الموظفين</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>التقدم للمدن الجامعية</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات
+                                        الدراسات العليا</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات اعضاء
+                                        هيئة التدريس</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>خدمات
+                                        الموظفين</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>التقدم للمدن
+                                        الجامعية</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

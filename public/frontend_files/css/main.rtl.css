@@ -236,6 +236,7 @@ ul {
 
 @media (max-width: 992px) {
     .navbar .search {
+        display: none;
         padding-bottom: 1rem;
     }
 }
@@ -259,7 +260,7 @@ ul {
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
-    border-color: var(--main-color);
+    border-color: var(--main-color-logo);
 }
 
 .navbar .dropdown-menu {
@@ -294,6 +295,11 @@ ul {
 
 /*{{--End Mega Menu sittings--}}*/
 
+@media (max-width: 560px) {
+    .navbar button svg {
+        color: var(--main-color-logo);
+    }
+}
 
 /* End Navbar */
 
