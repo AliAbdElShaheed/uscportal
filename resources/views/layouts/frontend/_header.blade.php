@@ -96,12 +96,16 @@
                     </div>
                     {{--End Mega Menu--}}
                 </li>
-				
-				
-				<li class="nav-item" data-asw-orgfontsize="16" style="font-size: 16px;">
-                    <a class="nav-link p-2 p-lg-2" style="color:red;font-weight:bold;font-size: 12px;" href="http://demo.usc.edu.eg" data-asw-orgfontsize="16">هذه الموقع تجريبى للدخول على الموقع القديم للجامعة</a>
+
+
+                <li class="nav-item" data-asw-orgfontsize="16" style="font-size: 16px;">
+                    <a class="nav-link p-2 p-lg-2"
+                       style="color:red;font-weight:bold;font-size: 12px; border: 1px dotted red"
+                       href="http://demo.usc.edu.eg" data-asw-orgfontsize="12">هذه الموقع تجريبى للدخول على الموقع
+                        القديم للجامعة</a>
                 </li>
             </ul>
+            s
 
             {{--Search Icon--}}
             <div class="search ps-3 pe-3 d-lg-block">
