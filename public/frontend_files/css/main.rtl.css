@@ -190,6 +190,10 @@ ul {
     outline: 4px solid var(--main-color) !important;
 }
 
+.popup-tab, .sidebar-popup {
+    z-index: 100000000;
+}
+
 
 /* End Global Rules */
 
