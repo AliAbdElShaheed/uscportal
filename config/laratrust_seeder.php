@@ -18,6 +18,7 @@ return [
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
             'events' => 'c,r,u,d',
+            'navigationMenu' => 'c,r,u,d',
             'profile' => 'r,u'
         ], // End of Super Admin Roles
 
@@ -26,6 +27,7 @@ return [
             'categories' => 'c,r,u,d',
             'blogs' => 'c,r,u,d',
             'events' => 'c,r,u,d',
+            'navigationMenu' => 'c,r,u,d',
             'profile' => 'r,u',
         ], // End of Admin Roles
 
@@ -34,6 +36,7 @@ return [
             'categories' => 'r',
             'blogs' => 'c,r,u,d',
             'events' => 'c,r,u,d',
+            'navigationMenu' => 'c,r,u',
             'profile' => 'r,u',
         ], // End of Blogger Roles
 
@@ -42,6 +45,7 @@ return [
             'categories' => 'r',
             'blogs' => 'r',
             'events' => 'r',
+            'navigationMenu' => 'r',
             'profile' => 'r,u',
         ], // End of User Roles
 

@@ -22,16 +22,38 @@
             @endif
 
 
+
+
+            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigationMenu_read'))
+                <li><a href="{{ route('nav-menu.index') }}"><i class="fa fa-list"
+                                                               aria-hidden="true"></i><span>@lang('site.navigationMenu')</span></a>
+                </li>
+            @endif
+
+
+
+            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigationMenu_read'))
+                <li><a href="{{ route('sub_nav-menu.index') }}"><i class="fa fa-list-alt"
+                                                                   aria-hidden="true"></i><span>@lang('site.navigationMenu')</span></a>
+                </li>
+            @endif
+
+
+
+
             @if (auth()->user()->hasPermission('categories_read'))
                 <li><a href="{{ route('categories.index') }}"><i
                             class="fa fa-sitemap"></i><span>@lang('site.categories')</span></a></li>
             @endif
+
+
 
             @if (auth()->user()->hasPermission('blogs_read'))
                 <li><a href="{{ route('blogs.index') }}"><i
                             class="fa fa-newspaper-o"></i><span>@lang('site.blogs')</span></a>
                 </li>
             @endif
+
 
 
             @if (auth()->user()->hasPermission('events_read'))
