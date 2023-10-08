@@ -55,6 +55,10 @@ Route::group(
     Route::get('/istc', [IstcController::class, 'index'])->name('front.istc');
 
 
+Route::get('/SocietySector', function () {
+        return view('SocietySector');
+    });
+
 }); //End of All Routes
 
 
