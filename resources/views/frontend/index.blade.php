@@ -1105,6 +1105,13 @@
             </p>
 
             <button onclick="togglePopup()">اغلاق</button>
+			
+			<br>
+						<br>
+
+			<p dir="RTL" style="margin: 0in 1.85pt 10pt 0in; text-align: right; line-height: 115%; font-size: 15px; font-family: Calibri, sans-serif;"><a href="https://usc.edu.eg/ar/FDTC" target="_blank" rel="noopener noreferrer"><strong><span style="font-size: 18px; line-height: 115%; color: rgb(184, 49, 47);">التعرف على شهادة اساسيات شهادة التحول الرقمي</span></strong></a><span style="font-size: 18px; color: rgb(184, 49, 47);"><a href="https://usc.edu.eg/ar/FDTC" target="_blank" rel="noopener noreferrer"><strong><span dir="LTR" style="line-height: 115%;">&nbsp;(FDTC)</span></strong></a></span><span style="font-size: 18px; color: rgb(0, 0, 0);"><strong><span dir="LTR" style="line-height: 115%;"><br></span></strong></span></p>
+			
+			
         </div>
     </div>
 
