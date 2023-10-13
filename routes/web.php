@@ -59,6 +59,12 @@ Route::get('/SocietySector', function () {
         return view('SocietySector');
     });
 
+
+Route::get('/FDTC', function () {
+        return view('FDTC');
+    });
+	
+	
 }); //End of All Routes
 
 
