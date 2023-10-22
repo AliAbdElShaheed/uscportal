@@ -33,7 +33,7 @@
                                 <button type="submit" class="btn btn-sm btn-primary"><i
                                         class="fa fa-search"> @lang('site.search') </i></button>
 
-                                @if(auth()->user()->hasPermission('navigations_create'))
+                                @if(auth()->user()->hasPermission('navigationMenu_create'))
                                     <a href="{{route('nav-menu.add')}}" class="btn btn-primary btn-sm"><i
                                             class="fa fa-plus-circle"> @lang('site.add_new_nav_link') </i></a>
                                 @else
@@ -95,7 +95,7 @@
                                     <td>{{$nav->notes}}</td>
                                     <td>
                                         {{--Edit nav--}}
-                                        @if(auth()->user()->hasPermission('navigations_update'))
+                                        @if(auth()->user()->hasPermission('navigationMenu_update'))
                                             <a href="{{route('nav-menu.edit', ['id'=>$nav->id])}}"
                                                class="btn btn-sm btn-info"><i
                                                     class="fa fa-edit"></i>@lang('site.edit')
@@ -109,7 +109,7 @@
 
 
                                         {{--Delete nav--}}
-                                        @if(auth()->user()->hasPermission('navigations_delete'))
+                                        @if(auth()->user()->hasPermission('navigationMenu_delete'))
                                             <form action="{{route('nav-menu.destroy', ['id'=>$nav->id])}}"
                                                   style="display: inline-block" method="post">
                                                 @csrf

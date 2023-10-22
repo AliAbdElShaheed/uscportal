@@ -14,10 +14,10 @@ class NavigationMenuController extends Controller
     // Make Construct Function To Prevent Not Authorized Users That Not Have Permissions To Access Not Permission Pages
     public function __construct()
     {
-        $this->middleware(['permission:navigationMenu_read'])->only('index');
-        $this->middleware(['permission:navigationMenu_create'])->only(['create', 'store']);
-        $this->middleware(['permission:navigationMenu_update'])->only(['edit', 'update']);
-        $this->middleware(['permission:navigationMenu_delete'])->only('destroy');
+        $this->middleware(['permission:navigations_read'])->only('index');
+        $this->middleware(['permission:navigations_create'])->only(['create', 'store']);
+        $this->middleware(['permission:navigations_update'])->only(['edit', 'update']);
+        $this->middleware(['permission:navigations_delete'])->only('destroy');
     } // End of Constructor
 
 

@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CategorySeeder::class,
             NavigationMenuSeeder::class,
+            SubNavSeeder::class,
 
         ]); // End of Call Func.
 

@@ -7,17 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Translatable\HasTranslations;
 
-class NavigationMenu extends Model
+class SubNav extends Model
 {
     use HasFactory;
     use SoftDeletes;
     use HasTranslations;
+
 
     public $translatable = [
         'name',
     ];
 
     protected $fillable = [
+        'nav_menu_id',
         'name',
         'status',
         'priority',
@@ -27,11 +29,10 @@ class NavigationMenu extends Model
     ];
 
 
-    // Relation to Sub Navs
-    public function sub_navs()
+    // The Relationship With NavigationMenu
+    public function navigationMenu()
     {
-        return $this->hasMany(SubNav::class);
-    } // End of Sub Navs Relationship
-
+        return $this->belongsTo(NavigationMenu::class);
+    } // End of NavigationMenu Relationship
 
 } // End of Model

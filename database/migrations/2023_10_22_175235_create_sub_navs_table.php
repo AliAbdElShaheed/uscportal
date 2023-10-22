@@ -6,25 +6,29 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
 
-    
+
     public function up()
     {
-        Schema::create('navigation_menus', function (Blueprint $table) {
+        Schema::create('sub_navs', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('nav_menu_id')->unsigned();
             $table->json('name')->unique();
             $table->boolean('status')->default(0);
-            $table->unsignedTinyInteger('priority')->unique();
+            $table->unsignedTinyInteger('priority');
             $table->string('href');
             $table->boolean('special')->default(0);
             $table->string('notes')->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            // The DB Relation with nav menu link
+            $table->foreign('nav_menu_id')->references('id')->on('navigation_menus')->onDelete('cascade');
         });
     }
 
 
     public function down()
     {
-        Schema::dropIfExists('navigation_menus');
+        Schema::dropIfExists('sub_navs');
     }
 };

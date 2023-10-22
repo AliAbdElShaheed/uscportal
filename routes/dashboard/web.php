@@ -7,6 +7,7 @@ use App\Http\Controllers\Dashboard\ClientController;
 use App\Http\Controllers\Dashboard\EventController;
 use App\Http\Controllers\Dashboard\NavigationMenuController;
 use App\Http\Controllers\Dashboard\ProductController;
+use App\Http\Controllers\Dashboard\SubNavController;
 use App\Http\Controllers\Dashboard\Supplier\SupplyOrderController;
 use App\Http\Controllers\Dashboard\SupplierController;
 use App\Http\Controllers\Dashboard\UserController;
@@ -71,17 +72,17 @@ Route::group(
         }); // End of NavigationMenuController Routes
 
 
-        // Here Will Be All Routes To SubNavigationMenuController
-        Route::group(['prefix' => 'sub-nav-menu', 'namespace' => 'sub-nav-menu'], function () {
+        // Here Will Be All Routes To SubNavController
+        Route::group(['prefix' => 'sub-navs', 'namespace' => 'sub-nav'], function () {
 
-            Route::get('/add', [NavigationMenuController::class, 'create'])->name('sub_nav-menu.add');
-            Route::post('/store', [NavigationMenuController::class, 'store'])->name('sub_nav-menu.store');
-            Route::get('/index', [NavigationMenuController::class, 'index'])->name('sub_nav-menu.index');
-            Route::get('/', [NavigationMenuController::class, 'index'])->name('sub_nav-menu.index');
-            Route::get('/edit/{id}', [NavigationMenuController::class, 'edit'])->name('sub_nav-menu.edit');
-            Route::post('/category/update/{id}', [NavigationMenuController::class, 'update'])->name('sub_nav-menu.update');
-            Route::get('/category/delete/{id}', [NavigationMenuController::class, 'destroy'])->name('sub_nav-menu.destroy');
-        }); // End of SubNavigationMenuController Routes
+            Route::get('/add', [SubNavController::class, 'create'])->name('sub_nav.add');
+            Route::post('/store', [SubNavController::class, 'store'])->name('sub_nav.store');
+            Route::get('/index', [SubNavController::class, 'index'])->name('sub_nav.index');
+            Route::get('/', [SubNavController::class, 'index'])->name('sub_nav.index');
+            Route::get('/edit/{id}', [SubNavController::class, 'edit'])->name('sub_nav.edit');
+            Route::post('/update/{id}', [SubNavController::class, 'update'])->name('sub_nav.update');
+            Route::get('/delete/{id}', [SubNavController::class, 'destroy'])->name('sub_nav.destroy');
+        }); // End of SubNavController Routes
 
 
         // Here Will Be All Routes To CategoryController

@@ -24,7 +24,7 @@
 
 
 
-            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigationMenu_read'))
+            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigations_read'))
                 <li><a href="{{ route('nav-menu.index') }}"><i class="fa fa-list"
                                                                aria-hidden="true"></i><span>@lang('site.navigationMenu')</span></a>
                 </li>
@@ -32,9 +32,9 @@
 
 
 
-            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigationMenu_read'))
-                <li><a href="{{ route('sub_nav-menu.index') }}"><i class="fa fa-list-alt"
-                                                                   aria-hidden="true"></i><span>@lang('site.navigationMenu')</span></a>
+            @if (auth()->user()->hasRole('super_admin') || auth()->user()->hasRole('admin') ||auth()->user()->hasPermission('navigations_read'))
+                <li><a href="{{ route('sub_nav.index') }}"><i class="fa fa-list-alt"
+                                                              aria-hidden="true"></i><span>@lang('site.sub_nav')</span></a>
                 </li>
             @endif
 
