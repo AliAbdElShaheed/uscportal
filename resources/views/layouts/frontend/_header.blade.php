@@ -47,8 +47,8 @@
                     <a class="nav-link p-2 p-lg-2" style="font-weight:bold;"
                        href="{{route('front.management')}}">@lang('front.university_management')</a>
                 </li>
-				
-				   {{--Dropdown list--}}
+
+                {{--Dropdown list--}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        style="font-weight:bold;"
@@ -65,25 +65,26 @@
                                 <img src="{{asset('uploads/frontend/images/labtop.png')}}" alt=""/>
                             </div>--}}
                             <div>
-                                <li><a class="dropdown-item" href="/SocietySector"><i class="far fa-clipboard fa-fw"></i>قطاع خدمة المجتمع</a>
+                                <li><a class="dropdown-item" href="/SocietySector"><i
+                                            class="far fa-clipboard fa-fw"></i>قطاع خدمة المجتمع</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{route('front.postgraduate')}}"><i class="far fa-clipboard fa-fw"></i>قطاع الدراسات العليا</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>قطاع شئون الطلاب</a></li>
-                               
-							   
-                                   
-								   
+                                <li><a class="dropdown-item" href="{{route('front.postgraduate')}}"><i
+                                            class="far fa-clipboard fa-fw"></i>قطاع الدراسات العليا</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="far fa-clipboard fa-fw"></i>قطاع شئون
+                                        الطلاب</a></li>
+
+
                             </div>
                         </ul>
                     </div>
                     {{--End Mega Menu--}}
                 </li>
-				
-				
-            <!--    <li class="nav-item">
-                    <a class="nav-link p-2 p-lg-2" style="font-weight:bold;"
-                       href="{{route('front.postgraduate')}}">@lang('front.postgraduate_and_research')</a>
-                </li>  -->
+
+
+                {{--    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-2" style="font-weight:bold;"
+                           href="{{route('front.postgraduate')}}">@lang('front.postgraduate_and_research')</a>
+                    </li>  --}}
                 <li class="nav-item">
                     <a class="nav-link p-2 p-lg-2" style="font-weight:bold;font-size: 16px;"
                        href="{{route('front.colleges')}}">@lang('front.colleges_and_institutes')</a>

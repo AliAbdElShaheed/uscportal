@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->json('name')->unique();
             $table->boolean('status')->default(0);
             $table->unsignedTinyInteger('priority')->unique();
+            $table->string('href');
             $table->boolean('special')->default(0);
             $table->string('notes')->nullable();
             $table->timestamps();

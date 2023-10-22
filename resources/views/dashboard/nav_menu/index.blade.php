@@ -60,6 +60,7 @@
                                 <th>@lang('site.name')</th>
                                 <th>@lang('site.status')</th>
                                 <th>@lang('site.priority')</th>
+                                <th>@lang('site.href')</th>
                                 <th>@lang('site.special_link')</th>
                                 {{--                                <th>@lang('site.num_of_sub_navs')</th>--}}
 
@@ -80,6 +81,7 @@
                                         @endif
                                     </td>
                                     <td>{{$nav->priority}}</td>
+                                    <td>{{$nav->href}}</td>
                                     <td>
                                         @if ($nav->special == 1)
                                             <span class="text-success text-bold">Special Link</span>

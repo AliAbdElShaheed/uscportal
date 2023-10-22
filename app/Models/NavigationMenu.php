@@ -21,6 +21,7 @@ class NavigationMenu extends Model
         'name',
         'status',
         'priority',
+        'href',
         'special',
         'notes',
     ];

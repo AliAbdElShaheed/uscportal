@@ -25,9 +25,7 @@ class DatabaseSeeder extends Seeder
             LaratrustSeeder::class,
             UserSeeder::class,
             CategorySeeder::class,
-//            ProductSeeder::class,
-//            ClientSeeder::class,
-//            SupplierSeeder::class,
+            NavigationMenuSeeder::class,
 
         ]); // End of Call Func.
 

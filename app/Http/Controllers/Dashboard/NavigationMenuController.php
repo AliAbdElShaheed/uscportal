@@ -52,12 +52,14 @@ class NavigationMenuController extends Controller
             'name' => 'required|unique:navigation_menus',
             'name_ar' => 'required',
             "priority" => 'required|numeric|min:1|unique:navigation_menus',
+            'href' => 'required',
         ]); // End of Validation
 
         $nav_link = new NavigationMenu();
         $nav_link->name = ['en' => $request['name'], 'ar' => $request['name_ar']];
         $nav_link->status = $request->status;
         $nav_link->priority = $request->priority;
+        $nav_link->href = $request->href;
         $nav_link->special = $request->special;
         $nav_link->save();
 
@@ -97,6 +99,7 @@ class NavigationMenuController extends Controller
                 'numeric',
                 'min:1',
                 Rule::unique('navigation_menus')->ignore($id),
+                'href' => 'required',
             ],
         ]); // End of Validation
 
@@ -105,6 +108,7 @@ class NavigationMenuController extends Controller
         $nav->name = ['en' => $request->name, 'ar' => $request->name_ar];
         $nav->status = $request->status;
         $nav->priority = $request->priority;
+        $nav->href = $request->href;
         $nav->special = $request->special;
         $nav->notes = $request->notes;
         $nav->update();

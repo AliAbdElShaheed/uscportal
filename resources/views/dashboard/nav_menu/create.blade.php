@@ -98,6 +98,15 @@
                                                 </div>
 
 
+                                                {{-- Nav href--}}
+                                                <div class="form-group col-md-4">
+                                                    <label for="exampleInputHref">@lang('site.href')</label>
+                                                    <input type="text" name="href" class="form-control"
+                                                           id="exampleInputHref"
+                                                           value="{{old('href')}}" required>
+                                                </div>
+
+
                                                 {{-- Nav Special--}}
                                                 {{--// List of Special--}}{{--
                                                 <?php $specials = ['Normal Link', 'Special Link']; ?>--}}

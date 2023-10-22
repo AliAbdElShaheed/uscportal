@@ -9,11 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+    
     public function run()
     {
         DB::table('categories')->delete();
@@ -28,7 +24,7 @@ class CategorySeeder extends Seeder
                     'en' => 'Events',
                     'ar' => 'أحداث'
                 ],
-                
+
             ];
 
         foreach ($categories as $category) {
