@@ -23,6 +23,11 @@ return new class extends Migration {
 
             // The DB Relation with nav menu link
             $table->foreign('nav_menu_id')->references('id')->on('navigation_menus')->onDelete('cascade');
+
+            // Add a unique constraint for priority within the same nav_menu_id
+            $table->unique(['nav_menu_id', 'priority']);
+
+
         });
     }
 

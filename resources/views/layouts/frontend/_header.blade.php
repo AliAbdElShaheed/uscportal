@@ -139,7 +139,6 @@
                         القديم للجامعة</a>
                 </li>
             </ul>
-            s
 
             {{--Search Icon--}}
             <div class="search ps-3 pe-3 d-lg-block">
