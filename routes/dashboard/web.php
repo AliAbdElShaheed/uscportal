@@ -66,8 +66,8 @@ Route::group(
             Route::get('/index', [NavigationMenuController::class, 'index'])->name('nav-menu.index');
             Route::get('/', [NavigationMenuController::class, 'index'])->name('nav-menu.index');
             Route::get('/edit/{id}', [NavigationMenuController::class, 'edit'])->name('nav-menu.edit');
-            Route::post('/category/update/{id}', [NavigationMenuController::class, 'update'])->name('nav-menu.update');
-            Route::get('/category/delete/{id}', [NavigationMenuController::class, 'destroy'])->name('nav-menu.destroy');
+            Route::post('/nav/update/{id}', [NavigationMenuController::class, 'update'])->name('nav-menu.update');
+            Route::get('/nav/delete/{id}', [NavigationMenuController::class, 'destroy'])->name('nav-menu.destroy');
         }); // End of NavigationMenuController Routes
 
 

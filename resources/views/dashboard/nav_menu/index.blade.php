@@ -35,10 +35,10 @@
 
                                 @if(auth()->user()->hasPermission('navigationMenu_create'))
                                     <a href="{{route('nav-menu.add')}}" class="btn btn-primary btn-sm"><i
-                                            class="fa fa-plus-circle"> @lang('site.add_new_category') </i></a>
+                                            class="fa fa-plus-circle"> @lang('site.add_new_nav_link') </i></a>
                                 @else
                                     <a href="#" class="btn btn-primary btn-sm disabled"><i
-                                            class="fa fa-plus-circle"> @lang('site.add_new_category') </i></a>
+                                            class="fa fa-plus-circle"> @lang('site.add_new_nav_link') </i></a>
 
                                 @endif
 
@@ -58,29 +58,43 @@
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>@lang('site.name')</th>
-                                <th>@lang('site.items_count')</th>
-                                <th>@lang('site.related_items')</th>
+                                <th>@lang('site.status')</th>
+                                <th>@lang('site.priority')</th>
+                                <th>@lang('site.special_link')</th>
+                                {{--                                <th>@lang('site.num_of_sub_navs')</th>--}}
+
                                 <th>@lang('site.notes')</th>
                                 <th style="width: 180px">@lang('site.actions')</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($navmenus as $index=>$category)
+                            @foreach($navmenus as $index=>$nav)
                                 <tr>
                                     <td>{{ $index + 1 }}</td>
-                                    <td>{{$category->name}}</td>
-                                    @if($category->id == 1)
-                                        <td>{{$category->blogs->count()}}</td>
-                                    @else
-                                        <td>{{$category->events->count()}}</td>
-                                    @endif
-                                    <td><a href="{{ route('nav-menu.index', ['category_id' => $category->id]) }}"
-                                           class="btn btn-primary btn-sm">@lang('site.items')</a></td>
-                                    <td>{{$category->notes}}</td>
+                                    <td>{{$nav->name}}</td>
                                     <td>
-                                        {{--Edit category--}}
+                                        @if ($nav->status == 1)
+                                            <span class="text-primary text-bold">Active</span>
+                                        @else
+                                            <span class="text-danger text-bold">Inactive</span>
+                                        @endif
+                                    </td>
+                                    <td>{{$nav->priority}}</td>
+                                    <td>
+                                        @if ($nav->special == 1)
+                                            <span class="text-success text-bold">Special Link</span>
+                                        @else
+                                            <span class="text-primary text-bold">Normal Link</span>
+                                        @endif
+                                    </td>
+
+                                    {{-- <td><a href="{{ route('nav-menu.index', ['nav_id' => $nav->id]) }}"
+                                            class="btn btn-primary btn-sm">@lang('site.items')</a></td>--}}
+                                    <td>{{$nav->notes}}</td>
+                                    <td>
+                                        {{--Edit nav--}}
                                         @if(auth()->user()->hasPermission('navigationMenu_update'))
-                                            <a href="{{route('nav-menu.edit', ['id'=>$category->id])}}"
+                                            <a href="{{route('nav-menu.edit', ['id'=>$nav->id])}}"
                                                class="btn btn-sm btn-info"><i
                                                     class="fa fa-edit"></i>@lang('site.edit')
                                             </a>
@@ -92,20 +106,21 @@
 
 
 
-                                        {{--Delete category--}}
+                                        {{--Delete nav--}}
                                         @if(auth()->user()->hasPermission('navigationMenu_delete'))
-                                            {{--
-                                            <form action="{{route('nav-menu.destroy', $category->id)}}" style="display: inline-block" method="post">
-                                                {{csrf_field()}}
-                                                {{method_field('delete')}}
-                                                <button class="btn btn-danger btn-sm">@lang('site.delete')</button>
-                                            </form>--}}
-                                            <a class="confirm"
-                                               href="{{route('nav-menu.destroy', ['id'=>$category->id])}}">
-                                                <button type="button"
-                                                        class="btn btn-sm btn-danger"><i
-                                                        class="fa fa-trash"></i> @lang('site.delete')</button>
-                                            </a>
+                                            <form action="{{route('nav-menu.destroy', ['id'=>$nav->id])}}"
+                                                  style="display: inline-block" method="post">
+                                                @csrf
+                                                {{method_field('GET')}}
+                                                <button
+                                                    class="btn btn-danger btn-sm delete">@lang('site.delete')</button>
+                                            </form>
+                                            {{-- <a class="confirm"
+                                                href="{{route('nav-menu.destroy', ['id'=>$nav->id])}}">
+                                                 <button type="button"
+                                                         class="btn btn-sm btn-danger"><i
+                                                         class="fa fa-trash"></i> @lang('site.delete')</button>
+                                             </a>--}}
                                         @else
                                             <a href="#">
                                                 <button type="button"
@@ -138,17 +153,5 @@
 
 @push('scripts')
 
-    {{--
-    <script onclick="delete" >
-        $(function () {
 
-            // Confirmation Message On Click The Link
-
-            $('.confirm').click(function() {
-
-                return confirm('Are You Sure ?');
-
-            });
-    </script>
-    --}}
 @endpush

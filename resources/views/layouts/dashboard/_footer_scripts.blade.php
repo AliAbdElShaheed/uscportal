@@ -65,6 +65,7 @@
 
         });//end of delete
 
+
         // // image preview
         // $(".image").change(function () {
         //
