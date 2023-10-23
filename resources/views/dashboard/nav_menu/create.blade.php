@@ -61,22 +61,18 @@
                                                 {{-- Nav Status--}}
                                                 {{--// List of State--}}{{--
                                                 <?php $status = ['InActive', 'Active']; ?>--}}
-
                                                 <div class="form-group col-md-4">
                                                     <label for="SelectStatus">@lang('site.status')</label>
                                                     <select id="SelectStatus" class="custom-select form-control"
                                                             name="status">
-
-                                                        <option
-                                                            value="1" {{ old('status') == 'active' ? 'selected' : '' }}>
-                                                            Active
-                                                        </option>
                                                         <option
                                                             value="0" {{ old('status') == 'inactive' ? 'selected' : '' }}>
                                                             Inactive
                                                         </option>
-
-
+                                                        <option
+                                                            value="1" {{ old('status') == 'active' ? 'selected' : '' }}>
+                                                            Active
+                                                        </option>
                                                         {{--@foreach($status as $state)
                                                                 <option
                                                                     value="{{ $state }}"
@@ -84,7 +80,6 @@
                                                                     {{ $state }}
                                                                 </option>
                                                             @endforeach--}}
-
                                                     </select>
                                                 </div>
 

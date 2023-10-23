@@ -6,15 +6,15 @@
 
         <section class="content-header">
 
-            <h1>@lang('site.navigationMenu')
-                <small>all Navigation Menu starts here</small>
+            <h1>@lang('site.sub_navs')
+                <small>all Sub Navs starts here</small>
             </h1>
 
             <ol class="breadcrumb">
                 <li><a href="{{route('dashboard.index')}}"> <i class="fa fa-dashboard"></i> @lang('site.dashboard')</a>
                 </li>
-                <li><a href="{{route('nav-menu.index')}}"> @lang('site.navigationMenu')</a></li>
-                <li class="active"> @lang('site.edit_navigationMenu')</li>
+                <li><a href="{{route('sub_nav.index')}}"> @lang('site.sub_navs')</a></li>
+                <li class="active"> @lang('site.edit_sub_nav')</li>
             </ol>
 
             <section class="content">
@@ -25,13 +25,13 @@
                             <div class="card card-primary">
 
                                 <div class="card-header">
-                                    <h3 class="card-title">@lang('site.edit_navigationMenu')</h3>
+                                    <h3 class="card-title">@lang('site.edit_sub_nav')</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 @include('partials._errors')
 
                                 <!-- form start -->
-                                <form method="post" action="{{route('nav-menu.update', $nav->id)}}">
+                                <form method="post" action="{{route('sub_nav.update', $nav->id)}}">
 
                                     @csrf
                                     @method('post')
@@ -58,9 +58,6 @@
 
 
                                                 {{-- Nav Status--}}
-                                                {{--// List of State--}}{{--
-                                                <?php $status = ['InActive', 'Active']; ?>--}}
-
                                                 <div class="form-group col-md-4">
                                                     <label for="SelectStatus">@lang('site.status')</label>
                                                     <select id="SelectStatus" class="custom-select form-control"
@@ -98,22 +95,10 @@
 
 
                                                 {{-- Nav Special--}}
-                                                {{--// List of Special--}}{{--
-                                                <?php $specials = ['Normal Link', 'Special Link']; ?>--}}
-
                                                 <div class="form-group col-md-4">
                                                     <label for="SelectSpecial">@lang('site.special')</label>
                                                     <select id="SelectSpecial" class="custom-select form-control"
                                                             name="special">
-
-                                                        {{--@foreach($specials as $special)
-                                                            <option
-                                                                value="{{ $special }}"
-                                                                {{ old('special') == $special ? 'selected' : '' }}>
-                                                                {{ $special }}
-                                                            </option>
-                                                        @endforeach--}}
-
                                                         <option
                                                             value="0" {{ $nav->special == 0 ? 'selected' : '' }}>
                                                             Normal Link
@@ -122,13 +107,32 @@
                                                             value="1" {{ $nav->special == 1 ? 'selected' : '' }}>
                                                             Special Link
                                                         </option>
-
-
                                                     </select>
                                                 </div>
 
 
-                                                {{-- Category Notes--}}
+                                                {{-- Main Navs List--}}
+                                                <div class="col-sm-4">
+                                                    <!-- select -->
+                                                    <div class="form-group">
+                                                        <label for="Select">@lang('site.navigationMenu')</label>
+                                                        <select id="Select" class="custom-select form-control"
+                                                                name="nav_menu_id" required>
+                                                            <option value="">---</option>
+                                                            @foreach($navmenus as $navmenu)
+
+                                                                <option
+                                                                    value="{{$navmenu->id}}"
+                                                                    {{ $navmenu->nav_menu_id == $navmenu->id ? 'selected' : '' }}
+                                                                >
+                                                                    {{$navmenu->name}}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                {{-- Notes--}}
                                                 <div class="form-group col-md-4">
                                                     <label for="exampleInputNotes">@lang('site.notes')</label>
                                                     <input type="text" name="notes" class="form-control"

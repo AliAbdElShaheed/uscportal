@@ -1,20 +1,19 @@
 @extends('layouts.dashboard.app')
 
 @section('content')
-
     <div class="content-wrapper">
 
         <section class="content-header">
 
-            <h1>@lang('site.navigationMenu')
-                <small>all Navigation Menu starts here {{$navmenus->count()}}</small>
+            <h1>@lang('site.sub_navs')
+                <small>all Sub Navs starts here {{$sub_navs->count()}}</small>
             </h1>
 
             <ol class="breadcrumb">
                 <li><a href="{{route('dashboard.index')}}"> <i class="fa fa-dashboard"></i> @lang('site.dashboard')</a>
                 </li>
-                <li><a href="{{route('nav-menu.index')}}"> @lang('site.navigationMenu')</a></li>
-                <li class="active"> @lang('site.add_navigationMenu')</li>
+                <li><a href="{{route('sub_nav.index')}}"> @lang('site.sub_navs')</a></li>
+                <li class="active"> @lang('site.add_sub_nav')</li>
             </ol>
 
             <section class="content">
@@ -25,17 +24,16 @@
                             <div class="card card-primary">
 
                                 <div class="card-header">
-                                    <h3 class="card-title">@lang('site.add_new_navigationMenu')</h3>
+                                    <h3 class="card-title">@lang('site.add_new_sub_nav')</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 @include('partials._errors')
 
                                 <!-- form start -->
-                                <form method="post" action="{{route('nav-menu.store')}}">
+                                <form method="post" action="{{route('sub_nav.store')}}">
 
                                     @csrf
                                     @method('post')
-                                    {{--{{method_field('post')}}--}}
                                     <!-- card-body -->
                                     <div class="row">
                                         <div class="col-md-12">
@@ -59,32 +57,18 @@
 
 
                                                 {{-- Nav Status--}}
-                                                {{--// List of State--}}{{--
-                                                <?php $status = ['InActive', 'Active']; ?>--}}
-
                                                 <div class="form-group col-md-4">
                                                     <label for="SelectStatus">@lang('site.status')</label>
                                                     <select id="SelectStatus" class="custom-select form-control"
                                                             name="status">
-
-                                                        <option
-                                                            value="1" {{ old('status') == 'active' ? 'selected' : '' }}>
-                                                            Active
-                                                        </option>
                                                         <option
                                                             value="0" {{ old('status') == 'inactive' ? 'selected' : '' }}>
                                                             Inactive
                                                         </option>
-
-
-                                                        {{--@foreach($status as $state)
-                                                                <option
-                                                                    value="{{ $state }}"
-                                                                    {{ old('status') == $state ? 'selected' : '' }}>
-                                                                    {{ $state }}
-                                                                </option>
-                                                            @endforeach--}}
-
+                                                        <option
+                                                            value="1" {{ old('status') == 'active' ? 'selected' : '' }}>
+                                                            Active
+                                                        </option>
                                                     </select>
                                                 </div>
 
@@ -108,22 +92,10 @@
 
 
                                                 {{-- Nav Special--}}
-                                                {{--// List of Special--}}{{--
-                                                <?php $specials = ['Normal Link', 'Special Link']; ?>--}}
-
                                                 <div class="form-group col-md-4">
                                                     <label for="SelectSpecial">@lang('site.special')</label>
                                                     <select id="SelectSpecial" class="custom-select form-control"
                                                             name="special">
-
-                                                        {{--@foreach($specials as $special)
-                                                            <option
-                                                                value="{{ $special }}"
-                                                                {{ old('special') == $special ? 'selected' : '' }}>
-                                                                {{ $special }}
-                                                            </option>
-                                                        @endforeach--}}
-
                                                         <option
                                                             value="0" {{ old('special') == 'Normal Link' ? 'selected' : '' }}>
                                                             Normal Link
@@ -138,7 +110,29 @@
                                                 </div>
 
 
-                                                {{-- Category Notes--}}
+                                                {{-- Main Navs List--}}
+                                                <div class="col-sm-4">
+                                                    <!-- select -->
+                                                    <div class="form-group">
+                                                        <label for="Select">@lang('site.navigationMenu')</label>
+                                                        <select id="Select" class="custom-select form-control"
+                                                                name="nav_menu_id" required>
+                                                            <option value="">---</option>
+                                                            @foreach($navmenus as $navmenu)
+
+                                                                <option
+                                                                    value="{{$navmenu->id}}"
+                                                                    {{ old('nav_menu_id') == $navmenu->id ? 'selected' : '' }}
+                                                                >
+                                                                    {{$navmenu->name}}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                {{--Notes--}}
                                                 <div class="form-group col-md-4">
                                                     <label for="exampleInputNotes">@lang('site.notes')</label>
                                                     <input type="text" name="notes" class="form-control"

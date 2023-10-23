@@ -6,23 +6,23 @@
 
         <section class="content-header">
 
-            <h1>@lang('site.navigationMenu')
-                <small>all navigationMenu starts here {{$navmenus->total()}}</small>
+            <h1>@lang('site.sub_navs')
+                <small>all Sub Navs starts here {{$sub_navs->total()}}</small>
             </h1>
 
             <ol class="breadcrumb">
                 <li><a href="{{route('dashboard.index')}}"> <i class="fa fa-dashboard"></i> @lang('site.dashboard')</a>
                 </li>
-                <li class="active"> @lang('site.navigationMenu')</li>
+                <li class="active"> @lang('site.sub_navs')</li>
             </ol>
 
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">@lang('site.navigationMenu_list')</h3>
+                    <h3 class="card-title">@lang('site.sub_navs_list')</h3>
 
                     {{-- The Search Form--}}
-                    <form action="{{route('nav-menu.index')}}" method="get">
+                    <form action="{{route('sub_nav.index')}}" method="get">
                         <div class="row">
 
                             <div class="col-md-4 ">
@@ -33,12 +33,12 @@
                                 <button type="submit" class="btn btn-sm btn-primary"><i
                                         class="fa fa-search"> @lang('site.search') </i></button>
 
-                                @if(auth()->user()->hasPermission('navigationMenu_create'))
-                                    <a href="{{route('nav-menu.add')}}" class="btn btn-primary btn-sm"><i
-                                            class="fa fa-plus-circle"> @lang('site.add_new_nav_link') </i></a>
+                                @if(auth()->user()->hasPermission('navigations_create'))
+                                    <a href="{{route('sub_nav.add')}}" class="btn btn-primary btn-sm"><i
+                                            class="fa fa-plus-circle"> @lang('site.add_sub_new_nav_link') </i></a>
                                 @else
                                     <a href="#" class="btn btn-primary btn-sm disabled"><i
-                                            class="fa fa-plus-circle"> @lang('site.add_new_nav_link') </i></a>
+                                            class="fa fa-plus-circle"> @lang('site.add_new_sub_nav_link') </i></a>
 
                                 @endif
 
@@ -51,13 +51,14 @@
                 <!-- /.card-header -->
                 <div class="card-body">
 
-                    @if ($navmenus->count() > 0)
+                    @if ($sub_navs->count() > 0)
 
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>@lang('site.name')</th>
+                                <th>@lang('site.main_nav')</th>
                                 <th>@lang('site.status')</th>
                                 <th>@lang('site.priority')</th>
                                 <th>@lang('site.href')</th>
@@ -69,10 +70,11 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($navmenus as $index=>$nav)
+                            @foreach($sub_navs as $index=>$nav)
                                 <tr>
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{$nav->name}}</td>
+                                    <td>{{$nav->nav_menu_id}}</td>
                                     <td>
                                         @if ($nav->status == 1)
                                             <span class="text-primary text-bold">Active</span>
@@ -95,8 +97,8 @@
                                     <td>{{$nav->notes}}</td>
                                     <td>
                                         {{--Edit nav--}}
-                                        @if(auth()->user()->hasPermission('navigationMenu_update'))
-                                            <a href="{{route('nav-menu.edit', ['id'=>$nav->id])}}"
+                                        @if(auth()->user()->hasPermission('navigations_update'))
+                                            <a href="{{route('sub_nav.edit', ['id'=>$nav->id])}}"
                                                class="btn btn-sm btn-info"><i
                                                     class="fa fa-edit"></i>@lang('site.edit')
                                             </a>
@@ -109,8 +111,8 @@
 
 
                                         {{--Delete nav--}}
-                                        @if(auth()->user()->hasPermission('navigationMenu_delete'))
-                                            <form action="{{route('nav-menu.destroy', ['id'=>$nav->id])}}"
+                                        @if(auth()->user()->hasPermission('navigations_delete'))
+                                            <form action="{{route('sub_nav.destroy', ['id'=>$nav->id])}}"
                                                   style="display: inline-block" method="post">
                                                 @csrf
                                                 {{method_field('GET')}}
@@ -136,7 +138,7 @@
 
                             </tbody>
                         </table>
-                        {{$navmenus->appends(request()->query())->links()}}
+                        {{$sub_navs->appends(request()->query())->links()}}
                         <!-- /.card-body -->
 
                     @else
